@@ -1,0 +1,161 @@
+---
+default_install_hook_types: ["pre-commit", "pre-push"]
+default_stages: ["pre-commit", "pre-push"]
+exclude: ^(.idea/.*|go.sum|CLAUDE.md)$
+minimum_pre_commit_version: 4.4.0
+repos:
+  - repo: local
+    hooks:
+  # Linting
+      - id: prettier
+        name: Prettier
+        entry: prettier --write --ignore-unknown
+        language: node
+        types: [text]
+        args: []
+        # https://github.com/prettier/prettier/releases
+        additional_dependencies: ["prettier@3.9.5"]
+        stages: ["pre-commit"]
+  # Security
+      - id: audit
+        name: pnpm audit
+        entry: make audit
+        language: unsupported
+        pass_filenames: false
+        verbose: false
+        stages: ["pre-push"]
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/fabasoad/pre-commit-snyk
+    rev: v1.0.3
+    hooks:
+      - id: snyk-test
+        args:
+          - --snyk-args=--all-projects --severity-threshold=low
+          - --hook-args=--log-level debug
+        stages: ["pre-push"]
+  - repo: https://github.com/fabasoad/pre-commit-grype
+    rev: v0.6.4
+    hooks:
+      - id: grype-dir
+        args:
+          - --grype-args=--by-cve --fail-on=low --exclude=**/node_modules
+          - --hook-args=--log-level debug
+        stages: ["pre-push"]
+  - repo: https://github.com/google/osv-scanner
+    rev: v2.4.0
+    hooks:
+      - id: osv-scanner
+        args:
+          - --lockfile=uv.lock
+        verbose: true
+        stages: ["pre-push"]
+  # Go
+  - repo: local
+    hooks:
+      - id: build
+        name: Build
+        entry: make build
+        language: unsupported
+        pass_filenames: false
+        verbose: false
+        types: [go]
+        stages: ["pre-push"]
+      - id: test
+        name: Unit tests
+        entry: make test
+        language: unsupported
+        pass_filenames: false
+        verbose: true
+        types: [go]
+        stages: ["pre-push"]
+      - id: go-vet
+        name: go-vet
+        entry: make vet
+        language: unsupported
+        pass_filenames: false
+        verbose: false
+        types: [go]
+        stages: ["pre-push"]
+      - id: go-staticcheck
+        name: go-staticcheck
+        entry: make staticcheck
+        language: unsupported
+        pass_filenames: false
+        verbose: false
+        types: [go]
+        stages: ["pre-push"]
+      - id: go-errcheck
+        name: go-errcheck
+        entry: make errcheck
+        language: unsupported
+        pass_filenames: false
+        verbose: false
+        types: [go]
+        stages: ["pre-push"]
+      - id: golangci-lint
+        name: go golangci-lint
+        entry: make lint
+        language: unsupported
+        pass_filenames: false
+        types: [go]
+        stages: ["pre-push"]
+  - repo: https://github.com/Bahjat/pre-commit-golang
+    rev: v1.0.6
+    hooks:
+      - id: go-fmt-import
+        types: [go]
+        stages: ["pre-push"]
+      - id: go-lint
+        types: [go]
+        stages: ["pre-push"]
+      - id: gofumpt
+        types: [go]
+        stages: ["pre-push"]
+      - id: go-ruleguard
+        types: [go]
+        stages: ["pre-push"]
+      - id: go-imports-reviser
+        types: [go]
+        stages: ["pre-push"]
+  # Markdown
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.49.1
+    hooks:
+      - id: markdownlint-fix
+        stages: ["pre-commit"]
+  # Yaml
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+        stages: ["pre-push"]
+  # GitHub Actions
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.12
+    hooks:
+      - id: actionlint
+        args: ["-pyflakes=", "-shellcheck="]
+        stages: ["pre-commit"]
+  # Other
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-json
+        stages: ["pre-push"]
+      - id: check-toml
+        stages: ["pre-push"]
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+      - id: no-commit-to-branch
+        stages: ["pre-commit"]
+      - id: trailing-whitespace

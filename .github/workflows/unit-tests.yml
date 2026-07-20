@@ -1,0 +1,22 @@
+---
+name: Unit Tests
+
+on: # yamllint disable-line rule:truthy
+  pull_request:
+    paths:
+      - .github/workflows/unit-tests.yml
+      - go.mod
+      - go.sum
+      - cmd/**
+      - internal/**
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    name: Go
+    uses: fabasoad/reusable-workflows/.github/workflows/wf-go-unit-tests.yml@main
+    permissions:
+      contents: read
