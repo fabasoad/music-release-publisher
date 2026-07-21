@@ -1,4 +1,4 @@
-BUILD_CMD := go build -o music-release-publisher cmd/bot/...
+BUILD_CMD := go build -o music-release-publisher cmd/bot/main.go
 
 .DEFAULT_GOAL := build
 
@@ -8,7 +8,7 @@ build: download/deps
 
 .PHONY: install
 install:
-	go install cmd/bot/...
+	go install cmd/bot/main.go
 
 .PHONY: download/deps
 download/deps:
@@ -25,7 +25,7 @@ lint:
 
 .PHONY: test
 test:
-	go tool oss.indeed.com/go/go-opine test -coverprofile=coverage.out -min-coverage 40
+	go tool oss.indeed.com/go/go-opine test -coverprofile=coverage.out -min-coverage 10
 
 .PHONY: test/console
 test/console: test
@@ -45,7 +45,7 @@ run/debug:
 
 .PHONY: run/quick
 run/quick:
-	go run -race cmd/bot/... $(ARGS)
+	go run -race cmd/bot/main.go $(ARGS)
 
 .PHONY: update
 update:

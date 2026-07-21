@@ -41,7 +41,7 @@ func (d *DiscordPublisher) Publish(ctx context.Context, release MusicRelease) er
 	if err != nil {
 		return fmt.Errorf("discord: send request: %w", err)
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
 		return fmt.Errorf("discord: unexpected status %d", resp.StatusCode)

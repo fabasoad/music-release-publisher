@@ -5,8 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"google.golang.org/genai"
 	"music-release-publisher/internal/publisher"
+
+	"google.golang.org/genai"
 )
 
 const model = "gemini-2.5-flash"
@@ -15,8 +16,12 @@ var genres = []string{
 	"electronic", "ambient", "post-rock", "indie", "jazz",
 }
 
+type contentGenerator interface {
+	GenerateContent(ctx context.Context, model string, contents []*genai.Content, config *genai.GenerateContentConfig) (*genai.GenerateContentResponse, error)
+}
+
 type Curator struct {
-	client *genai.Client
+	models contentGenerator
 }
 
 func NewCurator(ctx context.Context, apiKey string) (*Curator, error) {
@@ -27,7 +32,7 @@ func NewCurator(ctx context.Context, apiKey string) (*Curator, error) {
 	if err != nil {
 		return nil, fmt.Errorf("ai: create client: %w", err)
 	}
-	return &Curator{client: client}, nil
+	return &Curator{models: client.Models}, nil
 }
 
 func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, error) {
@@ -57,7 +62,7 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 		ResponseSchema:   schema,
 	}
 
-	result, err := c.client.Models.GenerateContent(ctx, model, genai.Text(prompt), config)
+	result, err := c.models.GenerateContent(ctx, model, genai.Text(prompt), config)
 	if err != nil {
 		return nil, fmt.Errorf("ai: generate content: %w", err)
 	}

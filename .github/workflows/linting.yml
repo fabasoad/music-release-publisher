@@ -6,27 +6,14 @@ on: # yamllint disable-line rule:truthy
   push:
     branches:
       - main
-  workflow_dispatch:
-    inputs:
-      linter:
-        description: "Run this linter:"
-        required: false
-        default: all
-        type: choice
-        options: [all, pre-commit, go-lint]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
 
 jobs:
-  go-lint:
-    name: Go Lint
-    if: contains(fromJSON('["all", "go-lint"]'), github.event.inputs.linter || 'all')
-    uses: fabasoad/reusable-workflows/.github/workflows/wf-go-lint.yml@main
-
   pre-commit:
     name: Pre-commit
-    if: contains(fromJSON('["all", "pre-commit"]'), github.event.inputs.linter || 'all')
     uses: fabasoad/reusable-workflows/.github/workflows/wf-pre-commit.yml@main
     with:
-      skip-hooks: "audit, test"
+      skip-hooks: "test"

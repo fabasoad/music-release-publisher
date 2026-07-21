@@ -6,7 +6,7 @@ minimum_pre_commit_version: 4.4.0
 repos:
   - repo: local
     hooks:
-  # Linting
+      # Linting
       - id: prettier
         name: Prettier
         entry: prettier --write --ignore-unknown
@@ -17,13 +17,6 @@ repos:
         additional_dependencies: ["prettier@3.9.5"]
         stages: ["pre-commit"]
   # Security
-      - id: audit
-        name: pnpm audit
-        entry: make audit
-        language: unsupported
-        pass_filenames: false
-        verbose: false
-        stages: ["pre-push"]
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
     hooks:
@@ -37,7 +30,7 @@ repos:
     hooks:
       - id: snyk-test
         args:
-          - --snyk-args=--all-projects --severity-threshold=low
+          - --snyk-args=--file=go.mod --package-manager=gomodules --severity-threshold=low
           - --hook-args=--log-level debug
         stages: ["pre-push"]
   - repo: https://github.com/fabasoad/pre-commit-grype
@@ -45,7 +38,7 @@ repos:
     hooks:
       - id: grype-dir
         args:
-          - --grype-args=--by-cve --fail-on=low --exclude=**/node_modules
+          - --grype-args=--by-cve --fail-on=low
           - --hook-args=--log-level debug
         stages: ["pre-push"]
   - repo: https://github.com/google/osv-scanner
@@ -53,7 +46,7 @@ repos:
     hooks:
       - id: osv-scanner
         args:
-          - --lockfile=uv.lock
+          - --lockfile=go.mod
         verbose: true
         stages: ["pre-push"]
   # Go

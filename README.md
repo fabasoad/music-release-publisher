@@ -51,16 +51,16 @@ Then wire it up with an env-var guard in `buildPublishers()` in `cmd/bot/main.go
 All configuration is via environment variables. The bot skips any platform whose
 vars are absent, so you only need to set the ones you want.
 
-| Variable | Required | Description |
-|---|---|---|
-| `GEMINI_API_KEY` | Yes | Google AI Studio API key |
-| `DISCORD_WEBHOOK_URL` | No | Discord channel webhook URL |
-| `TELEGRAM_BOT_TOKEN` | No | Telegram bot token (`123:ABC...`) |
-| `TELEGRAM_CHAT_ID` | No | Target Telegram chat/channel ID |
-| `THREADS_CLIENT_ID` | No | Meta app client ID |
-| `THREADS_CLIENT_SECRET` | No | Meta app client secret |
-| `THREADS_REDIRECT_URI` | No | OAuth redirect URI registered in Meta console |
-| `THREADS_ACCESS_TOKEN` | No | Pre-obtained long-lived access token |
+| Variable                | Required | Description                                   |
+| ----------------------- | -------- | --------------------------------------------- |
+| `GEMINI_API_KEY`        | Yes      | Google AI Studio API key                      |
+| `DISCORD_WEBHOOK_URL`   | No       | Discord channel webhook URL                   |
+| `TELEGRAM_BOT_TOKEN`    | No       | Telegram bot token (`123:ABC...`)             |
+| `TELEGRAM_CHAT_ID`      | No       | Target Telegram chat/channel ID               |
+| `THREADS_CLIENT_ID`     | No       | Meta app client ID                            |
+| `THREADS_CLIENT_SECRET` | No       | Meta app client secret                        |
+| `THREADS_REDIRECT_URI`  | No       | OAuth redirect URI registered in Meta console |
+| `THREADS_ACCESS_TOKEN`  | No       | Pre-obtained long-lived access token          |
 
 ## Running locally
 
@@ -68,7 +68,7 @@ vars are absent, so you only need to set the ones you want.
 export GEMINI_API_KEY=...
 export DISCORD_WEBHOOK_URL=...  # optional
 
-go run ./cmd/bot/...
+go run ./cmd/bot/main.go
 ```
 
 ## Deployment

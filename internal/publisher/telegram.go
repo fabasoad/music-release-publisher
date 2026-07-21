@@ -45,7 +45,7 @@ func (t *TelegramPublisher) Publish(ctx context.Context, release MusicRelease) e
 	if err != nil {
 		return fmt.Errorf("telegram: send request: %w", err)
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
 		return fmt.Errorf("telegram: unexpected status %d", resp.StatusCode)
