@@ -22,7 +22,7 @@ jobs:
   go-lint:
     name: Go Lint
     if: contains(fromJSON('["all", "go-lint"]'), github.event.inputs.linter || 'all')
-    uses: fabasoad/reusable-workflows/.github/workflows/wf-go-lint.yml@main
+    uses: fabasoad/reusable-workflows/.github/workflows/wf-go-lint.yml@eugene/b27c5c1c
 
   pre-commit:
     name: Pre-commit

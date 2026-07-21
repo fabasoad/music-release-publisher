@@ -17,6 +17,6 @@ on: # yamllint disable-line rule:truthy
 jobs:
   test:
     name: Go
-    uses: fabasoad/reusable-workflows/.github/workflows/wf-go-unit-tests.yml@main
+    uses: fabasoad/reusable-workflows/.github/workflows/wf-go-unit-tests.yml@eugene/b27c5c1c
     permissions:
       contents: read

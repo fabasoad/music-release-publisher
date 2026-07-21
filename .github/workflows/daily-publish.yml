@@ -3,7 +3,7 @@ name: Daily Music Release Publisher
 on:
   schedule:
     - cron: "0 9 * * *" # 09:00 UTC daily
-  workflow_dispatch:     # allow manual runs
+  workflow_dispatch: # allow manual runs
 
 jobs:
   publish:
@@ -16,7 +16,7 @@ jobs:
           go-version-file: go.mod
 
       - name: Build
-        run: go build ./cmd/bot/...
+        run: go build ./cmd/bot/main.go
 
       - name: Run
         env:
@@ -28,4 +28,4 @@ jobs:
           THREADS_CLIENT_SECRET: ${{ secrets.THREADS_CLIENT_SECRET }}
           THREADS_REDIRECT_URI: ${{ secrets.THREADS_REDIRECT_URI }}
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-        run: go run ./cmd/bot/...
+        run: go run ./cmd/bot/main.go
