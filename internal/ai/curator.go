@@ -4,6 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strings"
+	"time"
 
 	"music-release-publisher/internal/publisher"
 
@@ -40,14 +42,19 @@ func NewCurator(ctx context.Context, apiKey string) (*Curator, error) {
 }
 
 func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, error) {
+	now := time.Now().UTC()
+	start := now.AddDate(0, 0, -1).Format("2006/01/02")
+	end := now.Format("2006/01/02")
 	prompt := fmt.Sprintf(
-		"List notable new music releases from the past 24 hours including"+
-			" but not limited to the following genres: %v. Return only real,"+
+		"List notable new music releases between %s 00:00 UTC and %s 00:00 UTC"+
+			" including but not limited to the following genres: %v. Return only real,"+
 			" verifiable releases. For each release include the artist name,"+
-			" release title, type (album, EP, or single), and genre. If no new"+
-			" music releases were released from the past 24 hours — do not"+
-			" return older releases.",
-		genres,
+			" release title, release type (album, EP, or single), album title"+
+			" and release genre. If no new music releases were released in that time range"+
+			" — do not return older releases.",
+		start,
+		end,
+		strings.Join(genres, ", "),
 	)
 
 	schema := &genai.Schema{
@@ -57,10 +64,11 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 			Properties: map[string]*genai.Schema{
 				"artist": {Type: genai.TypeString},
 				"title":  {Type: genai.TypeString},
+				"album":  {Type: genai.TypeString},
 				"type":   {Type: genai.TypeString, Enum: []string{"album", "EP", "single"}},
 				"genre":  {Type: genai.TypeString},
 			},
-			Required: []string{"artist", "title", "type", "genre"},
+			Required: []string{"artist", "title", "album", "type", "genre"},
 		},
 	}
 

@@ -12,18 +12,14 @@ import (
 func main() {
 	ctx := context.Background()
 
-	geminiKey := mustEnv("GEMINI_API_KEY")
-	curator, err := ai.NewCurator(ctx, geminiKey)
-	if err != nil {
-		log.Fatalf("init curator: %v", err)
-	}
+	provider := buildReleaseProvider(ctx)
 
 	publishers := buildPublishers()
 	if len(publishers) == 0 {
 		log.Fatal("no publishers configured — set at least one platform's env vars")
 	}
 
-	releases, err := curator.FetchReleases(ctx)
+	releases, err := provider.FetchReleases(ctx)
 	if err != nil {
 		log.Fatalf("fetch releases: %v", err)
 	}
@@ -37,6 +33,24 @@ func main() {
 				log.Printf("[%s] published %q by %s", p.Name(), release.Title, release.Artist)
 			}
 		}
+	}
+}
+
+func buildReleaseProvider(ctx context.Context) publisher.ReleaseProvider {
+	name := os.Getenv("RELEASE_PROVIDER")
+	if name == "" {
+		name = "gemini"
+	}
+	switch name {
+	case "gemini":
+		p, err := ai.NewCurator(ctx, mustEnv("GEMINI_API_KEY"))
+		if err != nil {
+			log.Fatalf("init gemini provider: %v", err)
+		}
+		return p
+	default:
+		log.Fatalf("unknown RELEASE_PROVIDER %q", name)
+		return nil
 	}
 }
 
