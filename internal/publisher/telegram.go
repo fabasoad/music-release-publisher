@@ -24,11 +24,11 @@ func NewTelegramPublisher(botToken, chatID string) *TelegramPublisher {
 
 func (t *TelegramPublisher) Name() string { return "Telegram" }
 
-func (t *TelegramPublisher) Publish(ctx context.Context, release MusicRelease) error {
+func (t *TelegramPublisher) Publish(ctx context.Context, releases []MusicRelease) error {
 	url := fmt.Sprintf("https://api.telegram.org/bot%s/sendMessage", t.botToken)
 	payload := map[string]string{
 		"chat_id": t.chatID,
-		"text":    formatMessage(release),
+		"text":    formatMessage(releases),
 	}
 	body, err := json.Marshal(payload)
 	if err != nil {

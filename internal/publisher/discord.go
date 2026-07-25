@@ -22,9 +22,9 @@ func NewDiscordPublisher(webhookURL string) *DiscordPublisher {
 
 func (d *DiscordPublisher) Name() string { return "Discord" }
 
-func (d *DiscordPublisher) Publish(ctx context.Context, release MusicRelease) error {
+func (d *DiscordPublisher) Publish(ctx context.Context, releases []MusicRelease) error {
 	payload := map[string]string{
-		"content": formatMessage(release),
+		"content": formatMessage(releases),
 	}
 	body, err := json.Marshal(payload)
 	if err != nil {

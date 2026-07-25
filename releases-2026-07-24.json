@@ -1,0 +1,1945 @@
+{
+  "created": "2026-07-25T11:25:40.904Z",
+  "count": 52,
+  "offset": 0,
+  "releases": [
+    {
+      "id": "3909d3e4-7ed4-4bb4-be01-dbc45b783468",
+      "score": 100,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "3c3a4e0e-5610-3ce9-952a-b1a3493f99ed",
+      "count": 1,
+      "title": "The New Flesh",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Sylosis",
+          "artist": {
+            "id": "114f8840-8704-4b70-9673-904d60ecadc8",
+            "name": "Sylosis",
+            "sort-name": "Sylosis"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "bd68ca99-c1ae-4fdb-8dd9-0cf047c67b79",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "The New Flesh",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "barcode": "4065629754808",
+      "label-info": [
+        {
+          "catalog-number": "7548-0",
+          "label": {
+            "id": "f95e2b76-da5c-4b45-9368-2bf9f9ffae7c",
+            "name": "Nuclear Blast Records"
+          }
+        },
+        {
+          "catalog-number": "NBR 7548-0",
+          "label": {
+            "id": "f95e2b76-da5c-4b45-9368-2bf9f9ffae7c",
+            "name": "Nuclear Blast Records"
+          }
+        }
+      ],
+      "track-count": 11,
+      "media": [
+        {
+          "id": "744c1668-2403-43fd-8881-34639ae4ad31",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 11
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "melodic death metal"
+        },
+        {
+          "count": 1,
+          "name": "progressive metal"
+        },
+        {
+          "count": 1,
+          "name": "thrash metal"
+        },
+        {
+          "count": 1,
+          "name": "metalcore"
+        }
+      ]
+    },
+    {
+      "id": "f90fb4a8-8f25-47b9-82fd-412d8ca8aa34",
+      "score": 81,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "02146658-6824-4f0f-b05e-3c0733c3a14b",
+      "count": 1,
+      "title": "Crush The Crown",
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "The World You Wanted",
+          "artist": {
+            "id": "de47c1e6-9877-49d6-be17-d532194d899d",
+            "name": "The World You Wanted",
+            "sort-name": "The World You Wanted"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "8d459b4e-9032-4524-bab3-11767aa9ca20",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Crush The Crown",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "DE",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "name": "Germany",
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"]
+          }
+        }
+      ],
+      "barcode": "",
+      "track-count": 6,
+      "media": [
+        {
+          "id": "fd1e7335-1b97-4f5f-8745-43f8e33ce4e9",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "progressive metal"
+        },
+        {
+          "count": 1,
+          "name": "death metal"
+        },
+        {
+          "count": 1,
+          "name": "groove metal"
+        },
+        {
+          "count": 1,
+          "name": "post-metal"
+        }
+      ]
+    },
+    {
+      "id": "9e74fc1e-04cc-4427-8ac4-9b1453d8747b",
+      "score": 76,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "59062498-4f8c-490e-a830-ffea6d27f192",
+      "count": 1,
+      "title": "Pyrocracy",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng"
+      },
+      "artist-credit": [
+        {
+          "name": "Insanity",
+          "artist": {
+            "id": "4de8b0cd-577c-4398-a701-dbd00ed309bb",
+            "name": "Insanity",
+            "sort-name": "Insanity",
+            "disambiguation": "Thrash metal from Bullas"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "ea8687f0-b45e-4a3e-9897-983f7d83a9f4",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Pyrocracy",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "ES",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+            "name": "Spain",
+            "sort-name": "Spain",
+            "iso-3166-1-codes": ["ES"]
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "7c7beafe-4020-4a8c-878c-e5dc9254e7af",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "thrash metal"
+        },
+        {
+          "count": 1,
+          "name": "technical thrash metal"
+        }
+      ]
+    },
+    {
+      "id": "6f9c51c2-396e-4948-bb91-703394d50b59",
+      "score": 66,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "449528b0-0bab-3add-a3a5-cffca761ede8",
+      "count": 1,
+      "title": "Desolate Echoes of Turmoil",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": {
+        "language": "mul",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Profane Burial",
+          "artist": {
+            "id": "9b5aad4b-d7ea-4298-8cda-9248141b2d57",
+            "name": "Profane Burial",
+            "sort-name": "Profane Burial",
+            "disambiguation": "Symphonic black from Norway"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "b4f830ad-cbf8-4c55-af4a-19fef147b6d2",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Desolate Echoes of Turmoil",
+        "primary-type": "Album"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "b76db140-9dfb-4a6e-93b1-356c1c8941b3",
+            "name": "These Hands Melt"
+          }
+        }
+      ],
+      "track-count": 6,
+      "media": [
+        {
+          "id": "7206299e-9104-43a0-ab6d-88b0953d1e84",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "black metal"
+        },
+        {
+          "count": 1,
+          "name": "symphonic black metal"
+        }
+      ]
+    },
+    {
+      "id": "da15434d-3f77-4f60-9a27-204dd7f97b2d",
+      "score": 66,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "5646c56a-0da4-4fa6-95a2-aef5f8abe821",
+      "count": 1,
+      "title": "The Maw",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng"
+      },
+      "artist-credit": [
+        {
+          "name": "Duskseeker",
+          "artist": {
+            "id": "fcf967ac-d767-433a-884f-6d11c58ddd4b",
+            "name": "Duskseeker",
+            "sort-name": "Duskseeker"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "49858dbd-eba9-448c-920c-01c8ccd2f2d4",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "The Maw",
+        "primary-type": "EP"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "ac3fab76-d087-4826-8d3d-53c9d070dec0",
+            "name": "Realm and Ritual"
+          }
+        },
+        {
+          "label": {
+            "id": "60317b56-2539-480d-ad1c-527960899f85",
+            "name": "Fiadh Productions"
+          }
+        }
+      ],
+      "track-count": 5,
+      "media": [
+        {
+          "id": "1de46e6f-31fe-4360-9792-68471d733ec4",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 5
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "black metal"
+        },
+        {
+          "count": 1,
+          "name": "symphonic black metal"
+        }
+      ]
+    },
+    {
+      "id": "880b9321-8d33-44e9-b200-a9688d2a29b4",
+      "score": 66,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "95f9a87e-33c3-4107-bca3-9b77b1f8ba86",
+      "count": 1,
+      "title": "Unpredictable Blooming",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "Swayglow",
+          "artist": {
+            "id": "9bf24ae2-8eb3-4bfd-900f-acbe02caaaa2",
+            "name": "Swayglow",
+            "sort-name": "Swayglow"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "2e35dc4a-df69-41cb-8a24-e7476ae7f6d8",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "Unpredictable Blooming",
+        "primary-type": "EP"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "track-count": 5,
+      "media": [
+        {
+          "id": "17051e94-b0ae-4afa-bc42-a1ded47005e1",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 5
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "post-rock"
+        },
+        {
+          "count": 1,
+          "name": "shoegaze"
+        },
+        {
+          "count": 1,
+          "name": "indie rock"
+        },
+        {
+          "count": 1,
+          "name": "dream pop"
+        }
+      ]
+    },
+    {
+      "id": "2026b10d-f2d1-40b5-87f2-82457f2bbbdb",
+      "score": 65,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "c9126749-fe2e-348c-93d1-9dabfeed7b4a",
+      "count": 1,
+      "title": "Gleam in the Black",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Insomnium",
+          "artist": {
+            "id": "c1f8e226-75ea-4fe6-83ce-59c122bcbca4",
+            "name": "Insomnium",
+            "sort-name": "Insomnium",
+            "disambiguation": "Finnish melodic death metal band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "d56e60da-d124-413d-9b1e-cbb35a680e2c",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Gleam in the Black",
+        "primary-type": "Single"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "",
+      "track-count": 2,
+      "media": [
+        {
+          "id": "732ac289-0c98-4ce7-a757-5821bcd1d614",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 2
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "melodic death metal"
+        }
+      ]
+    },
+    {
+      "id": "37a39ff2-3353-4843-98ab-81f0e6ddf031",
+      "score": 64,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "4f8d3b54-cc00-3bc0-80b3-1e847a0109d3",
+      "count": 1,
+      "title": "Revelations In Black",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": {
+        "language": "eng"
+      },
+      "artist-credit": [
+        {
+          "name": "Caelestia",
+          "artist": {
+            "id": "0872c60c-a13a-4249-b727-2d5e39599b5a",
+            "name": "Caelestia",
+            "sort-name": "Caelestia"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "37a1040e-6d9e-4805-b7e0-30d960427737",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Revelations In Black",
+        "primary-type": "Album"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "638647995023",
+      "label-info": [
+        {
+          "catalog-number": "ECLP 99502",
+          "label": {
+            "id": "2ad9577d-cf72-4940-bc5a-e14d28edad7b",
+            "name": "Eclipse Records"
+          }
+        }
+      ],
+      "track-count": 10,
+      "media": [
+        {
+          "id": "fa249289-c7ed-4532-8841-cb67874f4ebe",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 10
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "death metal"
+        },
+        {
+          "count": 1,
+          "name": "blackened death metal"
+        },
+        {
+          "count": 1,
+          "name": "extreme metal"
+        }
+      ]
+    },
+    {
+      "id": "2090be35-86f7-41e3-9506-50646a490613",
+      "score": 59,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "3b06a803-1c13-4137-b461-e87a91f4cbe3",
+      "count": 1,
+      "title": "Dust Absorber",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Dust Absorber",
+          "artist": {
+            "id": "809b1935-7275-40ba-9a88-d9506a7b921c",
+            "name": "Dust Absorber",
+            "sort-name": "Dust Absorber",
+            "disambiguation": "American shoegaze band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "d0c36800-c861-436f-812b-474d9bfc63f5",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "Dust Absorber",
+        "primary-type": "EP"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "track-count": 3,
+      "media": [
+        {
+          "id": "da781b4c-7863-4452-9029-fee557a9e4b4",
+          "disc-count": 0,
+          "track-count": 3
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "shoegaze"
+        },
+        {
+          "count": 1,
+          "name": "indie rock"
+        },
+        {
+          "count": 1,
+          "name": "dream pop"
+        }
+      ]
+    },
+    {
+      "id": "27349fc4-cb9b-4669-9cfb-5e4a163bbf72",
+      "score": 58,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "ba698dba-a8f4-4ecf-aa06-b295ec6a6359",
+      "count": 1,
+      "title": "Wrath",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "Bleached Cross",
+          "artist": {
+            "id": "38a196bd-ea62-41b9-9e5e-f526810cff13",
+            "name": "Bleached Cross",
+            "sort-name": "Bleached Cross"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "fa6d70ab-1921-4060-bca8-885e0e02951a",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Wrath",
+        "primary-type": "Album"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "7c705863-6c6c-4eb3-9e71-7cf0d5d557cb",
+            "name": "New Morality Zine"
+          }
+        }
+      ],
+      "track-count": 10,
+      "media": [
+        {
+          "id": "33ddb190-43d1-4ad6-bd82-b335c01691d8",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 10
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "alternative rock"
+        },
+        {
+          "count": 1,
+          "name": "post-punk"
+        },
+        {
+          "count": 1,
+          "name": "post-hardcore"
+        }
+      ]
+    },
+    {
+      "id": "61d20f1a-ef67-45a8-8e6f-c768ebb1d0de",
+      "score": 57,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "36f0a092-0a1a-4578-ae8b-8f9c2ed751c2",
+      "count": 1,
+      "title": "July 24th Rehearsal",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng"
+      },
+      "artist-credit": [
+        {
+          "name": "Pixie Allston",
+          "artist": {
+            "id": "04772266-c3ed-47be-9c46-3b3e109b1c09",
+            "name": "Pixie Allston",
+            "sort-name": "Allston, Pixie",
+            "disambiguation": "New Zealand noisegrind"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "23fbde60-31fe-4f1a-98b9-067ceb439bb6",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "July 24th Rehearsal",
+        "primary-type": "Album"
+      },
+      "date": "2026-07-24",
+      "country": "NZ",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+            "name": "New Zealand",
+            "sort-name": "New Zealand",
+            "iso-3166-1-codes": ["NZ"]
+          }
+        }
+      ],
+      "track-count": 25,
+      "media": [
+        {
+          "id": "95c4bee8-a044-4c23-ae4e-94ef55143786",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 25
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "noise"
+        },
+        {
+          "count": 1,
+          "name": "punk"
+        },
+        {
+          "count": 1,
+          "name": "metal"
+        },
+        {
+          "count": 1,
+          "name": "experimental"
+        },
+        {
+          "count": 1,
+          "name": "grindcore"
+        },
+        {
+          "count": 1,
+          "name": "harsh noise"
+        },
+        {
+          "count": 1,
+          "name": "powerviolence"
+        },
+        {
+          "count": 1,
+          "name": "noisegrind"
+        },
+        {
+          "count": 1,
+          "name": "raw punk"
+        }
+      ]
+    },
+    {
+      "id": "9e573eed-736b-4a95-a407-05e0d2674d3d",
+      "score": 57,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "7db78868-f748-3dc3-b9a4-87eb091ac48f",
+      "count": 1,
+      "title": "Scarlet Desires",
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Black Magick SS",
+          "artist": {
+            "id": "ca10f13e-0a01-4641-981f-eceea2c1df5e",
+            "name": "Black Magick SS",
+            "sort-name": "Black Magick SS",
+            "disambiguation": "Occult rock band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "a8ad48ca-94e3-4794-a7f3-60549cf08886",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Scarlet Desires",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "LT",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "0785dc14-96af-3dc4-bde4-dcdfc2e2d0d6",
+            "name": "Lithuania",
+            "sort-name": "Lithuania",
+            "iso-3166-1-codes": ["LT"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "CPR041",
+          "label": {
+            "id": "636ec653-3448-408e-832b-7b9d6e14f212",
+            "name": "Creep Purple Records"
+          }
+        }
+      ],
+      "track-count": 6,
+      "media": [
+        {
+          "id": "502dd05b-fff5-443a-a55d-4e4db1aee04a",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "black metal"
+        },
+        {
+          "count": 1,
+          "name": "psychedelic rock"
+        }
+      ]
+    },
+    {
+      "id": "e68509a9-48ee-419b-8358-dd957470d78c",
+      "score": 54,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "d50b8cde-9876-4be7-a138-86e633b1cf59",
+      "count": 1,
+      "title": "Fugue",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Black Bordello",
+          "artist": {
+            "id": "75fd16ad-3c6b-4357-af72-71a344bacb4c",
+            "name": "Black Bordello",
+            "sort-name": "Black Bordello"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "a78e99fb-5321-4097-a5bf-860f2bea509b",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Fugue",
+        "primary-type": "Single"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "157afde4-4bf5-4039-8ad2-5a15acc85176",
+            "name": "[no label]"
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "4294a544-8aab-4c0e-88b0-eb8f24601bf9",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "alternative rock"
+        },
+        {
+          "count": 1,
+          "name": "indie rock"
+        },
+        {
+          "count": 1,
+          "name": "art rock"
+        }
+      ]
+    },
+    {
+      "id": "bb45b6c5-c65d-4e7e-bc99-10b237b4028c",
+      "score": 47,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "2878d7d9-6e01-4c7b-a7c0-7754dc3a8be1",
+      "count": 1,
+      "title": "IJje Wijkstra / Blessed By Vomit / Regurgitasi - 3-Way Split 2026",
+      "status": "Official",
+      "disambiguation": "Digital release",
+      "packaging": "None",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "joinphrase": " / ",
+          "name": "IJje Wijkstra",
+          "artist": {
+            "id": "beeab901-28c1-4b4b-93f7-e49001ba37b3",
+            "name": "IJje Wijkstra",
+            "sort-name": "IJje Wijkstra"
+          }
+        },
+        {
+          "joinphrase": " / ",
+          "name": "Blessed By Vomit",
+          "artist": {
+            "id": "411492c0-f696-41a1-b351-cba15b549370",
+            "name": "Blessed By Vomit",
+            "sort-name": "Vomit, Blessed By"
+          }
+        },
+        {
+          "name": "Regurgitasi",
+          "artist": {
+            "id": "2e4ba0d1-d0e9-4c31-a4ac-7768d3def765",
+            "name": "Regurgitasi",
+            "sort-name": "Regurgitasi",
+            "disambiguation": "Goregrind band from Canada"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "22463e24-505c-44d7-9761-1c3bce271683",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "3 Way Split",
+        "primary-type": "EP"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "883005450366",
+      "label-info": [
+        {
+          "catalog-number": "[none]",
+          "label": {
+            "id": "f7966194-95eb-4111-bdba-08dbf188c348",
+            "name": "Grindwar Records"
+          }
+        }
+      ],
+      "track-count": 23,
+      "media": [
+        {
+          "id": "d948eb5e-3d07-4268-a7ba-59738e1b5b75",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 23
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "grindcore"
+        },
+        {
+          "count": 1,
+          "name": "goregrind"
+        }
+      ]
+    },
+    {
+      "id": "235b3847-7ac0-4395-85de-900f0590952f",
+      "score": 47,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "2878d7d9-6e01-4c7b-a7c0-7754dc3a8be1",
+      "count": 1,
+      "title": "3 Way Split",
+      "status": "Official",
+      "disambiguation": "Digital release",
+      "packaging": "None",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "joinphrase": " / ",
+          "name": "IJje Wijkstra",
+          "artist": {
+            "id": "beeab901-28c1-4b4b-93f7-e49001ba37b3",
+            "name": "IJje Wijkstra",
+            "sort-name": "IJje Wijkstra"
+          }
+        },
+        {
+          "joinphrase": " / ",
+          "name": "Blessed By Vomit",
+          "artist": {
+            "id": "411492c0-f696-41a1-b351-cba15b549370",
+            "name": "Blessed By Vomit",
+            "sort-name": "Vomit, Blessed By"
+          }
+        },
+        {
+          "name": "Regurgitasi",
+          "artist": {
+            "id": "2e4ba0d1-d0e9-4c31-a4ac-7768d3def765",
+            "name": "Regurgitasi",
+            "sort-name": "Regurgitasi",
+            "disambiguation": "Goregrind band from Canada"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "22463e24-505c-44d7-9761-1c3bce271683",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "3 Way Split",
+        "primary-type": "EP"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "883005450366",
+      "label-info": [
+        {
+          "catalog-number": "CC389",
+          "label": {
+            "id": "b69c593b-6b6f-4ab1-9f41-3620f1b9c09d",
+            "name": "Cultus"
+          }
+        }
+      ],
+      "track-count": 23,
+      "media": [
+        {
+          "id": "4cfd2b10-318f-42e4-8e88-5ed4e6a42be7",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 23
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "grindcore"
+        },
+        {
+          "count": 1,
+          "name": "goregrind"
+        }
+      ]
+    },
+    {
+      "id": "6d11fb77-31a4-4033-85b6-63411aff8423",
+      "score": 47,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "2878d7d9-6e01-4c7b-a7c0-7754dc3a8be1",
+      "count": 1,
+      "title": "3 Way Split",
+      "status": "Official",
+      "disambiguation": "CD version",
+      "packaging": "Jewel Case",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "joinphrase": " / ",
+          "name": "IJje Wijkstra",
+          "artist": {
+            "id": "beeab901-28c1-4b4b-93f7-e49001ba37b3",
+            "name": "IJje Wijkstra",
+            "sort-name": "IJje Wijkstra"
+          }
+        },
+        {
+          "joinphrase": " / ",
+          "name": "Blessed By Vomit",
+          "artist": {
+            "id": "411492c0-f696-41a1-b351-cba15b549370",
+            "name": "Blessed By Vomit",
+            "sort-name": "Vomit, Blessed By"
+          }
+        },
+        {
+          "name": "Regurgitasi",
+          "artist": {
+            "id": "2e4ba0d1-d0e9-4c31-a4ac-7768d3def765",
+            "name": "Regurgitasi",
+            "sort-name": "Regurgitasi",
+            "disambiguation": "Goregrind band from Canada"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "22463e24-505c-44d7-9761-1c3bce271683",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "3 Way Split",
+        "primary-type": "EP"
+      },
+      "date": "2026-07-24",
+      "country": "CA",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "71bbafaa-e825-3e15-8ca9-017dcad1748b",
+            "name": "Canada",
+            "sort-name": "Canada",
+            "iso-3166-1-codes": ["CA"]
+          }
+        }
+      ],
+      "barcode": "883005450366",
+      "label-info": [
+        {
+          "catalog-number": "CC389",
+          "label": {
+            "id": "b69c593b-6b6f-4ab1-9f41-3620f1b9c09d",
+            "name": "Cultus"
+          }
+        }
+      ],
+      "track-count": 23,
+      "media": [
+        {
+          "id": "9b370410-6d62-40a2-8442-69eb8376ca99",
+          "format": "CD",
+          "disc-count": 0,
+          "track-count": 23
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "grindcore"
+        },
+        {
+          "count": 1,
+          "name": "goregrind"
+        }
+      ]
+    },
+    {
+      "id": "c4ed7a7e-92e5-4fc1-8ff1-5700e41cdc86",
+      "score": 45,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "195c0924-8033-3e47-a829-276e69fdeae5",
+      "count": 1,
+      "title": "Everythingness",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "Atmos Bloom",
+          "artist": {
+            "id": "f3c77b7a-2f11-4e15-8640-25d8aa619cc4",
+            "name": "Atmos Bloom",
+            "sort-name": "Atmos Bloom"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "15147196-5eac-4134-b2af-152bc9ef6467",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Everythingness",
+        "primary-type": "Album"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "b8f557bd-1568-4621-afb5-7079f27feb30",
+            "name": "Spirit Goth Records"
+          }
+        }
+      ],
+      "track-count": 10,
+      "media": [
+        {
+          "id": "bfaf2615-cba7-4ba6-9da2-feb91dfb3675",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 10
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "indie rock"
+        },
+        {
+          "count": 1,
+          "name": "lo-fi"
+        },
+        {
+          "count": 1,
+          "name": "dream pop"
+        }
+      ]
+    },
+    {
+      "id": "12acaab6-a204-408f-99e4-8c8f9924c216",
+      "score": 44,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "f5fb622a-8ce8-42ad-a885-967a2044fb93",
+      "count": 1,
+      "title": "Dreaming of Tomorrow",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Veritate",
+          "artist": {
+            "id": "aace3b3c-7238-495f-b805-98d1a3999aab",
+            "name": "Veritate",
+            "sort-name": "Veritate",
+            "disambiguation": "Austrian Metal Band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "be9a7549-e913-48df-a2c4-3349f2906e5a",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Dreaming of Tomorrow",
+        "primary-type": "Single"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "4069977453680",
+      "label-info": [
+        {
+          "label": {
+            "id": "56a5440c-f68f-48fe-9ec4-4a580fd4c649",
+            "name": "Strasser Music"
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "30bb6f04-2bff-4cd3-8b44-4f4c5b66a97c",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "metalcore"
+        },
+        {
+          "count": 1,
+          "name": "alternative metal"
+        }
+      ]
+    },
+    {
+      "id": "232e13a5-026b-4057-bb58-baec7a3ab40b",
+      "score": 43,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "artist-credit-id": "6d74c673-cb5b-3511-9486-b21f20d92680",
+      "count": 1,
+      "title": "Future Soul",
+      "status": "Official",
+      "packaging": "Digipak",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Tedeschi Trucks Band",
+          "artist": {
+            "id": "e33e1ccf-a3b9-4449-a66a-0091e8f55a60",
+            "name": "Tedeschi Trucks Band",
+            "sort-name": "Tedeschi Trucks Band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "a8b717df-56ec-415b-9933-f75e81a60991",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Future Soul",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "barcode": "0888072737440",
+      "asin": "B0GFXNK5LY",
+      "label-info": [
+        {
+          "catalog-number": "FAN03118",
+          "label": {
+            "id": "757acd4a-dade-433d-b754-53468f243220",
+            "name": "Fantasy"
+          }
+        }
+      ],
+      "track-count": 11,
+      "media": [
+        {
+          "id": "3a38972b-5ba6-4aad-839f-a3c700f153b5",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 11
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "blues"
+        },
+        {
+          "count": 1,
+          "name": "funk"
+        },
+        {
+          "count": 1,
+          "name": "soul"
+        },
+        {
+          "count": 1,
+          "name": "blues rock"
+        },
+        {
+          "count": 1,
+          "name": "southern rock"
+        }
+      ]
+    },
+    {
+      "id": "cdc0da8b-292b-4e6e-b605-2b768313bd1f",
+      "score": 41,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "artist-credit-id": "f8361ba0-8b03-355c-a40e-cbde72d61256",
+      "count": 1,
+      "title": "Fantastic Planet",
+      "status": "Official",
+      "packaging": "Digipak",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Failure",
+          "artist": {
+            "id": "f0ed9f50-70b9-4406-9374-7d76ae21a04a",
+            "name": "Failure",
+            "sort-name": "Failure",
+            "disambiguation": "US alternative rock band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "ffaf0ab2-77e7-35da-b595-fdd8fad38cf3",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Fantastic Planet",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "barcode": "",
+      "label-info": [
+        {
+          "catalog-number": "FLR003 01",
+          "label": {
+            "id": "5e0834fd-e400-4f8c-a6a7-af063a53cd38",
+            "name": "Failure Records"
+          }
+        }
+      ],
+      "track-count": 17,
+      "media": [
+        {
+          "id": "511947f1-9f5b-4a65-b0ac-ad36c977b503",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 17
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "alternative rock"
+        },
+        {
+          "count": 1,
+          "name": "space rock"
+        }
+      ]
+    },
+    {
+      "id": "277bf7d2-75d5-412d-9ac5-24c9d038ad13",
+      "score": 41,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "97aa35b0-e41e-4f63-8118-b2ff27a1f894",
+      "count": 1,
+      "title": "Hyperphantasia",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Child Seat",
+          "artist": {
+            "id": "f8a31597-1063-4dd1-8f59-cc2939b9025d",
+            "name": "Child Seat",
+            "sort-name": "Child Seat"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "86aa34ba-56ea-4d42-9552-d70655ae9db9",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Hyperphantasia",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "MB003",
+          "label": {
+            "id": "22e24a21-c1bb-4700-8488-9114735b6677",
+            "name": "Moonboot! Records"
+          }
+        }
+      ],
+      "track-count": 14,
+      "media": [
+        {
+          "id": "2a630b7f-ed31-44fc-924f-8c6b7f426567",
+          "format": "CD-R",
+          "disc-count": 1,
+          "track-count": 14
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "pop"
+        },
+        {
+          "count": 1,
+          "name": "indie pop"
+        },
+        {
+          "count": 1,
+          "name": "dream pop"
+        },
+        {
+          "count": 1,
+          "name": "alternative pop"
+        }
+      ]
+    },
+    {
+      "id": "61b819ad-6f8d-4c71-b2eb-9bc52e985981",
+      "score": 38,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "adf39616-16b2-3281-85d3-ca63d7ebbf45",
+      "count": 1,
+      "title": "Im Reich des Zauberers",
+      "status": "Official",
+      "text-representation": {
+        "language": "deu",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Merlin",
+          "artist": {
+            "id": "01c39252-9a49-41de-9997-a295839fc38a",
+            "name": "Merlin",
+            "sort-name": "Merlin",
+            "disambiguation": "East German metal band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "dc516997-8e31-465f-981f-9e9758128480",
+        "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Im Reich des Zauberers",
+        "primary-type": "Album",
+        "secondary-types": ["Live"],
+        "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"]
+      },
+      "date": "2026",
+      "country": "DE",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "name": "Germany",
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "GDR 044",
+          "label": {
+            "id": "813c3b56-e408-491d-8629-f22be1cbc98b",
+            "name": "German Democratic Recordings"
+          }
+        }
+      ],
+      "track-count": 9,
+      "media": [
+        {
+          "id": "984ea332-8f24-4bff-8bbb-c5b474032be0",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 9
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "heavy metal"
+        }
+      ]
+    },
+    {
+      "id": "e31e116b-9a03-4d68-ae28-613cbb221485",
+      "score": 38,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "6f85dcc1-cad5-362e-bddc-085ed4e015fa",
+      "count": 1,
+      "title": "A fenyő",
+      "status": "Official",
+      "text-representation": {
+        "language": "hun",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Fenyő Miklós",
+          "artist": {
+            "id": "a2667239-21fb-4493-a555-ac23347feefa",
+            "name": "Fenyő Miklós",
+            "sort-name": "Miklós, Fenyő"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "f728d73e-c497-4f61-a2df-0f6c826bc9b9",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "A fenyő",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "HU",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "312bc5bb-7e43-3e63-81c6-b4d712b37b2c",
+            "name": "Hungary",
+            "sort-name": "Hungary",
+            "iso-3166-1-codes": ["HU"]
+          }
+        }
+      ],
+      "barcode": "0745099958022",
+      "label-info": [
+        {
+          "catalog-number": "0745099958022",
+          "label": {
+            "id": "1321f266-6f04-45f1-8b65-3b9ff589dafd",
+            "name": "Magneoton"
+          }
+        }
+      ],
+      "track-count": 11,
+      "media": [
+        {
+          "id": "a9bd386a-3a6d-4c04-8531-98b8fa75bc65",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 11
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "rock"
+        },
+        {
+          "count": 1,
+          "name": "pop"
+        },
+        {
+          "count": 1,
+          "name": "rock and roll"
+        }
+      ]
+    },
+    {
+      "id": "f962888d-c552-44dc-baf1-4226de13bbce",
+      "score": 35,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "3231c6b9-6127-4733-9179-6f3abc5cb25f",
+      "count": 1,
+      "title": "Темные небеса",
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "text-representation": {
+        "language": "rus",
+        "script": "Cyrl"
+      },
+      "artist-credit": [
+        {
+          "name": "Darkinfrost",
+          "artist": {
+            "id": "22b25567-58e7-48df-8173-8ba127b42ac5",
+            "name": "Darkinfrost",
+            "sort-name": "Darkinfrost"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "91c6b24c-4650-4cb7-9b89-0bcccf4ef93d",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Темные небеса",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "157afde4-4bf5-4039-8ad2-5a15acc85176",
+            "name": "[no label]"
+          }
+        }
+      ],
+      "track-count": 6,
+      "media": [
+        {
+          "id": "fdee152f-7ac5-45e7-ad57-3277c9cc5cc2",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "black metal"
+        },
+        {
+          "count": 1,
+          "name": "raw black metal"
+        }
+      ]
+    },
+    {
+      "id": "db6877e9-3bdf-44c1-845a-914383806f99",
+      "score": 31,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "a9ace056-991c-4e08-bf2a-b46a88a84c3b",
+      "count": 1,
+      "title": "Cel Rayzer",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "Cel Ray",
+          "artist": {
+            "id": "0f4b14dd-f979-4ad1-9ae8-2cbb13fc07ab",
+            "name": "Cel Ray",
+            "sort-name": "Cel Ray",
+            "disambiguation": "Chicago area band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "347e5327-b736-4da5-b70a-2563fbad98e0",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Cel Rayzer",
+        "primary-type": "Album"
+      },
+      "date": "2026-07-24",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-24",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "634457260764",
+      "label-info": [
+        {
+          "label": {
+            "id": "ab54e798-5f5e-4d17-98bf-e25d61485bb9",
+            "name": "Exploding in Sound Records"
+          }
+        }
+      ],
+      "track-count": 10,
+      "media": [
+        {
+          "id": "82b2f8fa-aea9-4b1d-873c-195cff8fc7ea",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 10
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "punk"
+        },
+        {
+          "count": 1,
+          "name": "post-punk"
+        },
+        {
+          "count": 1,
+          "name": "chicago"
+        }
+      ]
+    }
+  ]
+}

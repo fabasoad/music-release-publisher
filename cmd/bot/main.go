@@ -6,37 +6,60 @@ import (
 	"os"
 
 	"music-release-publisher/internal/ai"
+	"music-release-publisher/internal/musicbrainz"
 	"music-release-publisher/internal/publisher"
 )
 
 func main() {
 	ctx := context.Background()
 
-	geminiKey := mustEnv("GEMINI_API_KEY")
-	curator, err := ai.NewCurator(ctx, geminiKey)
-	if err != nil {
-		log.Fatalf("init curator: %v", err)
-	}
+	provider := buildReleaseProvider(ctx)
 
 	publishers := buildPublishers()
 	if len(publishers) == 0 {
 		log.Fatal("no publishers configured — set at least one platform's env vars")
 	}
 
-	releases, err := curator.FetchReleases(ctx)
+	releases, err := provider.FetchReleases(ctx)
 	if err != nil {
 		log.Fatalf("fetch releases: %v", err)
 	}
 	log.Printf("fetched %d releases", len(releases))
 
-	for _, release := range releases {
+	chunkSize := 4
+	for i := 0; i < len(releases); i += chunkSize {
+		// Ensure the index does not go out of bounds on the last chunk
+		end := min(i+chunkSize, len(releases))
+
+		chunk := releases[i:end]
+
 		for _, p := range publishers {
-			if err := p.Publish(ctx, release); err != nil {
-				log.Printf("[%s] publish %q by %s: %v", p.Name(), release.Title, release.Artist, err)
+			if err := p.Publish(ctx, chunk); err != nil {
+				log.Printf("[%s] publish failed: %v", p.Name(), err)
 			} else {
-				log.Printf("[%s] published %q by %s", p.Name(), release.Title, release.Artist)
+				log.Printf("[%s] published successfully", p.Name())
 			}
 		}
+	}
+}
+
+func buildReleaseProvider(ctx context.Context) publisher.ReleaseProvider {
+	name := os.Getenv("RELEASE_PROVIDER")
+	if name == "" {
+		name = "gemini"
+	}
+	switch name {
+	case "gemini":
+		p, err := ai.NewCurator(ctx, mustEnv("GEMINI_API_KEY"))
+		if err != nil {
+			log.Fatalf("init gemini provider: %v", err)
+		}
+		return p
+	case "musicbrainz":
+		return musicbrainz.NewProvider()
+	default:
+		log.Fatalf("unknown RELEASE_PROVIDER %q", name)
+		return nil
 	}
 }
 
