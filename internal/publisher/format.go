@@ -1,7 +1,11 @@
 package publisher
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func formatMessage(r MusicRelease) string {
-	return fmt.Sprintf("🎵 New %s release!\n\n%s — %s\nGenre: %s", r.Type, r.Artist, r.Title, r.Genre)
+	title := fmt.Sprintf("🔥 New %s Release 🔥", r.Type)
+	body := fmt.Sprintf("%s — %s (%s)", r.Artist, r.Title, r.Genre)
+	return fmt.Sprintf("%s\n\n%s", title, body)
 }

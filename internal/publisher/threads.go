@@ -30,10 +30,11 @@ func NewThreadsPublisher(clientID, clientSecret, redirectURI, accessToken string
 func (t *ThreadsPublisher) Name() string { return "Threads" }
 
 func (t *ThreadsPublisher) Publish(ctx context.Context, release MusicRelease) error {
-	content := &threads.TextPostContent{
-		Text: formatMessage(release),
+	content := &threads.ImagePostContent{
+		Text:     formatMessage(release),
+		ImageURL: release.CoverURL,
 	}
-	_, err := t.client.CreateTextPost(ctx, content)
+	_, err := t.client.CreateImagePost(ctx, content)
 	if err != nil {
 		return fmt.Errorf("threads: create post: %w", err)
 	}

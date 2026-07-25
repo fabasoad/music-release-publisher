@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"music-release-publisher/internal/ai"
+	"music-release-publisher/internal/musicbrainz"
 	"music-release-publisher/internal/publisher"
 )
 
@@ -48,6 +49,8 @@ func buildReleaseProvider(ctx context.Context) publisher.ReleaseProvider {
 			log.Fatalf("init gemini provider: %v", err)
 		}
 		return p
+	case "musicbrainz":
+		return musicbrainz.NewProvider()
 	default:
 		log.Fatalf("unknown RELEASE_PROVIDER %q", name)
 		return nil
