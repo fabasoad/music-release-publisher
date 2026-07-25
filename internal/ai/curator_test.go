@@ -5,11 +5,12 @@ import (
 	"errors"
 	"testing"
 
+	"music-release-publisher/internal/publisher"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/genai"
-	"music-release-publisher/internal/publisher"
 )
 
 type mockContentGenerator struct {
@@ -120,7 +121,7 @@ func TestFetchReleases_InvalidJSON(t *testing.T) {
 
 func TestFetchReleases_UsesCorrectModel(t *testing.T) {
 	gen := new(mockContentGenerator)
-	gen.On("GenerateContent", mock.Anything, "gemini-2.5-flash", mock.Anything, mock.Anything).
+	gen.On("GenerateContent", mock.Anything, "gemini-2.5-flash-lite", mock.Anything, mock.Anything).
 		Return(makeResponse(`[]`), nil)
 
 	c := &Curator{models: gen}

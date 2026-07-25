@@ -10,10 +10,14 @@ import (
 	"google.golang.org/genai"
 )
 
-const model = "gemini-2.5-flash"
+const model = "gemini-2.5-flash-lite"
 
 var genres = []string{
-	"electronic", "ambient", "post-rock", "indie", "jazz",
+	"nu-metal", "metalcore", "alternative rock", "post-hardcore", "heavy metal",
+	"emo", "punk rock", "deathcore", "hardcore", "death metal", "black metal",
+	"stoner metal", "extreme metal", "indie", "progressive metal", "rap rock",
+	"groove metal", "industrial rock", "doom metal", "pop-punk", "stoner metal",
+	"hardcore punk", "sludge metal", "grunge", "thrash metal",
 }
 
 type contentGenerator interface {
@@ -37,9 +41,12 @@ func NewCurator(ctx context.Context, apiKey string) (*Curator, error) {
 
 func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, error) {
 	prompt := fmt.Sprintf(
-		"List notable music releases from the past 24 hours across these genres: %v. "+
-			"Return only real, verifiable releases. For each release include the artist name, "+
-			"release title, type (album, EP, or single), and genre.",
+		"List notable new music releases from the past 24 hours including"+
+			" but not limited to the following genres: %v. Return only real,"+
+			" verifiable releases. For each release include the artist name,"+
+			" release title, type (album, EP, or single), and genre. If no new"+
+			" music releases were released from the past 24 hours — do not"+
+			" return older releases.",
 		genres,
 	)
 

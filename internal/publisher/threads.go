@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	threads "github.com/tirthpatell/threads-go"
+	"github.com/tirthpatell/threads-go"
 )
 
 type ThreadsPublisher struct {
