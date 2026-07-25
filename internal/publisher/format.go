@@ -7,7 +7,7 @@ import (
 )
 
 func formatMessage(releases []MusicRelease) string {
-	title := fmt.Sprintf("🔥 New %s Release 🔥", time.Now().AddDate(0, 0, -1).Weekday().String())
+	title := fmt.Sprintf("🔥 New %s Releases 🔥", time.Now().AddDate(0, 0, -1).Weekday().String())
 	var body []string
 	for _, r := range releases {
 		body = append(body, fmt.Sprintf("- [%s] %s — %s (%s)", r.Type, r.Artist, r.Title, r.Genre))
