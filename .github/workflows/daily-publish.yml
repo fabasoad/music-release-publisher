@@ -1,31 +1,35 @@
+---
 name: Daily Music Release Publisher
 
 on:
   schedule:
     - cron: "0 9 * * *" # 09:00 UTC daily
-  workflow_dispatch: # allow manual runs
+  workflow_dispatch: {}
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    name: Publish
+    runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout ${{ github.repository }}
+        uses: actions/checkout@v7
 
-      - uses: actions/setup-go@v5
+      - name: Setup Go
+        uses: actions/setup-go@v7
         with:
-          go-version-file: go.mod
-
-      - name: Build
-        run: go build ./cmd/bot/main.go
+          go-version-file: "go.mod"
+          cache: "true"
+          cache-dependency-path: "go.sum"
 
       - name: Run
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          THREADS_CLIENT_ID: ${{ secrets.THREADS_CLIENT_ID }}
-          THREADS_CLIENT_SECRET: ${{ secrets.THREADS_CLIENT_SECRET }}
-          THREADS_REDIRECT_URI: ${{ secrets.THREADS_REDIRECT_URI }}
-          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
-        run: go run ./cmd/bot/main.go
+          RELEASE_PROVIDER: "${{ vars.RELEASE_PROVIDER }}"
+          GEMINI_API_KEY: "${{ secrets.GEMINI_API_KEY }}"
+          DISCORD_WEBHOOK_URL: "${{ secrets.DISCORD_WEBHOOK_URL }}"
+          TELEGRAM_BOT_TOKEN: "${{ secrets.TELEGRAM_BOT_TOKEN }}"
+          TELEGRAM_CHAT_ID: "${{ secrets.TELEGRAM_CHAT_ID }}"
+          THREADS_CLIENT_ID: "${{ secrets.THREADS_CLIENT_ID }}"
+          THREADS_CLIENT_SECRET: "${{ secrets.THREADS_CLIENT_SECRET }}"
+          THREADS_REDIRECT_URI: "${{ secrets.THREADS_REDIRECT_URI }}"
+          THREADS_ACCESS_TOKEN: "${{ secrets.THREADS_ACCESS_TOKEN }}"
+        run: make run

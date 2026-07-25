@@ -26,12 +26,18 @@ func main() {
 	}
 	log.Printf("fetched %d releases", len(releases))
 
-	for _, release := range releases {
+	chunkSize := 4
+	for i := 0; i < len(releases); i += chunkSize {
+		// Ensure the index does not go out of bounds on the last chunk
+		end := min(i+chunkSize, len(releases))
+
+		chunk := releases[i:end]
+
 		for _, p := range publishers {
-			if err := p.Publish(ctx, release); err != nil {
-				log.Printf("[%s] publish %q by %s: %v", p.Name(), release.Title, release.Artist, err)
+			if err := p.Publish(ctx, chunk); err != nil {
+				log.Printf("[%s] publish failed: %v", p.Name(), err)
 			} else {
-				log.Printf("[%s] published %q by %s", p.Name(), release.Title, release.Artist)
+				log.Printf("[%s] published successfully", p.Name())
 			}
 		}
 	}

@@ -3,6 +3,7 @@ package publisher
 import (
 	"context"
 	"fmt"
+	"strings"
 
 	"github.com/tirthpatell/threads-go"
 )
@@ -29,12 +30,31 @@ func NewThreadsPublisher(clientID, clientSecret, redirectURI, accessToken string
 
 func (t *ThreadsPublisher) Name() string { return "Threads" }
 
-func (t *ThreadsPublisher) Publish(ctx context.Context, release MusicRelease) error {
-	content := &threads.ImagePostContent{
-		Text:     formatMessage(release),
-		ImageURL: release.CoverURL,
+func (t *ThreadsPublisher) Publish(ctx context.Context, releases []MusicRelease) error {
+	topicTag := "Rock Music"
+	for _, r := range releases {
+		if strings.Contains(r.Genre, "Metal") {
+			topicTag = "Metal Threads"
+			break
+		}
 	}
-	_, err := t.client.CreateImagePost(ctx, content)
+
+	var containerIDs []string
+	for _, r := range releases {
+		c, err := t.client.CreateMediaContainer(ctx, threads.MediaTypeImage, r.CoverURL, r.Title)
+		if err != nil {
+			return fmt.Errorf("threads: create container: %w", err)
+		}
+		containerIDs = append(containerIDs, c.String())
+	}
+
+	content := &threads.CarouselPostContent{
+		Text:     formatMessage(releases),
+		Children: containerIDs,
+		TopicTag: topicTag,
+	}
+
+	_, err := t.client.CreateCarouselPost(ctx, content)
 	if err != nil {
 		return fmt.Errorf("threads: create post: %w", err)
 	}

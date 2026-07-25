@@ -13,7 +13,7 @@ type MusicRelease struct {
 
 type Publisher interface {
 	Name() string
-	Publish(ctx context.Context, release MusicRelease) error
+	Publish(ctx context.Context, releases []MusicRelease) error
 }
 
 type ReleaseProvider interface {
