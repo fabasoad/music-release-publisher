@@ -24,7 +24,7 @@ func (d *DiscordPublisher) Name() string { return "Discord" }
 
 func (d *DiscordPublisher) Publish(ctx context.Context, releases []MusicRelease) error {
 	payload := map[string]string{
-		"content": formatMessage(releases),
+		"content": formatMessageMultiple(releases),
 	}
 	body, err := json.Marshal(payload)
 	if err != nil {

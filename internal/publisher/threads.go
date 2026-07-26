@@ -39,6 +39,28 @@ func (t *ThreadsPublisher) Publish(ctx context.Context, releases []MusicRelease)
 		}
 	}
 
+	if len(releases) == 1 {
+		return t.publishSingle(ctx, topicTag, releases[0])
+	}
+
+	return t.publishMultiple(ctx, topicTag, releases)
+}
+
+func (t *ThreadsPublisher) publishSingle(ctx context.Context, topicTag string, release MusicRelease) error {
+	content := &threads.ImagePostContent{
+		Text:     formatMessageSingle(release),
+		ImageURL: release.CoverURL,
+		TopicTag: topicTag,
+	}
+
+	_, err := t.client.CreateImagePost(ctx, content)
+	if err != nil {
+		return fmt.Errorf("threads: create post: %w", err)
+	}
+	return nil
+}
+
+func (t *ThreadsPublisher) publishMultiple(ctx context.Context, topicTag string, releases []MusicRelease) error {
 	var containerIDs []string
 	for _, r := range releases {
 		c, err := t.client.CreateMediaContainer(ctx, threads.MediaTypeImage, r.CoverURL, r.Title)
@@ -49,7 +71,7 @@ func (t *ThreadsPublisher) Publish(ctx context.Context, releases []MusicRelease)
 	}
 
 	content := &threads.CarouselPostContent{
-		Text:     formatMessage(releases),
+		Text:     formatMessageMultiple(releases),
 		Children: containerIDs,
 		TopicTag: topicTag,
 	}

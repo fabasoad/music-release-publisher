@@ -28,7 +28,7 @@ func (t *TelegramPublisher) Publish(ctx context.Context, releases []MusicRelease
 	url := fmt.Sprintf("https://api.telegram.org/bot%s/sendMessage", t.botToken)
 	payload := map[string]string{
 		"chat_id": t.chatID,
-		"text":    formatMessage(releases),
+		"text":    formatMessageMultiple(releases),
 	}
 	body, err := json.Marshal(payload)
 	if err != nil {
