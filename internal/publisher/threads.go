@@ -55,7 +55,7 @@ func (t *ThreadsPublisher) publishSingle(ctx context.Context, topicTag string, r
 
 	_, err := t.client.CreateImagePost(ctx, content)
 	if err != nil {
-		return fmt.Errorf("threads: create post: %w", err)
+		return fmt.Errorf("threads: create image post: %w", err)
 	}
 	return nil
 }
@@ -78,7 +78,7 @@ func (t *ThreadsPublisher) publishMultiple(ctx context.Context, topicTag string,
 
 	_, err := t.client.CreateCarouselPost(ctx, content)
 	if err != nil {
-		return fmt.Errorf("threads: create post: %w", err)
+		return fmt.Errorf("threads: create carousel post: %w", err)
 	}
 	return nil
 }

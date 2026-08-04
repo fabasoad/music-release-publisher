@@ -42,7 +42,7 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 		"List notable new music releases between %s 00:00 UTC and %s 00:00 UTC"+
 			" including but not limited to the following genres: %v. Return only real,"+
 			" verifiable releases. For each release include the artist name,"+
-			" release title, release type (Album, EP, or Single), album title"+
+			" release title, release type, album title"+
 			" and release genre. If no new music releases were released in that time range"+
 			" — do not return older releases.",
 		start,
@@ -58,7 +58,7 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 				"artist": {Type: genai.TypeString},
 				"title":  {Type: genai.TypeString},
 				"album":  {Type: genai.TypeString},
-				"type":   {Type: genai.TypeString, Enum: []string{"Album", "EP", "Single"}},
+				"type":   {Type: genai.TypeString, Enum: []string{"Album", "EP", "Single", "Broadcast", "Other", "Compilation", "Soundtrack", "Spokenword", "Interview", "Audiobook", "Audio drama", "Live", "Remix", "DJ-mix", "Mixtape/Street"}},
 				"genre":  {Type: genai.TypeString},
 			},
 			Required: []string{"artist", "title", "album", "type", "genre"},

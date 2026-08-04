@@ -6,7 +6,7 @@ type MusicRelease struct {
 	Artist   string `json:"artist"`
 	Title    string `json:"title"`
 	Album    string `json:"album"`
-	Type     string `json:"type"` // "Album", "EP", or "Single"
+	Type     string `json:"type"`
 	Genre    string `json:"genre"`
 	CoverURL string `json:"cover_url,omitempty"`
 }
