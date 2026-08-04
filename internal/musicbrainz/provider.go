@@ -96,6 +96,8 @@ func NewProvider() *Provider {
 	return &Provider{client: &http.Client{Timeout: 30 * time.Second}}
 }
 
+const maxRetries = 3
+
 func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, error) {
 	date := time.Now().UTC().AddDate(0, 0, -1).Format("2006-01-02")
 
@@ -106,15 +108,38 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 	query := fmt.Sprintf("date:%s AND (%s)", date, strings.Join(tagParts, " OR "))
 
 	reqURL := fmt.Sprintf("%s/release?query=%s&fmt=json", baseURL, url.QueryEscape(query))
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, reqURL, nil)
-	if err != nil {
-		return nil, fmt.Errorf("musicbrainz: build request: %w", err)
-	}
-	req.Header.Set("User-Agent", userAgent)
 
-	resp, err := p.client.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("musicbrainz: request: %w", err)
+	var resp *http.Response
+	for attempt := range maxRetries {
+		req, err := http.NewRequestWithContext(ctx, http.MethodGet, reqURL, nil)
+		if err != nil {
+			return nil, fmt.Errorf("musicbrainz: build request: %w", err)
+		}
+		req.Header.Set("User-Agent", userAgent)
+
+		resp, err = p.client.Do(req)
+		if err != nil {
+			return nil, fmt.Errorf("musicbrainz: request: %w", err)
+		}
+
+		if resp.StatusCode < 500 {
+			break
+		}
+
+		_ = resp.Body.Close()
+		resp = nil
+
+		if attempt < maxRetries-1 {
+			select {
+			case <-ctx.Done():
+				return nil, ctx.Err()
+			case <-time.After(time.Duration(1<<uint(attempt)) * time.Second):
+			}
+		}
+	}
+
+	if resp == nil {
+		return nil, fmt.Errorf("musicbrainz: service unavailable after %d attempts", maxRetries)
 	}
 	defer func(b io.ReadCloser) {
 		_ = b.Close()
