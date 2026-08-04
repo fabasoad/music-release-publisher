@@ -1,1 +1,1612 @@
-{"created":"2026-07-26T15:05:14.130Z","count":28,"offset":0,"releases":[{"id":"3909d3e4-7ed4-4bb4-be01-dbc45b783468","score":100,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"3c3a4e0e-5610-3ce9-952a-b1a3493f99ed","count":1,"title":"The New Flesh","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Sylosis","artist":{"id":"114f8840-8704-4b70-9673-904d60ecadc8","name":"Sylosis","sort-name":"Sylosis"}}],"release-group":{"id":"bd68ca99-c1ae-4fdb-8dd9-0cf047c67b79","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"The New Flesh","primary-type":"Album"},"date":"2026","country":"US","release-events":[{"date":"2026","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"4065629754808","label-info":[{"catalog-number":"7548-0","label":{"id":"f95e2b76-da5c-4b45-9368-2bf9f9ffae7c","name":"Nuclear Blast Records"}},{"catalog-number":"NBR 7548-0","label":{"id":"f95e2b76-da5c-4b45-9368-2bf9f9ffae7c","name":"Nuclear Blast Records"}}],"track-count":11,"media":[{"id":"744c1668-2403-43fd-8881-34639ae4ad31","format":"CD","disc-count":1,"track-count":11}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"melodic death metal"},{"count":1,"name":"progressive metal"},{"count":1,"name":"thrash metal"},{"count":1,"name":"metalcore"}]},{"id":"f90fb4a8-8f25-47b9-82fd-412d8ca8aa34","score":81,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","artist-credit-id":"02146658-6824-4f0f-b05e-3c0733c3a14b","count":1,"title":"Crush The Crown","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"The World You Wanted","artist":{"id":"de47c1e6-9877-49d6-be17-d532194d899d","name":"The World You Wanted","sort-name":"The World You Wanted"}}],"release-group":{"id":"8d459b4e-9032-4524-bab3-11767aa9ca20","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Crush The Crown","primary-type":"Album"},"date":"2026","country":"DE","release-events":[{"date":"2026","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"","track-count":6,"media":[{"id":"fd1e7335-1b97-4f5f-8745-43f8e33ce4e9","format":"CD","disc-count":1,"track-count":6}],"tags":[{"count":1,"name":"progressive metal"},{"count":1,"name":"death metal"},{"count":1,"name":"groove metal"},{"count":1,"name":"post-metal"}]},{"id":"9e74fc1e-04cc-4427-8ac4-9b1453d8747b","score":76,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"59062498-4f8c-490e-a830-ffea6d27f192","count":1,"title":"Pyrocracy","status":"Official","text-representation":{"language":"eng"},"artist-credit":[{"name":"Insanity","artist":{"id":"4de8b0cd-577c-4398-a701-dbd00ed309bb","name":"Insanity","sort-name":"Insanity","disambiguation":"Thrash metal from Bullas"}}],"release-group":{"id":"ea8687f0-b45e-4a3e-9897-983f7d83a9f4","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"Pyrocracy","primary-type":"Single"},"date":"2026","country":"ES","release-events":[{"date":"2026","area":{"id":"471c46a7-afc5-31c4-923c-d0444f5053a4","name":"Spain","sort-name":"Spain","iso-3166-1-codes":["ES"]}}],"track-count":1,"media":[{"id":"7c7beafe-4020-4a8c-878c-e5dc9254e7af","format":"Digital Media","disc-count":0,"track-count":1}],"tags":[{"count":1,"name":"thrash metal"},{"count":1,"name":"technical thrash metal"}]},{"id":"880b9321-8d33-44e9-b200-a9688d2a29b4","score":66,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"95f9a87e-33c3-4107-bca3-9b77b1f8ba86","count":1,"title":"Unpredictable Blooming","status":"Official","artist-credit":[{"name":"Swayglow","artist":{"id":"9bf24ae2-8eb3-4bfd-900f-acbe02caaaa2","name":"Swayglow","sort-name":"Swayglow"}}],"release-group":{"id":"2e35dc4a-df69-41cb-8a24-e7476ae7f6d8","type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","primary-type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","title":"Unpredictable Blooming","primary-type":"EP"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"track-count":5,"media":[{"id":"17051e94-b0ae-4afa-bc42-a1ded47005e1","format":"Digital Media","disc-count":0,"track-count":5}],"tags":[{"count":1,"name":"post-rock"},{"count":1,"name":"shoegaze"},{"count":1,"name":"indie rock"},{"count":1,"name":"dream pop"}]},{"id":"2090be35-86f7-41e3-9506-50646a490613","score":59,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"3b06a803-1c13-4137-b461-e87a91f4cbe3","count":1,"title":"Dust Absorber","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Dust Absorber","artist":{"id":"809b1935-7275-40ba-9a88-d9506a7b921c","name":"Dust Absorber","sort-name":"Dust Absorber","disambiguation":"American shoegaze band"}}],"release-group":{"id":"d0c36800-c861-436f-812b-474d9bfc63f5","type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","primary-type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","title":"Dust Absorber","primary-type":"EP"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"track-count":3,"media":[{"id":"da781b4c-7863-4452-9029-fee557a9e4b4","disc-count":0,"track-count":3}],"tags":[{"count":1,"name":"shoegaze"},{"count":1,"name":"indie rock"},{"count":1,"name":"dream pop"}]},{"id":"9e573eed-736b-4a95-a407-05e0d2674d3d","score":57,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","artist-credit-id":"7db78868-f748-3dc3-b9a4-87eb091ac48f","count":1,"title":"Scarlet Desires","status":"Official","packaging":"Jewel Case","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Black Magick SS","artist":{"id":"ca10f13e-0a01-4641-981f-eceea2c1df5e","name":"Black Magick SS","sort-name":"Black Magick SS","disambiguation":"Occult rock band"}}],"release-group":{"id":"a8ad48ca-94e3-4794-a7f3-60549cf08886","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Scarlet Desires","primary-type":"Album"},"date":"2026","country":"LT","release-events":[{"date":"2026","area":{"id":"0785dc14-96af-3dc4-bde4-dcdfc2e2d0d6","name":"Lithuania","sort-name":"Lithuania","iso-3166-1-codes":["LT"]}}],"label-info":[{"catalog-number":"CPR041","label":{"id":"636ec653-3448-408e-832b-7b9d6e14f212","name":"Creep Purple Records"}}],"track-count":6,"media":[{"id":"502dd05b-fff5-443a-a55d-4e4db1aee04a","format":"CD","disc-count":1,"track-count":6}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"black metal"},{"count":1,"name":"psychedelic rock"}]},{"id":"56451462-f0c5-46bf-b06a-63345b8d6f83","score":47,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"2472ef58-d798-4c5e-960f-c747b3bcebe6","count":1,"title":"DEMONSTRATION","status":"Official","text-representation":{"language":"eng"},"artist-credit":[{"name":"Immortal Cry","artist":{"id":"b1d49a1f-f6d6-43d1-8cbb-b44c36c97232","name":"Immortal Cry","sort-name":"Immortal Cry"}}],"release-group":{"id":"4a61e2ab-4533-4afe-b526-00d7ddb367e3","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"DEMONSTRATION","primary-type":"Single","secondary-types":["Demo"],"secondary-type-ids":["81598169-0d6c-3bce-b4be-866fa658eda3"]},"date":"2026-07-26","country":"XW","release-events":[{"date":"2026-07-26","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"track-count":2,"media":[{"id":"f4007fb4-56cc-4944-9e95-d7d47535215a","format":"Digital Media","disc-count":0,"track-count":2}],"tags":[{"count":1,"name":"metal"},{"count":1,"name":"beatdown hardcore"}]},{"id":"232e13a5-026b-4057-bb58-baec7a3ab40b","score":43,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","artist-credit-id":"6d74c673-cb5b-3511-9486-b21f20d92680","count":1,"title":"Future Soul","status":"Official","packaging":"Digipak","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Tedeschi Trucks Band","artist":{"id":"e33e1ccf-a3b9-4449-a66a-0091e8f55a60","name":"Tedeschi Trucks Band","sort-name":"Tedeschi Trucks Band"}}],"release-group":{"id":"a8b717df-56ec-415b-9933-f75e81a60991","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Future Soul","primary-type":"Album"},"date":"2026","country":"US","release-events":[{"date":"2026","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"0888072737440","asin":"B0GFXNK5LY","label-info":[{"catalog-number":"FAN03118","label":{"id":"757acd4a-dade-433d-b754-53468f243220","name":"Fantasy"}}],"track-count":11,"media":[{"id":"3a38972b-5ba6-4aad-839f-a3c700f153b5","format":"CD","disc-count":1,"track-count":11}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"blues"},{"count":1,"name":"funk"},{"count":1,"name":"soul"},{"count":1,"name":"blues rock"},{"count":1,"name":"southern rock"}]},{"id":"cdc0da8b-292b-4e6e-b605-2b768313bd1f","score":41,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","artist-credit-id":"f8361ba0-8b03-355c-a40e-cbde72d61256","count":1,"title":"Fantastic Planet","status":"Official","packaging":"Digipak","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Failure","artist":{"id":"f0ed9f50-70b9-4406-9374-7d76ae21a04a","name":"Failure","sort-name":"Failure","disambiguation":"US alternative rock band"}}],"release-group":{"id":"ffaf0ab2-77e7-35da-b595-fdd8fad38cf3","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Fantastic Planet","primary-type":"Album"},"date":"2026","country":"US","release-events":[{"date":"2026","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"barcode":"","label-info":[{"catalog-number":"FLR003 01","label":{"id":"5e0834fd-e400-4f8c-a6a7-af063a53cd38","name":"Failure Records"}}],"track-count":17,"media":[{"id":"511947f1-9f5b-4a65-b0ac-ad36c977b503","format":"CD","disc-count":1,"track-count":17}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"alternative rock"},{"count":1,"name":"space rock"}]},{"id":"277bf7d2-75d5-412d-9ac5-24c9d038ad13","score":41,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"97aa35b0-e41e-4f63-8118-b2ff27a1f894","count":1,"title":"Hyperphantasia","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Child Seat","artist":{"id":"f8a31597-1063-4dd1-8f59-cc2939b9025d","name":"Child Seat","sort-name":"Child Seat"}}],"release-group":{"id":"86aa34ba-56ea-4d42-9552-d70655ae9db9","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Hyperphantasia","primary-type":"Album"},"date":"2026","country":"US","release-events":[{"date":"2026","area":{"id":"489ce91b-6658-3307-9877-795b68554c98","name":"United States","sort-name":"United States","iso-3166-1-codes":["US"]}}],"label-info":[{"catalog-number":"MB003","label":{"id":"22e24a21-c1bb-4700-8488-9114735b6677","name":"Moonboot! Records"}}],"track-count":14,"media":[{"id":"2a630b7f-ed31-44fc-924f-8c6b7f426567","format":"CD-R","disc-count":1,"track-count":14}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"pop"},{"count":1,"name":"indie pop"},{"count":1,"name":"dream pop"},{"count":1,"name":"alternative pop"}]},{"id":"61b819ad-6f8d-4c71-b2eb-9bc52e985981","score":38,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"adf39616-16b2-3281-85d3-ca63d7ebbf45","count":1,"title":"Im Reich des Zauberers","status":"Official","text-representation":{"language":"deu","script":"Latn"},"artist-credit":[{"name":"Merlin","artist":{"id":"01c39252-9a49-41de-9997-a295839fc38a","name":"Merlin","sort-name":"Merlin","disambiguation":"East German metal band"}}],"release-group":{"id":"dc516997-8e31-465f-981f-9e9758128480","type-id":"6fd474e2-6b58-3102-9d17-d6f7eb7da0a0","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Im Reich des Zauberers","primary-type":"Album","secondary-types":["Live"],"secondary-type-ids":["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"]},"date":"2026","country":"DE","release-events":[{"date":"2026","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"label-info":[{"catalog-number":"GDR 044","label":{"id":"813c3b56-e408-491d-8629-f22be1cbc98b","name":"German Democratic Recordings"}}],"track-count":9,"media":[{"id":"984ea332-8f24-4bff-8bbb-c5b474032be0","format":"CD","disc-count":1,"track-count":9}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"heavy metal"}]},{"id":"e31e116b-9a03-4d68-ae28-613cbb221485","score":38,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"6f85dcc1-cad5-362e-bddc-085ed4e015fa","count":1,"title":"A fenyő","status":"Official","text-representation":{"language":"hun","script":"Latn"},"artist-credit":[{"name":"Fenyő Miklós","artist":{"id":"a2667239-21fb-4493-a555-ac23347feefa","name":"Fenyő Miklós","sort-name":"Miklós, Fenyő"}}],"release-group":{"id":"f728d73e-c497-4f61-a2df-0f6c826bc9b9","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"A fenyő","primary-type":"Album"},"date":"2026","country":"HU","release-events":[{"date":"2026","area":{"id":"312bc5bb-7e43-3e63-81c6-b4d712b37b2c","name":"Hungary","sort-name":"Hungary","iso-3166-1-codes":["HU"]}}],"barcode":"0745099958022","label-info":[{"catalog-number":"0745099958022","label":{"id":"1321f266-6f04-45f1-8b65-3b9ff589dafd","name":"Magneoton"}}],"track-count":11,"media":[{"id":"a9bd386a-3a6d-4c04-8531-98b8fa75bc65","format":"CD","disc-count":1,"track-count":11}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"pop"},{"count":1,"name":"rock and roll"}]},{"id":"f962888d-c552-44dc-baf1-4226de13bbce","score":35,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"ec27701a-4a22-37f4-bfac-6616e0f9750a","artist-credit-id":"3231c6b9-6127-4733-9179-6f3abc5cb25f","count":1,"title":"Темные небеса","status":"Official","packaging":"Jewel Case","text-representation":{"language":"rus","script":"Cyrl"},"artist-credit":[{"name":"Darkinfrost","artist":{"id":"22b25567-58e7-48df-8173-8ba127b42ac5","name":"Darkinfrost","sort-name":"Darkinfrost"}}],"release-group":{"id":"91c6b24c-4650-4cb7-9b89-0bcccf4ef93d","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Темные небеса","primary-type":"Album"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"label-info":[{"label":{"id":"157afde4-4bf5-4039-8ad2-5a15acc85176","name":"[no label]"}}],"track-count":6,"media":[{"id":"fdee152f-7ac5-45e7-ad57-3277c9cc5cc2","format":"CD","disc-count":1,"track-count":6}],"tags":[{"count":1,"name":"black metal"},{"count":1,"name":"raw black metal"}]},{"id":"10a4721e-6ad6-4780-873c-4b34b031449a","score":28,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","artist-credit-id":"6f266248-3763-3138-b2f7-17f05af63fd3","count":1,"title":"La respuesta | Hablando de ti","status":"Official","disambiguation":"remastered","packaging":"None","text-representation":{"language":"spa","script":"Latn"},"artist-credit":[{"name":"Los Gatos Salvajes","artist":{"id":"b7651102-c2c0-4342-bd0a-8d24068c2be1","name":"Los Gatos Salvajes","sort-name":"Gatos Salvajes, Los"}}],"release-group":{"id":"739947af-8c27-48bd-aaed-b6745ef614df","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"La respuesta / Hablando de tí","primary-type":"Single"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"8721465449655","label-info":[{"label":{"id":"5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec","name":"Inamu Discos"}}],"track-count":2,"media":[{"id":"6354c004-9dc9-4985-ad61-2e5f9d27376e","format":"Digital Media","disc-count":0,"track-count":2}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"classic rock"},{"count":1,"name":"latin rock"},{"count":1,"name":"beat"},{"count":1,"name":"merseybeat"}]},{"id":"ace59bd4-7456-4237-a29c-f69b75a2e890","score":28,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","artist-credit-id":"6f266248-3763-3138-b2f7-17f05af63fd3","count":1,"title":"Estoy llorando | Eres mala","status":"Official","disambiguation":"remastered","packaging":"None","text-representation":{"language":"spa","script":"Latn"},"artist-credit":[{"name":"Los Gatos Salvajes","artist":{"id":"b7651102-c2c0-4342-bd0a-8d24068c2be1","name":"Los Gatos Salvajes","sort-name":"Gatos Salvajes, Los"}}],"release-group":{"id":"00422d2f-59fa-4e9d-ab77-dd4f31d650ed","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"Estoy llorando / Eres mala","primary-type":"Single"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"8721465449662","label-info":[{"label":{"id":"5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec","name":"Inamu Discos"}}],"track-count":2,"media":[{"id":"43b5b324-23b4-4147-aa6a-a3ae95cf7a42","format":"Digital Media","disc-count":0,"track-count":2}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"classic rock"},{"count":1,"name":"latin rock"},{"count":1,"name":"beat"},{"count":1,"name":"merseybeat"}]},{"id":"5e727d06-fc74-4930-b140-5adccaa84214","score":28,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","artist-credit-id":"6f266248-3763-3138-b2f7-17f05af63fd3","count":1,"title":"Boleto para pasear | Harás lo que te pida","status":"Official","disambiguation":"remastered","packaging":"None","text-representation":{"language":"spa","script":"Latn"},"artist-credit":[{"name":"Los Gatos Salvajes","artist":{"id":"b7651102-c2c0-4342-bd0a-8d24068c2be1","name":"Los Gatos Salvajes","sort-name":"Gatos Salvajes, Los"}}],"release-group":{"id":"0e9762d5-956b-4ea4-9385-e1169a22f4f7","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"Boleto para pasear / Harás lo que te pida","primary-type":"Single"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"8721465449679","label-info":[{"label":{"id":"5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec","name":"Inamu Discos"}}],"track-count":2,"media":[{"id":"43f77afd-a9c6-431c-8931-dcb2f8784592","format":"Digital Media","disc-count":0,"track-count":2}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"classic rock"},{"count":1,"name":"latin rock"},{"count":1,"name":"beat"},{"count":1,"name":"merseybeat"}]},{"id":"acbb6eb0-f129-4a1d-81f9-592ae042f6d0","score":28,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","artist-credit-id":"6f266248-3763-3138-b2f7-17f05af63fd3","count":1,"title":"Los Gatos Salvajes EP","status":"Official","disambiguation":"remastered","packaging":"None","text-representation":{"language":"spa","script":"Latn"},"artist-credit":[{"name":"Los Gatos Salvajes","artist":{"id":"b7651102-c2c0-4342-bd0a-8d24068c2be1","name":"Los Gatos Salvajes","sort-name":"Gatos Salvajes, Los"}}],"release-group":{"id":"343f7e83-337b-4eb3-95a3-02560ec6b435","type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","primary-type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","title":"Porque heriste mi corazón / Yo soy el mejor / Donde vas / Me tienes que besarporque heriste mi corazón / Yo soy el mejor / Donde vas / Me tienes que besar","primary-type":"EP"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"8721465449686","label-info":[{"label":{"id":"5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec","name":"Inamu Discos"}}],"track-count":4,"media":[{"id":"6286586f-5e6e-4bdf-9e86-152bf01150d8","format":"Digital Media","disc-count":0,"track-count":4}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"classic rock"},{"count":1,"name":"latin rock"},{"count":1,"name":"beat"},{"count":1,"name":"merseybeat"}]},{"id":"3577cfd8-d54b-4648-aca9-02236b8bc923","score":28,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"8f931351-d2e2-310f-afc6-37b89ddba246","artist-credit-id":"31582ed3-d905-3f99-bc31-a40c8ed666cf","count":2,"title":"Liebe Glaube Monster","status":"Official","packaging":"Digipak","text-representation":{"language":"deu","script":"Latn"},"artist-credit":[{"name":"Unheilig","artist":{"id":"6dfa03fb-8b02-4055-b7cc-e48f426b13f8","name":"Unheilig","sort-name":"Unheilig"}}],"release-group":{"id":"8c1948ad-ec95-4018-b678-6fdac4ea0550","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Liebe Glaube Monster","primary-type":"Album"},"date":"2026-03-13","country":"DE","release-events":[{"date":"2026-03-13","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}},{"date":"2026","area":{"id":"89a675c2-3e37-3518-b83c-418bad59a85a","name":"Europe","sort-name":"Europe","iso-3166-1-codes":["XE"]}}],"barcode":"0602478775062","label-info":[{"catalog-number":"0602478775062","label":{"id":"1b3b52a5-ef89-4f8b-8d5f-e15a7a58863b","name":"Vertigo"}},{"catalog-number":"0602478775062-2CD","label":{"id":"1b3b52a5-ef89-4f8b-8d5f-e15a7a58863b","name":"Vertigo"}},{"catalog-number":"0602478775062","label":{"id":"1391bdc7-a22c-48a4-a5fb-e7b8ef6ce143","name":"Universal"}}],"track-count":26,"media":[{"id":"5452636a-bb98-42c7-b644-e9e40bf923d1","format":"CD","disc-count":1,"track-count":16},{"id":"3d694bae-5a50-4e48-9f98-ec896923df7e","format":"CD","disc-count":1,"track-count":10}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"electronic"},{"count":1,"name":"pop"},{"count":1,"name":"alternative rock"},{"count":1,"name":"industrial"},{"count":1,"name":"ballad"},{"count":1,"name":"pop rock"}]},{"id":"b31f351b-b19e-46bb-873e-adb73fc5cbaf","score":27,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"6c1b253b-aa08-4d1f-8381-3ee480ed57ab","artist-credit-id":"aa7d39bc-c39a-466e-957e-a44045727afe","count":1,"title":"Mesdames, messieurs !","status":"Official","packaging":"Digifile","text-representation":{"language":"fra","script":"Latn"},"artist-credit":[{"name":"Sam Sauvage","artist":{"id":"53ceabc4-9e4c-4dd2-b067-c212e9f70062","name":"Sam Sauvage","sort-name":"Sam Sauvage"}}],"release-group":{"id":"0ced966f-ef29-408d-9ca8-d293333ce6d5","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Mesdames, messieurs !","primary-type":"Album"},"date":"2026","country":"FR","release-events":[{"date":"2026","area":{"id":"08310658-51eb-3801-80de-5a0739207115","name":"France","sort-name":"France","iso-3166-1-codes":["FR"]}}],"barcode":"3596974963023","label-info":[{"catalog-number":"3496302","label":{"id":"1e3f1c2a-02ef-4804-a1e7-362827da9cb1","name":"Cinq 7"}}],"track-count":13,"media":[{"id":"a239dc43-889d-4cf4-a779-a3acb93e386e","format":"CD","disc-count":1,"track-count":13}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"pop"},{"count":1,"name":"art rock"},{"count":1,"name":"chanson"}]},{"id":"3f6f12c7-899c-4a7a-a8ec-3c6dce0afc8a","score":21,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"476b2036-44b9-4a46-af91-b7c399767013","count":1,"title":"3 AM Drift","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"TheVeilers","artist":{"id":"6600a2f6-2b0e-4746-9511-c3ce65d4befd","name":"TheVeilers","sort-name":"TheVeilers"}}],"release-group":{"id":"de7e2c09-fc9a-4b7f-aa2c-148d10b91cbc","type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","primary-type-id":"6d0c5bf6-7a33-3420-a519-44fc63eedebf","title":"3 AM Drift","primary-type":"EP"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"label-info":[{"label":{"id":"81ae5989-189b-475d-87ea-f18a3a98db69","name":"Cats' Den"}}],"track-count":3,"media":[{"id":"8c5d472c-5792-49d6-a176-d7c424f9b7bc","format":"Digital Media","disc-count":0,"track-count":3}],"tags":[{"count":1,"name":"lo-fi"},{"count":1,"name":"trip hop"},{"count":1,"name":"coldwave"}]},{"id":"586c480d-1d70-47da-acf5-1b895d75e1e6","score":14,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"b5deef81-6673-3621-88c2-9bdc72717b31","count":1,"title":"All Our Dreams","status":"Official","artist-credit":[{"name":"Ghost Loft","artist":{"id":"8fbc6960-70af-409a-b921-a93a28bd9790","name":"Ghost Loft","sort-name":"Ghost Loft"}}],"release-group":{"id":"3de83337-e73d-4422-b5e9-ab343f642867","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"All Our Dreams","primary-type":"Album"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"859731915639","label-info":[{"label":{"id":"d824eeaf-218f-487e-9a61-6c5c17d419c8","name":"Kintsugi"}}],"track-count":1,"media":[{"id":"ddd77f85-00a2-4391-8132-8bbb5de6f54d","format":"Digital Media","disc-count":0,"track-count":1}],"tags":[{"count":1,"name":"alternative & indie"}]},{"id":"82334e1e-ba8d-44b8-ae2d-786f80b70201","score":11,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"4a06b91c-9729-3c1c-a2ef-e3cfe4d75f3b","count":1,"title":"Lifelines","status":"Official","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Chris Norman","artist":{"id":"197889a0-15b6-40bc-89b1-8859137bf823","name":"Chris Norman","sort-name":"Norman, Chris","disambiguation":"English soft rock singer"}}],"release-group":{"id":"6945457e-2401-4980-b566-56730296388c","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Lifelines","primary-type":"Album"},"date":"2026","country":"DE","release-events":[{"date":"2026","area":{"id":"85752fda-13c4-31a3-bee5-0e5cb1f51dad","name":"Germany","sort-name":"Germany","iso-3166-1-codes":["DE"]}}],"barcode":"4029759211853","label-info":[{"catalog-number":"0221185SBE","label":{"id":"3aef43e7-15fc-4172-97a2-190181213426","name":"Stars"}},{"catalog-number":"0221185SBE","label":{"id":"e7f93668-4476-45f9-bff5-02d2cecaa704","name":"edel"}}],"track-count":15,"media":[{"id":"07a1bfcd-31f0-44f2-a896-84deb88dd410","format":"CD","disc-count":1,"track-count":15}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"pop"},{"count":1,"name":"pop rock"}]},{"id":"ef0ec8af-f87f-48bd-9067-6cb9916d1055","score":11,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","artist-credit-id":"0b52b47b-e603-4d20-bb20-6e2c17bfa059","count":1,"title":"Let It Rot","status":"Official","packaging":"None","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Divide Music","artist":{"id":"4697981c-8357-415b-9ee4-8ffc9c08c529","name":"Divide Music","sort-name":"Divide Music"}}],"release-group":{"id":"0315332c-3878-4c47-a61a-f84914a85d5d","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"Let It Rot","primary-type":"Single"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"","track-count":1,"media":[{"id":"3040f4a9-ae81-4279-94ee-9543485820de","format":"Digital Media","disc-count":0,"track-count":1}],"tags":[{"count":1,"name":"rock"}]},{"id":"f24f2366-456a-4acb-88b0-ab341fa82cfa","score":11,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","packaging-id":"119eba76-b343-3e02-a292-f0f00644bb9b","artist-credit-id":"0b52b47b-e603-4d20-bb20-6e2c17bfa059","count":1,"title":"Better Off Dead","status":"Official","packaging":"None","text-representation":{"language":"eng","script":"Latn"},"artist-credit":[{"name":"Divide Music","artist":{"id":"4697981c-8357-415b-9ee4-8ffc9c08c529","name":"Divide Music","sort-name":"Divide Music"}}],"release-group":{"id":"cabe5499-d72d-453c-83b8-0836d875b24d","type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","primary-type-id":"d6038452-8ee0-3f68-affc-2de9a1ede0b9","title":"Better Off Dead","primary-type":"Single"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"barcode":"","track-count":1,"media":[{"id":"5067e1f5-9477-4419-9516-94ad53fb6892","format":"Digital Media","disc-count":0,"track-count":1}],"tags":[{"count":1,"name":"rock"}]},{"id":"52215044-8ebf-4b12-a914-5e799e3ac20d","score":11,"status-id":"4e304316-386d-3409-af2e-78857eec5cfe","artist-credit-id":"7c767710-3cac-36af-b2c1-9c33c5bb9a83","count":1,"title":"Liberatsiya","status":"Official","artist-credit":[{"name":"The Ukrainians","artist":{"id":"5f81942c-7734-4e40-9536-b71bcb9c5658","name":"The Ukrainians","sort-name":"Ukrainians, The"}}],"release-group":{"id":"83dcbe86-627c-4102-aa33-1f01ca8e8f7a","type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","primary-type-id":"f529b476-6e62-324f-b0aa-1f3e33d313fc","title":"Liberatsiya","primary-type":"Album"},"date":"2026","country":"XW","release-events":[{"date":"2026","area":{"id":"525d4e18-3d00-31b9-a58b-a146a916de8f","name":"[Worldwide]","sort-name":"[Worldwide]","iso-3166-1-codes":["XW"]}}],"label-info":[{"catalog-number":"ZRKCD 20","label":{"id":"f5c2ee34-2999-43c2-a062-260d04253e46","name":"Zirka Records"}}],"track-count":10,"media":[{"id":"17ee7882-7724-4765-aad3-26c8d8eaf365","format":"CD","disc-count":1,"track-count":10}],"tags":[{"count":1,"name":"rock"},{"count":1,"name":"folk"}]}]}
+{
+  "created": "2026-07-26T15:05:14.130Z",
+  "count": 28,
+  "offset": 0,
+  "releases": [
+    {
+      "id": "3909d3e4-7ed4-4bb4-be01-dbc45b783468",
+      "score": 100,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "3c3a4e0e-5610-3ce9-952a-b1a3493f99ed",
+      "count": 1,
+      "title": "The New Flesh",
+      "status": "Official",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Sylosis",
+          "artist": {
+            "id": "114f8840-8704-4b70-9673-904d60ecadc8",
+            "name": "Sylosis",
+            "sort-name": "Sylosis"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "bd68ca99-c1ae-4fdb-8dd9-0cf047c67b79",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "The New Flesh",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "barcode": "4065629754808",
+      "label-info": [
+        {
+          "catalog-number": "7548-0",
+          "label": {
+            "id": "f95e2b76-da5c-4b45-9368-2bf9f9ffae7c",
+            "name": "Nuclear Blast Records"
+          }
+        },
+        {
+          "catalog-number": "NBR 7548-0",
+          "label": {
+            "id": "f95e2b76-da5c-4b45-9368-2bf9f9ffae7c",
+            "name": "Nuclear Blast Records"
+          }
+        }
+      ],
+      "track-count": 11,
+      "media": [
+        {
+          "id": "744c1668-2403-43fd-8881-34639ae4ad31",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 11
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "melodic death metal" },
+        { "count": 1, "name": "progressive metal" },
+        { "count": 1, "name": "thrash metal" },
+        { "count": 1, "name": "metalcore" }
+      ]
+    },
+    {
+      "id": "f90fb4a8-8f25-47b9-82fd-412d8ca8aa34",
+      "score": 81,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "02146658-6824-4f0f-b05e-3c0733c3a14b",
+      "count": 1,
+      "title": "Crush The Crown",
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "The World You Wanted",
+          "artist": {
+            "id": "de47c1e6-9877-49d6-be17-d532194d899d",
+            "name": "The World You Wanted",
+            "sort-name": "The World You Wanted"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "8d459b4e-9032-4524-bab3-11767aa9ca20",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Crush The Crown",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "DE",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "name": "Germany",
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"]
+          }
+        }
+      ],
+      "barcode": "",
+      "track-count": 6,
+      "media": [
+        {
+          "id": "fd1e7335-1b97-4f5f-8745-43f8e33ce4e9",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "progressive metal" },
+        { "count": 1, "name": "death metal" },
+        { "count": 1, "name": "groove metal" },
+        { "count": 1, "name": "post-metal" }
+      ]
+    },
+    {
+      "id": "9e74fc1e-04cc-4427-8ac4-9b1453d8747b",
+      "score": 76,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "59062498-4f8c-490e-a830-ffea6d27f192",
+      "count": 1,
+      "title": "Pyrocracy",
+      "status": "Official",
+      "text-representation": { "language": "eng" },
+      "artist-credit": [
+        {
+          "name": "Insanity",
+          "artist": {
+            "id": "4de8b0cd-577c-4398-a701-dbd00ed309bb",
+            "name": "Insanity",
+            "sort-name": "Insanity",
+            "disambiguation": "Thrash metal from Bullas"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "ea8687f0-b45e-4a3e-9897-983f7d83a9f4",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Pyrocracy",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "ES",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
+            "name": "Spain",
+            "sort-name": "Spain",
+            "iso-3166-1-codes": ["ES"]
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "7c7beafe-4020-4a8c-878c-e5dc9254e7af",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "thrash metal" },
+        { "count": 1, "name": "technical thrash metal" }
+      ]
+    },
+    {
+      "id": "880b9321-8d33-44e9-b200-a9688d2a29b4",
+      "score": 66,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "95f9a87e-33c3-4107-bca3-9b77b1f8ba86",
+      "count": 1,
+      "title": "Unpredictable Blooming",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "Swayglow",
+          "artist": {
+            "id": "9bf24ae2-8eb3-4bfd-900f-acbe02caaaa2",
+            "name": "Swayglow",
+            "sort-name": "Swayglow"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "2e35dc4a-df69-41cb-8a24-e7476ae7f6d8",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "Unpredictable Blooming",
+        "primary-type": "EP"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "track-count": 5,
+      "media": [
+        {
+          "id": "17051e94-b0ae-4afa-bc42-a1ded47005e1",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 5
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "post-rock" },
+        { "count": 1, "name": "shoegaze" },
+        { "count": 1, "name": "indie rock" },
+        { "count": 1, "name": "dream pop" }
+      ]
+    },
+    {
+      "id": "2090be35-86f7-41e3-9506-50646a490613",
+      "score": 59,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "3b06a803-1c13-4137-b461-e87a91f4cbe3",
+      "count": 1,
+      "title": "Dust Absorber",
+      "status": "Official",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Dust Absorber",
+          "artist": {
+            "id": "809b1935-7275-40ba-9a88-d9506a7b921c",
+            "name": "Dust Absorber",
+            "sort-name": "Dust Absorber",
+            "disambiguation": "American shoegaze band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "d0c36800-c861-436f-812b-474d9bfc63f5",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "Dust Absorber",
+        "primary-type": "EP"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "track-count": 3,
+      "media": [
+        {
+          "id": "da781b4c-7863-4452-9029-fee557a9e4b4",
+          "disc-count": 0,
+          "track-count": 3
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "shoegaze" },
+        { "count": 1, "name": "indie rock" },
+        { "count": 1, "name": "dream pop" }
+      ]
+    },
+    {
+      "id": "9e573eed-736b-4a95-a407-05e0d2674d3d",
+      "score": 57,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "7db78868-f748-3dc3-b9a4-87eb091ac48f",
+      "count": 1,
+      "title": "Scarlet Desires",
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Black Magick SS",
+          "artist": {
+            "id": "ca10f13e-0a01-4641-981f-eceea2c1df5e",
+            "name": "Black Magick SS",
+            "sort-name": "Black Magick SS",
+            "disambiguation": "Occult rock band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "a8ad48ca-94e3-4794-a7f3-60549cf08886",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Scarlet Desires",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "LT",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "0785dc14-96af-3dc4-bde4-dcdfc2e2d0d6",
+            "name": "Lithuania",
+            "sort-name": "Lithuania",
+            "iso-3166-1-codes": ["LT"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "CPR041",
+          "label": {
+            "id": "636ec653-3448-408e-832b-7b9d6e14f212",
+            "name": "Creep Purple Records"
+          }
+        }
+      ],
+      "track-count": 6,
+      "media": [
+        {
+          "id": "502dd05b-fff5-443a-a55d-4e4db1aee04a",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "black metal" },
+        { "count": 1, "name": "psychedelic rock" }
+      ]
+    },
+    {
+      "id": "56451462-f0c5-46bf-b06a-63345b8d6f83",
+      "score": 47,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "2472ef58-d798-4c5e-960f-c747b3bcebe6",
+      "count": 1,
+      "title": "DEMONSTRATION",
+      "status": "Official",
+      "text-representation": { "language": "eng" },
+      "artist-credit": [
+        {
+          "name": "Immortal Cry",
+          "artist": {
+            "id": "b1d49a1f-f6d6-43d1-8cbb-b44c36c97232",
+            "name": "Immortal Cry",
+            "sort-name": "Immortal Cry"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "4a61e2ab-4533-4afe-b526-00d7ddb367e3",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "DEMONSTRATION",
+        "primary-type": "Single",
+        "secondary-types": ["Demo"],
+        "secondary-type-ids": ["81598169-0d6c-3bce-b4be-866fa658eda3"]
+      },
+      "date": "2026-07-26",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-07-26",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "track-count": 2,
+      "media": [
+        {
+          "id": "f4007fb4-56cc-4944-9e95-d7d47535215a",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 2
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "metal" },
+        { "count": 1, "name": "beatdown hardcore" }
+      ]
+    },
+    {
+      "id": "232e13a5-026b-4057-bb58-baec7a3ab40b",
+      "score": 43,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "artist-credit-id": "6d74c673-cb5b-3511-9486-b21f20d92680",
+      "count": 1,
+      "title": "Future Soul",
+      "status": "Official",
+      "packaging": "Digipak",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Tedeschi Trucks Band",
+          "artist": {
+            "id": "e33e1ccf-a3b9-4449-a66a-0091e8f55a60",
+            "name": "Tedeschi Trucks Band",
+            "sort-name": "Tedeschi Trucks Band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "a8b717df-56ec-415b-9933-f75e81a60991",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Future Soul",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "barcode": "0888072737440",
+      "asin": "B0GFXNK5LY",
+      "label-info": [
+        {
+          "catalog-number": "FAN03118",
+          "label": {
+            "id": "757acd4a-dade-433d-b754-53468f243220",
+            "name": "Fantasy"
+          }
+        }
+      ],
+      "track-count": 11,
+      "media": [
+        {
+          "id": "3a38972b-5ba6-4aad-839f-a3c700f153b5",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 11
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "blues" },
+        { "count": 1, "name": "funk" },
+        { "count": 1, "name": "soul" },
+        { "count": 1, "name": "blues rock" },
+        { "count": 1, "name": "southern rock" }
+      ]
+    },
+    {
+      "id": "cdc0da8b-292b-4e6e-b605-2b768313bd1f",
+      "score": 41,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "artist-credit-id": "f8361ba0-8b03-355c-a40e-cbde72d61256",
+      "count": 1,
+      "title": "Fantastic Planet",
+      "status": "Official",
+      "packaging": "Digipak",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Failure",
+          "artist": {
+            "id": "f0ed9f50-70b9-4406-9374-7d76ae21a04a",
+            "name": "Failure",
+            "sort-name": "Failure",
+            "disambiguation": "US alternative rock band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "ffaf0ab2-77e7-35da-b595-fdd8fad38cf3",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Fantastic Planet",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "barcode": "",
+      "label-info": [
+        {
+          "catalog-number": "FLR003 01",
+          "label": {
+            "id": "5e0834fd-e400-4f8c-a6a7-af063a53cd38",
+            "name": "Failure Records"
+          }
+        }
+      ],
+      "track-count": 17,
+      "media": [
+        {
+          "id": "511947f1-9f5b-4a65-b0ac-ad36c977b503",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 17
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "alternative rock" },
+        { "count": 1, "name": "space rock" }
+      ]
+    },
+    {
+      "id": "277bf7d2-75d5-412d-9ac5-24c9d038ad13",
+      "score": 41,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "97aa35b0-e41e-4f63-8118-b2ff27a1f894",
+      "count": 1,
+      "title": "Hyperphantasia",
+      "status": "Official",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Child Seat",
+          "artist": {
+            "id": "f8a31597-1063-4dd1-8f59-cc2939b9025d",
+            "name": "Child Seat",
+            "sort-name": "Child Seat"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "86aa34ba-56ea-4d42-9552-d70655ae9db9",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Hyperphantasia",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "name": "United States",
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "MB003",
+          "label": {
+            "id": "22e24a21-c1bb-4700-8488-9114735b6677",
+            "name": "Moonboot! Records"
+          }
+        }
+      ],
+      "track-count": 14,
+      "media": [
+        {
+          "id": "2a630b7f-ed31-44fc-924f-8c6b7f426567",
+          "format": "CD-R",
+          "disc-count": 1,
+          "track-count": 14
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "pop" },
+        { "count": 1, "name": "indie pop" },
+        { "count": 1, "name": "dream pop" },
+        { "count": 1, "name": "alternative pop" }
+      ]
+    },
+    {
+      "id": "61b819ad-6f8d-4c71-b2eb-9bc52e985981",
+      "score": 38,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "adf39616-16b2-3281-85d3-ca63d7ebbf45",
+      "count": 1,
+      "title": "Im Reich des Zauberers",
+      "status": "Official",
+      "text-representation": { "language": "deu", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Merlin",
+          "artist": {
+            "id": "01c39252-9a49-41de-9997-a295839fc38a",
+            "name": "Merlin",
+            "sort-name": "Merlin",
+            "disambiguation": "East German metal band"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "dc516997-8e31-465f-981f-9e9758128480",
+        "type-id": "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Im Reich des Zauberers",
+        "primary-type": "Album",
+        "secondary-types": ["Live"],
+        "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"]
+      },
+      "date": "2026",
+      "country": "DE",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "name": "Germany",
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "GDR 044",
+          "label": {
+            "id": "813c3b56-e408-491d-8629-f22be1cbc98b",
+            "name": "German Democratic Recordings"
+          }
+        }
+      ],
+      "track-count": 9,
+      "media": [
+        {
+          "id": "984ea332-8f24-4bff-8bbb-c5b474032be0",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 9
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "heavy metal" }
+      ]
+    },
+    {
+      "id": "e31e116b-9a03-4d68-ae28-613cbb221485",
+      "score": 38,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "6f85dcc1-cad5-362e-bddc-085ed4e015fa",
+      "count": 1,
+      "title": "A fenyő",
+      "status": "Official",
+      "text-representation": { "language": "hun", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Fenyő Miklós",
+          "artist": {
+            "id": "a2667239-21fb-4493-a555-ac23347feefa",
+            "name": "Fenyő Miklós",
+            "sort-name": "Miklós, Fenyő"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "f728d73e-c497-4f61-a2df-0f6c826bc9b9",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "A fenyő",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "HU",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "312bc5bb-7e43-3e63-81c6-b4d712b37b2c",
+            "name": "Hungary",
+            "sort-name": "Hungary",
+            "iso-3166-1-codes": ["HU"]
+          }
+        }
+      ],
+      "barcode": "0745099958022",
+      "label-info": [
+        {
+          "catalog-number": "0745099958022",
+          "label": {
+            "id": "1321f266-6f04-45f1-8b65-3b9ff589dafd",
+            "name": "Magneoton"
+          }
+        }
+      ],
+      "track-count": 11,
+      "media": [
+        {
+          "id": "a9bd386a-3a6d-4c04-8531-98b8fa75bc65",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 11
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "pop" },
+        { "count": 1, "name": "rock and roll" }
+      ]
+    },
+    {
+      "id": "f962888d-c552-44dc-baf1-4226de13bbce",
+      "score": 35,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "artist-credit-id": "3231c6b9-6127-4733-9179-6f3abc5cb25f",
+      "count": 1,
+      "title": "Темные небеса",
+      "status": "Official",
+      "packaging": "Jewel Case",
+      "text-representation": { "language": "rus", "script": "Cyrl" },
+      "artist-credit": [
+        {
+          "name": "Darkinfrost",
+          "artist": {
+            "id": "22b25567-58e7-48df-8173-8ba127b42ac5",
+            "name": "Darkinfrost",
+            "sort-name": "Darkinfrost"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "91c6b24c-4650-4cb7-9b89-0bcccf4ef93d",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Темные небеса",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "157afde4-4bf5-4039-8ad2-5a15acc85176",
+            "name": "[no label]"
+          }
+        }
+      ],
+      "track-count": 6,
+      "media": [
+        {
+          "id": "fdee152f-7ac5-45e7-ad57-3277c9cc5cc2",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 6
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "black metal" },
+        { "count": 1, "name": "raw black metal" }
+      ]
+    },
+    {
+      "id": "10a4721e-6ad6-4780-873c-4b34b031449a",
+      "score": 28,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "6f266248-3763-3138-b2f7-17f05af63fd3",
+      "count": 1,
+      "title": "La respuesta | Hablando de ti",
+      "status": "Official",
+      "disambiguation": "remastered",
+      "packaging": "None",
+      "text-representation": { "language": "spa", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Los Gatos Salvajes",
+          "artist": {
+            "id": "b7651102-c2c0-4342-bd0a-8d24068c2be1",
+            "name": "Los Gatos Salvajes",
+            "sort-name": "Gatos Salvajes, Los"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "739947af-8c27-48bd-aaed-b6745ef614df",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "La respuesta / Hablando de tí",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "8721465449655",
+      "label-info": [
+        {
+          "label": {
+            "id": "5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec",
+            "name": "Inamu Discos"
+          }
+        }
+      ],
+      "track-count": 2,
+      "media": [
+        {
+          "id": "6354c004-9dc9-4985-ad61-2e5f9d27376e",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 2
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "classic rock" },
+        { "count": 1, "name": "latin rock" },
+        { "count": 1, "name": "beat" },
+        { "count": 1, "name": "merseybeat" }
+      ]
+    },
+    {
+      "id": "ace59bd4-7456-4237-a29c-f69b75a2e890",
+      "score": 28,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "6f266248-3763-3138-b2f7-17f05af63fd3",
+      "count": 1,
+      "title": "Estoy llorando | Eres mala",
+      "status": "Official",
+      "disambiguation": "remastered",
+      "packaging": "None",
+      "text-representation": { "language": "spa", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Los Gatos Salvajes",
+          "artist": {
+            "id": "b7651102-c2c0-4342-bd0a-8d24068c2be1",
+            "name": "Los Gatos Salvajes",
+            "sort-name": "Gatos Salvajes, Los"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "00422d2f-59fa-4e9d-ab77-dd4f31d650ed",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Estoy llorando / Eres mala",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "8721465449662",
+      "label-info": [
+        {
+          "label": {
+            "id": "5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec",
+            "name": "Inamu Discos"
+          }
+        }
+      ],
+      "track-count": 2,
+      "media": [
+        {
+          "id": "43b5b324-23b4-4147-aa6a-a3ae95cf7a42",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 2
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "classic rock" },
+        { "count": 1, "name": "latin rock" },
+        { "count": 1, "name": "beat" },
+        { "count": 1, "name": "merseybeat" }
+      ]
+    },
+    {
+      "id": "5e727d06-fc74-4930-b140-5adccaa84214",
+      "score": 28,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "6f266248-3763-3138-b2f7-17f05af63fd3",
+      "count": 1,
+      "title": "Boleto para pasear | Harás lo que te pida",
+      "status": "Official",
+      "disambiguation": "remastered",
+      "packaging": "None",
+      "text-representation": { "language": "spa", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Los Gatos Salvajes",
+          "artist": {
+            "id": "b7651102-c2c0-4342-bd0a-8d24068c2be1",
+            "name": "Los Gatos Salvajes",
+            "sort-name": "Gatos Salvajes, Los"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "0e9762d5-956b-4ea4-9385-e1169a22f4f7",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Boleto para pasear / Harás lo que te pida",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "8721465449679",
+      "label-info": [
+        {
+          "label": {
+            "id": "5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec",
+            "name": "Inamu Discos"
+          }
+        }
+      ],
+      "track-count": 2,
+      "media": [
+        {
+          "id": "43f77afd-a9c6-431c-8931-dcb2f8784592",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 2
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "classic rock" },
+        { "count": 1, "name": "latin rock" },
+        { "count": 1, "name": "beat" },
+        { "count": 1, "name": "merseybeat" }
+      ]
+    },
+    {
+      "id": "acbb6eb0-f129-4a1d-81f9-592ae042f6d0",
+      "score": 28,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "6f266248-3763-3138-b2f7-17f05af63fd3",
+      "count": 1,
+      "title": "Los Gatos Salvajes EP",
+      "status": "Official",
+      "disambiguation": "remastered",
+      "packaging": "None",
+      "text-representation": { "language": "spa", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Los Gatos Salvajes",
+          "artist": {
+            "id": "b7651102-c2c0-4342-bd0a-8d24068c2be1",
+            "name": "Los Gatos Salvajes",
+            "sort-name": "Gatos Salvajes, Los"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "343f7e83-337b-4eb3-95a3-02560ec6b435",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "Porque heriste mi corazón / Yo soy el mejor / Donde vas / Me tienes que besarporque heriste mi corazón / Yo soy el mejor / Donde vas / Me tienes que besar",
+        "primary-type": "EP"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "8721465449686",
+      "label-info": [
+        {
+          "label": {
+            "id": "5bf83fe7-7b1a-4b8b-b359-cafbbe5ccfec",
+            "name": "Inamu Discos"
+          }
+        }
+      ],
+      "track-count": 4,
+      "media": [
+        {
+          "id": "6286586f-5e6e-4bdf-9e86-152bf01150d8",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 4
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "classic rock" },
+        { "count": 1, "name": "latin rock" },
+        { "count": 1, "name": "beat" },
+        { "count": 1, "name": "merseybeat" }
+      ]
+    },
+    {
+      "id": "3577cfd8-d54b-4648-aca9-02236b8bc923",
+      "score": 28,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "8f931351-d2e2-310f-afc6-37b89ddba246",
+      "artist-credit-id": "31582ed3-d905-3f99-bc31-a40c8ed666cf",
+      "count": 2,
+      "title": "Liebe Glaube Monster",
+      "status": "Official",
+      "packaging": "Digipak",
+      "text-representation": { "language": "deu", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Unheilig",
+          "artist": {
+            "id": "6dfa03fb-8b02-4055-b7cc-e48f426b13f8",
+            "name": "Unheilig",
+            "sort-name": "Unheilig"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "8c1948ad-ec95-4018-b678-6fdac4ea0550",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Liebe Glaube Monster",
+        "primary-type": "Album"
+      },
+      "date": "2026-03-13",
+      "country": "DE",
+      "release-events": [
+        {
+          "date": "2026-03-13",
+          "area": {
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "name": "Germany",
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"]
+          }
+        },
+        {
+          "date": "2026",
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "name": "Europe",
+            "sort-name": "Europe",
+            "iso-3166-1-codes": ["XE"]
+          }
+        }
+      ],
+      "barcode": "0602478775062",
+      "label-info": [
+        {
+          "catalog-number": "0602478775062",
+          "label": {
+            "id": "1b3b52a5-ef89-4f8b-8d5f-e15a7a58863b",
+            "name": "Vertigo"
+          }
+        },
+        {
+          "catalog-number": "0602478775062-2CD",
+          "label": {
+            "id": "1b3b52a5-ef89-4f8b-8d5f-e15a7a58863b",
+            "name": "Vertigo"
+          }
+        },
+        {
+          "catalog-number": "0602478775062",
+          "label": {
+            "id": "1391bdc7-a22c-48a4-a5fb-e7b8ef6ce143",
+            "name": "Universal"
+          }
+        }
+      ],
+      "track-count": 26,
+      "media": [
+        {
+          "id": "5452636a-bb98-42c7-b644-e9e40bf923d1",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 16
+        },
+        {
+          "id": "3d694bae-5a50-4e48-9f98-ec896923df7e",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 10
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "electronic" },
+        { "count": 1, "name": "pop" },
+        { "count": 1, "name": "alternative rock" },
+        { "count": 1, "name": "industrial" },
+        { "count": 1, "name": "ballad" },
+        { "count": 1, "name": "pop rock" }
+      ]
+    },
+    {
+      "id": "b31f351b-b19e-46bb-873e-adb73fc5cbaf",
+      "score": 27,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "6c1b253b-aa08-4d1f-8381-3ee480ed57ab",
+      "artist-credit-id": "aa7d39bc-c39a-466e-957e-a44045727afe",
+      "count": 1,
+      "title": "Mesdames, messieurs !",
+      "status": "Official",
+      "packaging": "Digifile",
+      "text-representation": { "language": "fra", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Sam Sauvage",
+          "artist": {
+            "id": "53ceabc4-9e4c-4dd2-b067-c212e9f70062",
+            "name": "Sam Sauvage",
+            "sort-name": "Sam Sauvage"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "0ced966f-ef29-408d-9ca8-d293333ce6d5",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Mesdames, messieurs !",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "FR",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "08310658-51eb-3801-80de-5a0739207115",
+            "name": "France",
+            "sort-name": "France",
+            "iso-3166-1-codes": ["FR"]
+          }
+        }
+      ],
+      "barcode": "3596974963023",
+      "label-info": [
+        {
+          "catalog-number": "3496302",
+          "label": {
+            "id": "1e3f1c2a-02ef-4804-a1e7-362827da9cb1",
+            "name": "Cinq 7"
+          }
+        }
+      ],
+      "track-count": 13,
+      "media": [
+        {
+          "id": "a239dc43-889d-4cf4-a779-a3acb93e386e",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 13
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "pop" },
+        { "count": 1, "name": "art rock" },
+        { "count": 1, "name": "chanson" }
+      ]
+    },
+    {
+      "id": "3f6f12c7-899c-4a7a-a8ec-3c6dce0afc8a",
+      "score": 21,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "476b2036-44b9-4a46-af91-b7c399767013",
+      "count": 1,
+      "title": "3 AM Drift",
+      "status": "Official",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "TheVeilers",
+          "artist": {
+            "id": "6600a2f6-2b0e-4746-9511-c3ce65d4befd",
+            "name": "TheVeilers",
+            "sort-name": "TheVeilers"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "de7e2c09-fc9a-4b7f-aa2c-148d10b91cbc",
+        "type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "primary-type-id": "6d0c5bf6-7a33-3420-a519-44fc63eedebf",
+        "title": "3 AM Drift",
+        "primary-type": "EP"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "label": {
+            "id": "81ae5989-189b-475d-87ea-f18a3a98db69",
+            "name": "Cats' Den"
+          }
+        }
+      ],
+      "track-count": 3,
+      "media": [
+        {
+          "id": "8c5d472c-5792-49d6-a176-d7c424f9b7bc",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 3
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "lo-fi" },
+        { "count": 1, "name": "trip hop" },
+        { "count": 1, "name": "coldwave" }
+      ]
+    },
+    {
+      "id": "586c480d-1d70-47da-acf5-1b895d75e1e6",
+      "score": 14,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "b5deef81-6673-3621-88c2-9bdc72717b31",
+      "count": 1,
+      "title": "All Our Dreams",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "Ghost Loft",
+          "artist": {
+            "id": "8fbc6960-70af-409a-b921-a93a28bd9790",
+            "name": "Ghost Loft",
+            "sort-name": "Ghost Loft"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "3de83337-e73d-4422-b5e9-ab343f642867",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "All Our Dreams",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "859731915639",
+      "label-info": [
+        {
+          "label": {
+            "id": "d824eeaf-218f-487e-9a61-6c5c17d419c8",
+            "name": "Kintsugi"
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "ddd77f85-00a2-4391-8132-8bbb5de6f54d",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [{ "count": 1, "name": "alternative & indie" }]
+    },
+    {
+      "id": "82334e1e-ba8d-44b8-ae2d-786f80b70201",
+      "score": 11,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "4a06b91c-9729-3c1c-a2ef-e3cfe4d75f3b",
+      "count": 1,
+      "title": "Lifelines",
+      "status": "Official",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Chris Norman",
+          "artist": {
+            "id": "197889a0-15b6-40bc-89b1-8859137bf823",
+            "name": "Chris Norman",
+            "sort-name": "Norman, Chris",
+            "disambiguation": "English soft rock singer"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "6945457e-2401-4980-b566-56730296388c",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Lifelines",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "DE",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "name": "Germany",
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"]
+          }
+        }
+      ],
+      "barcode": "4029759211853",
+      "label-info": [
+        {
+          "catalog-number": "0221185SBE",
+          "label": {
+            "id": "3aef43e7-15fc-4172-97a2-190181213426",
+            "name": "Stars"
+          }
+        },
+        {
+          "catalog-number": "0221185SBE",
+          "label": {
+            "id": "e7f93668-4476-45f9-bff5-02d2cecaa704",
+            "name": "edel"
+          }
+        }
+      ],
+      "track-count": 15,
+      "media": [
+        {
+          "id": "07a1bfcd-31f0-44f2-a896-84deb88dd410",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 15
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "pop" },
+        { "count": 1, "name": "pop rock" }
+      ]
+    },
+    {
+      "id": "ef0ec8af-f87f-48bd-9067-6cb9916d1055",
+      "score": 11,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "0b52b47b-e603-4d20-bb20-6e2c17bfa059",
+      "count": 1,
+      "title": "Let It Rot",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Divide Music",
+          "artist": {
+            "id": "4697981c-8357-415b-9ee4-8ffc9c08c529",
+            "name": "Divide Music",
+            "sort-name": "Divide Music"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "0315332c-3878-4c47-a61a-f84914a85d5d",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Let It Rot",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "",
+      "track-count": 1,
+      "media": [
+        {
+          "id": "3040f4a9-ae81-4279-94ee-9543485820de",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [{ "count": 1, "name": "rock" }]
+    },
+    {
+      "id": "f24f2366-456a-4acb-88b0-ab341fa82cfa",
+      "score": 11,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "0b52b47b-e603-4d20-bb20-6e2c17bfa059",
+      "count": 1,
+      "title": "Better Off Dead",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": { "language": "eng", "script": "Latn" },
+      "artist-credit": [
+        {
+          "name": "Divide Music",
+          "artist": {
+            "id": "4697981c-8357-415b-9ee4-8ffc9c08c529",
+            "name": "Divide Music",
+            "sort-name": "Divide Music"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "cabe5499-d72d-453c-83b8-0836d875b24d",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Better Off Dead",
+        "primary-type": "Single"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "barcode": "",
+      "track-count": 1,
+      "media": [
+        {
+          "id": "5067e1f5-9477-4419-9516-94ad53fb6892",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [{ "count": 1, "name": "rock" }]
+    },
+    {
+      "id": "52215044-8ebf-4b12-a914-5e799e3ac20d",
+      "score": 11,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "7c767710-3cac-36af-b2c1-9c33c5bb9a83",
+      "count": 1,
+      "title": "Liberatsiya",
+      "status": "Official",
+      "artist-credit": [
+        {
+          "name": "The Ukrainians",
+          "artist": {
+            "id": "5f81942c-7734-4e40-9536-b71bcb9c5658",
+            "name": "The Ukrainians",
+            "sort-name": "Ukrainians, The"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "83dcbe86-627c-4102-aa33-1f01ca8e8f7a",
+        "type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+        "title": "Liberatsiya",
+        "primary-type": "Album"
+      },
+      "date": "2026",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "ZRKCD 20",
+          "label": {
+            "id": "f5c2ee34-2999-43c2-a062-260d04253e46",
+            "name": "Zirka Records"
+          }
+        }
+      ],
+      "track-count": 10,
+      "media": [
+        {
+          "id": "17ee7882-7724-4765-aad3-26c8d8eaf365",
+          "format": "CD",
+          "disc-count": 1,
+          "track-count": 10
+        }
+      ],
+      "tags": [
+        { "count": 1, "name": "rock" },
+        { "count": 1, "name": "folk" }
+      ]
+    }
+  ]
+}

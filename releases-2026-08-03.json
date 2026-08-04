@@ -41,9 +41,7 @@
             "id": "489ce91b-6658-3307-9877-795b68554c98",
             "name": "United States",
             "sort-name": "United States",
-            "iso-3166-1-codes": [
-              "US"
-            ]
+            "iso-3166-1-codes": ["US"]
           }
         }
       ],
@@ -136,9 +134,7 @@
             "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
             "name": "Germany",
             "sort-name": "Germany",
-            "iso-3166-1-codes": [
-              "DE"
-            ]
+            "iso-3166-1-codes": ["DE"]
           }
         }
       ],
@@ -209,9 +205,7 @@
             "id": "471c46a7-afc5-31c4-923c-d0444f5053a4",
             "name": "Spain",
             "sort-name": "Spain",
-            "iso-3166-1-codes": [
-              "ES"
-            ]
+            "iso-3166-1-codes": ["ES"]
           }
         }
       ],
@@ -269,9 +263,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -340,9 +332,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -408,9 +398,7 @@
             "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
             "name": "Germany",
             "sort-name": "Germany",
-            "iso-3166-1-codes": [
-              "DE"
-            ]
+            "iso-3166-1-codes": ["DE"]
           }
         }
       ],
@@ -478,9 +466,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -548,9 +534,7 @@
             "id": "0785dc14-96af-3dc4-bde4-dcdfc2e2d0d6",
             "name": "Lithuania",
             "sort-name": "Lithuania",
-            "iso-3166-1-codes": [
-              "LT"
-            ]
+            "iso-3166-1-codes": ["LT"]
           }
         }
       ],
@@ -627,9 +611,7 @@
             "id": "489ce91b-6658-3307-9877-795b68554c98",
             "name": "United States",
             "sort-name": "United States",
-            "iso-3166-1-codes": [
-              "US"
-            ]
+            "iso-3166-1-codes": ["US"]
           }
         }
       ],
@@ -721,9 +703,7 @@
             "id": "489ce91b-6658-3307-9877-795b68554c98",
             "name": "United States",
             "sort-name": "United States",
-            "iso-3166-1-codes": [
-              "US"
-            ]
+            "iso-3166-1-codes": ["US"]
           }
         }
       ],
@@ -799,9 +779,7 @@
             "id": "489ce91b-6658-3307-9877-795b68554c98",
             "name": "United States",
             "sort-name": "United States",
-            "iso-3166-1-codes": [
-              "US"
-            ]
+            "iso-3166-1-codes": ["US"]
           }
         }
       ],
@@ -875,12 +853,8 @@
         "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
         "title": "Im Reich des Zauberers",
         "primary-type": "Album",
-        "secondary-types": [
-          "Live"
-        ],
-        "secondary-type-ids": [
-          "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
-        ]
+        "secondary-types": ["Live"],
+        "secondary-type-ids": ["6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"]
       },
       "date": "2026",
       "country": "DE",
@@ -891,9 +865,7 @@
             "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
             "name": "Germany",
             "sort-name": "Germany",
-            "iso-3166-1-codes": [
-              "DE"
-            ]
+            "iso-3166-1-codes": ["DE"]
           }
         }
       ],
@@ -964,9 +936,7 @@
             "id": "312bc5bb-7e43-3e63-81c6-b4d712b37b2c",
             "name": "Hungary",
             "sort-name": "Hungary",
-            "iso-3166-1-codes": [
-              "HU"
-            ]
+            "iso-3166-1-codes": ["HU"]
           }
         }
       ],
@@ -1044,9 +1014,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1119,9 +1087,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1207,9 +1173,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1295,9 +1259,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1383,9 +1345,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1470,9 +1430,7 @@
             "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
             "name": "Germany",
             "sort-name": "Germany",
-            "iso-3166-1-codes": [
-              "DE"
-            ]
+            "iso-3166-1-codes": ["DE"]
           }
         },
         {
@@ -1481,9 +1439,7 @@
             "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
             "name": "Europe",
             "sort-name": "Europe",
-            "iso-3166-1-codes": [
-              "XE"
-            ]
+            "iso-3166-1-codes": ["XE"]
           }
         }
       ],
@@ -1614,9 +1570,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1692,9 +1646,7 @@
             "id": "08310658-51eb-3801-80de-5a0739207115",
             "name": "France",
             "sort-name": "France",
-            "iso-3166-1-codes": [
-              "FR"
-            ]
+            "iso-3166-1-codes": ["FR"]
           }
         }
       ],
@@ -1774,9 +1726,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1846,9 +1796,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
@@ -1916,9 +1864,7 @@
             "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
             "name": "Germany",
             "sort-name": "Germany",
-            "iso-3166-1-codes": [
-              "DE"
-            ]
+            "iso-3166-1-codes": ["DE"]
           }
         }
       ],
@@ -2003,9 +1949,7 @@
             "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
             "name": "[Worldwide]",
             "sort-name": "[Worldwide]",
-            "iso-3166-1-codes": [
-              "XW"
-            ]
+            "iso-3166-1-codes": ["XW"]
           }
         }
       ],
