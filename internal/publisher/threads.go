@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/tirthpatell/threads-go"
 )
@@ -55,9 +56,32 @@ func (t *ThreadsPublisher) publishSingle(ctx context.Context, topicTag string, r
 
 	_, err := t.client.CreateImagePost(ctx, content)
 	if err != nil {
-		return fmt.Errorf("threads: create post: %w", err)
+		return fmt.Errorf("threads: create image post: %w", err)
 	}
 	return nil
+}
+
+func (t *ThreadsPublisher) waitForContainer(ctx context.Context, id threads.ContainerID) error {
+	for range threads.DefaultContainerPollMaxAttempts {
+		status, err := t.client.GetContainerStatus(ctx, id)
+		if err != nil {
+			return fmt.Errorf("get status: %w", err)
+		}
+		switch status.Status {
+		case threads.ContainerStatusFinished:
+			return nil
+		case threads.ContainerStatusError:
+			return fmt.Errorf("container processing failed: %s", status.ErrorMessage)
+		case threads.ContainerStatusExpired:
+			return fmt.Errorf("container expired before publish")
+		}
+		select {
+		case <-ctx.Done():
+			return ctx.Err()
+		case <-time.After(threads.DefaultContainerPollInterval):
+		}
+	}
+	return fmt.Errorf("container not ready after %d attempts", threads.DefaultContainerPollMaxAttempts)
 }
 
 func (t *ThreadsPublisher) publishMultiple(ctx context.Context, topicTag string, releases []MusicRelease) error {
@@ -66,6 +90,9 @@ func (t *ThreadsPublisher) publishMultiple(ctx context.Context, topicTag string,
 		c, err := t.client.CreateMediaContainer(ctx, threads.MediaTypeImage, r.CoverURL, r.Title)
 		if err != nil {
 			return fmt.Errorf("threads: create container: %w", err)
+		}
+		if err := t.waitForContainer(ctx, c); err != nil {
+			return fmt.Errorf("threads: container %s not ready: %w", c, err)
 		}
 		containerIDs = append(containerIDs, c.String())
 	}
@@ -78,7 +105,7 @@ func (t *ThreadsPublisher) publishMultiple(ctx context.Context, topicTag string,
 
 	_, err := t.client.CreateCarouselPost(ctx, content)
 	if err != nil {
-		return fmt.Errorf("threads: create post: %w", err)
+		return fmt.Errorf("threads: create carousel post: %w", err)
 	}
 	return nil
 }
