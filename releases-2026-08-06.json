@@ -1,0 +1,294 @@
+{
+  "created": "2026-08-07T13:03:59.557Z",
+  "count": 30,
+  "offset": 0,
+  "releases": [
+    {
+      "id": "e8148956-3aee-45e3-b15e-44e9b0ee1bd0",
+      "score": 23,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "artist-credit-id": "0b282203-25a9-4ee3-87b6-9436d633bbf9",
+      "count": 1,
+      "title": "Us Two",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "James Tonic",
+          "artist": {
+            "id": "4fbc993f-c578-49e5-ab2a-62869ce85bf6",
+            "name": "James Tonic",
+            "sort-name": "Tonic, James",
+            "disambiguation": "Canadian urban music"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "a789aad1-085c-464a-8a98-8f09f620c712",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Us Two",
+        "primary-type": "Single"
+      },
+      "date": "2026-08-06",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-08-06",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ]
+          }
+        }
+      ],
+      "label-info": [
+        {
+          "catalog-number": "CAT: CAT1980224",
+          "label": {
+            "id": "409348a9-a7ba-4dad-8e92-e6b246553b71",
+            "name": "Drummer Records, Inc."
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "65fa430c-ddeb-4621-b4f3-fdf1c93be477",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "pop"
+        },
+        {
+          "count": 1,
+          "name": "dream pop"
+        },
+        {
+          "count": 1,
+          "name": "alternative pop"
+        }
+      ]
+    },
+    {
+      "id": "9dd5c561-44d9-4073-83b1-55a9ac3e3dec",
+      "score": 14,
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "artist-credit-id": "1daa40ce-f9c6-45d2-9134-c3da256d7a4b",
+      "count": 1,
+      "title": "Lover",
+      "status": "Official",
+      "packaging": "None",
+      "text-representation": {
+        "language": "vie",
+        "script": "Latn"
+      },
+      "artist-credit": [
+        {
+          "name": "TIEP.",
+          "artist": {
+            "id": "238454ee-61d1-42ad-b567-75bcec5db87d",
+            "name": "TIEP.",
+            "sort-name": "TIEP",
+            "disambiguation": "Vietnamese singer-songwriter and record producer"
+          }
+        }
+      ],
+      "release-group": {
+        "id": "7024211d-c94c-450e-be56-4b4940249313",
+        "type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+        "title": "Lover",
+        "primary-type": "Single"
+      },
+      "date": "2026-08-06",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2026-08-06",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "name": "[Worldwide]",
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": [
+              "XW"
+            ]
+          }
+        }
+      ],
+      "barcode": "882352150073",
+      "label-info": [
+        {
+          "catalog-number": "[none]",
+          "label": {
+            "id": "157afde4-4bf5-4039-8ad2-5a15acc85176",
+            "name": "[no label]"
+          }
+        }
+      ],
+      "track-count": 1,
+      "media": [
+        {
+          "id": "639b823f-08ec-4e51-b8e8-424dcbbf0bb8",
+          "format": "Digital Media",
+          "disc-count": 0,
+          "track-count": 1
+        }
+      ],
+      "tags": [
+        {
+          "count": 1,
+          "name": "indie pop"
+        },
+        {
+          "count": 1,
+          "name": "dream pop"
+        },
+        {
+          "count": 1,
+          "name": "alternative pop"
+        },
+        {
+          "count": 1,
+          "name": "dark"
+        },
+        {
+          "count": 1,
+          "name": "melancholic"
+        },
+        {
+          "count": 1,
+          "name": "haunting"
+        },
+        {
+          "count": 1,
+          "name": "moody"
+        },
+        {
+          "count": 1,
+          "name": "cinematic"
+        },
+        {
+          "count": 1,
+          "name": "dramatic"
+        },
+        {
+          "count": 1,
+          "name": "atmospheric"
+        },
+        {
+          "count": 1,
+          "name": "emotional"
+        },
+        {
+          "count": 1,
+          "name": "romantic song"
+        },
+        {
+          "count": 1,
+          "name": "cinematic music"
+        },
+        {
+          "count": 1,
+          "name": "intense"
+        },
+        {
+          "count": 1,
+          "name": "lonely"
+        },
+        {
+          "count": 1,
+          "name": "mysterious"
+        },
+        {
+          "count": 1,
+          "name": "passionate"
+        },
+        {
+          "count": 1,
+          "name": "intimate"
+        },
+        {
+          "count": 1,
+          "name": "dark pop"
+        },
+        {
+          "count": 1,
+          "name": "obsession"
+        },
+        {
+          "count": 1,
+          "name": "lover"
+        },
+        {
+          "count": 1,
+          "name": "seductive"
+        },
+        {
+          "count": 1,
+          "name": "atmospheric pop"
+        },
+        {
+          "count": 1,
+          "name": "modern pop"
+        },
+        {
+          "count": 1,
+          "name": "vietnamese music"
+        },
+        {
+          "count": 1,
+          "name": "night drive"
+        },
+        {
+          "count": 1,
+          "name": "vietnamese pop"
+        },
+        {
+          "count": 1,
+          "name": "midnight vibes"
+        },
+        {
+          "count": 1,
+          "name": "emotional song"
+        },
+        {
+          "count": 1,
+          "name": "toxic love"
+        },
+        {
+          "count": 1,
+          "name": "tiep"
+        },
+        {
+          "count": 1,
+          "name": "dark love"
+        },
+        {
+          "count": 1,
+          "name": "sad love song"
+        },
+        {
+          "count": 1,
+          "name": "heartbreak song"
+        },
+        {
+          "count": 1,
+          "name": "obsessive"
+        }
+      ]
+    }
+  ]
+}

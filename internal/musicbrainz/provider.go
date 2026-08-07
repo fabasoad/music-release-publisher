@@ -176,8 +176,9 @@ func joinGenres(tags []struct {
 	Count int    `json:"count"`
 	Name  string `json:"name"`
 }) string {
-	parts := make([]string, 0, len(tags))
-	for _, t := range tags {
+	limit := min(len(tags), 5)
+	parts := make([]string, 0, limit)
+	for _, t := range tags[:limit] {
 		parts = append(parts, cases.Title(language.Und).String(t.Name))
 	}
 	return strings.Join(parts, " / ")
