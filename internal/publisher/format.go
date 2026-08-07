@@ -20,3 +20,11 @@ func formatMessageMultiple(releases []MusicRelease) string {
 	}
 	return fmt.Sprintf("%s\n\n%s", title, strings.Join(body, "\n"))
 }
+
+func truncateText(text string, limit int) string {
+	runes := []rune(text)
+	if len(runes) <= limit {
+		return text
+	}
+	return string(runes[:limit-3]) + "..."
+}

@@ -49,7 +49,7 @@ func (t *ThreadsPublisher) Publish(ctx context.Context, releases []MusicRelease)
 
 func (t *ThreadsPublisher) publishSingle(ctx context.Context, topicTag string, release MusicRelease) error {
 	content := &threads.ImagePostContent{
-		Text:     formatMessageSingle(release),
+		Text:     truncateText(formatMessageSingle(release), 500),
 		ImageURL: release.CoverURL,
 		TopicTag: topicTag,
 	}
@@ -98,7 +98,7 @@ func (t *ThreadsPublisher) publishMultiple(ctx context.Context, topicTag string,
 	}
 
 	content := &threads.CarouselPostContent{
-		Text:     formatMessageMultiple(releases),
+		Text:     truncateText(formatMessageMultiple(releases), 500),
 		Children: containerIDs,
 		TopicTag: topicTag,
 	}

@@ -1,0 +1,251 @@
+2026-08-07T00:00:46.7474161Z Current runner version: '2.336.0'
+2026-08-07T00:00:46.7494362Z ##[group]Runner Image Provisioner
+2026-08-07T00:00:46.7495094Z Hosted Compute Agent
+2026-08-07T00:00:46.7495677Z Version: 20260707.563
+2026-08-07T00:00:46.7496248Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-08-07T00:00:46.7496893Z Build Date: 2026-07-07T19:33:50Z
+2026-08-07T00:00:46.7497503Z Worker ID: {8d4fab63-f5e6-4026-9da0-2d67d1414f5a}
+2026-08-07T00:00:46.7498255Z Azure Region: westus3
+2026-08-07T00:00:46.7499010Z ##[endgroup]
+2026-08-07T00:00:46.7500190Z ##[group]Operating System
+2026-08-07T00:00:46.7500835Z Ubuntu
+2026-08-07T00:00:46.7501322Z 24.04.4
+2026-08-07T00:00:46.7501801Z LTS
+2026-08-07T00:00:46.7502324Z ##[endgroup]
+2026-08-07T00:00:46.7502792Z ##[group]Runner Image
+2026-08-07T00:00:46.7503367Z Image: ubuntu-24.04
+2026-08-07T00:00:46.7503925Z Version: 20260720.247.2
+2026-08-07T00:00:46.7505007Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+2026-08-07T00:00:46.7506584Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+2026-08-07T00:00:46.7507436Z ##[endgroup]
+2026-08-07T00:00:46.7508395Z ##[group]GITHUB_TOKEN Permissions
+2026-08-07T00:00:46.7510302Z Contents: read
+2026-08-07T00:00:46.7510793Z Metadata: read
+2026-08-07T00:00:46.7511445Z ##[endgroup]
+2026-08-07T00:00:46.7513089Z Secret source: Actions
+2026-08-07T00:00:46.7514051Z Prepare workflow directory
+2026-08-07T00:00:46.7769290Z Prepare all required actions
+2026-08-07T00:00:46.7808834Z Getting action download info
+2026-08-07T00:00:47.0795368Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-08-07T00:00:47.7748453Z Download action repository 'actions/setup-go@v7' (SHA:b7ad1dad31e06c5925ef5d2fc7ad053ef454303e)
+2026-08-07T00:00:49.3954881Z Complete job name: Publish
+2026-08-07T00:00:49.5072081Z ##[group]Run actions/checkout@v7
+2026-08-07T00:00:49.5072583Z with:
+2026-08-07T00:00:49.5072859Z   repository: fabasoad/music-release-publisher
+2026-08-07T00:00:49.5075136Z   token: ***
+2026-08-07T00:00:49.5075370Z   ssh-strict: true
+2026-08-07T00:00:49.5075601Z   ssh-user: git
+2026-08-07T00:00:49.5075834Z   persist-credentials: true
+2026-08-07T00:00:49.5076090Z   clean: true
+2026-08-07T00:00:49.5076320Z   sparse-checkout-cone-mode: true
+2026-08-07T00:00:49.5076582Z   fetch-depth: 1
+2026-08-07T00:00:49.5076807Z   fetch-tags: false
+2026-08-07T00:00:49.5077041Z   show-progress: true
+2026-08-07T00:00:49.5077270Z   lfs: false
+2026-08-07T00:00:49.5077493Z   submodules: false
+2026-08-07T00:00:49.5077726Z   set-safe-directory: true
+2026-08-07T00:00:49.5077984Z   allow-unsafe-pr-checkout: false
+2026-08-07T00:00:49.5078381Z ##[endgroup]
+2026-08-07T00:00:49.5890293Z Syncing repository: fabasoad/music-release-publisher
+2026-08-07T00:00:49.5891502Z ##[group]Getting Git version info
+2026-08-07T00:00:49.5892004Z Working directory is '/home/runner/work/music-release-publisher/music-release-publisher'
+2026-08-07T00:00:49.5892607Z [command]/usr/bin/git version
+2026-08-07T00:00:49.6461791Z git version 2.54.0
+2026-08-07T00:00:49.6482755Z ##[endgroup]
+2026-08-07T00:00:49.6502389Z Temporarily overriding HOME='/home/runner/work/_temp/60d4d109-e89f-4c5f-88b8-e1193a80a489' before making global git config changes
+2026-08-07T00:00:49.6503476Z Adding repository directory to the temporary git global config as a safe directory
+2026-08-07T00:00:49.6507341Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/music-release-publisher/music-release-publisher
+2026-08-07T00:00:49.7102194Z Deleting the contents of '/home/runner/work/music-release-publisher/music-release-publisher'
+2026-08-07T00:00:49.7104955Z ##[group]Determining repository object format
+2026-08-07T00:00:49.7106148Z ##[endgroup]
+2026-08-07T00:00:49.7106727Z ##[group]Initializing the repository
+2026-08-07T00:00:49.7110212Z [command]/usr/bin/git init /home/runner/work/music-release-publisher/music-release-publisher
+2026-08-07T00:00:49.8260369Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-08-07T00:00:49.8267828Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-08-07T00:00:49.8268399Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-08-07T00:00:49.8277564Z hint: call:
+2026-08-07T00:00:49.8278169Z hint:
+2026-08-07T00:00:49.8278877Z hint: 	git config --global init.defaultBranch <name>
+2026-08-07T00:00:49.8279495Z hint:
+2026-08-07T00:00:49.8279981Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-08-07T00:00:49.8280713Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-08-07T00:00:49.8281276Z hint:
+2026-08-07T00:00:49.8281658Z hint: 	git branch -m <name>
+2026-08-07T00:00:49.8282113Z hint:
+2026-08-07T00:00:49.8282773Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-08-07T00:00:49.8284005Z Initialized empty Git repository in /home/runner/work/music-release-publisher/music-release-publisher/.git/
+2026-08-07T00:00:49.8285792Z [command]/usr/bin/git remote add origin https://github.com/fabasoad/music-release-publisher
+2026-08-07T00:00:49.9098439Z ##[endgroup]
+2026-08-07T00:00:49.9099145Z ##[group]Disabling automatic garbage collection
+2026-08-07T00:00:49.9101951Z [command]/usr/bin/git config --local gc.auto 0
+2026-08-07T00:00:50.0061798Z ##[endgroup]
+2026-08-07T00:00:50.0062518Z ##[group]Setting up auth
+2026-08-07T00:00:50.0063060Z Removing SSH command configuration
+2026-08-07T00:00:50.0066661Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-08-07T00:00:50.0100953Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-08-07T00:00:50.0991217Z Removing HTTP extra header
+2026-08-07T00:00:50.0996349Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-08-07T00:00:50.1024810Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-08-07T00:00:50.1209543Z Removing includeIf entries pointing to credentials config files
+2026-08-07T00:00:50.1213684Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-08-07T00:00:50.1242245Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-08-07T00:00:50.1432659Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-08-07T00:00:50.1474089Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git.path /home/runner/work/_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:00:50.1506464Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:00:50.1537266Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:00:50.1599316Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:00:50.2027177Z ##[endgroup]
+2026-08-07T00:00:50.2027691Z ##[group]Fetching the repository
+2026-08-07T00:00:50.2033630Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +73d932a762a5f84ae125d580a21952831f2dac0f:refs/remotes/origin/main
+2026-08-07T00:00:50.7066723Z From https://github.com/fabasoad/music-release-publisher
+2026-08-07T00:00:50.7067814Z  * [new ref]         73d932a762a5f84ae125d580a21952831f2dac0f -> origin/main
+2026-08-07T00:00:50.7092585Z [command]/usr/bin/git branch --list --remote origin/main
+2026-08-07T00:00:50.7116940Z   origin/main
+2026-08-07T00:00:50.7123794Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-08-07T00:00:50.7146588Z 73d932a762a5f84ae125d580a21952831f2dac0f
+2026-08-07T00:00:50.7150073Z ##[endgroup]
+2026-08-07T00:00:50.7150969Z ##[group]Determining the checkout info
+2026-08-07T00:00:50.7151563Z ##[endgroup]
+2026-08-07T00:00:50.7153972Z [command]/usr/bin/git sparse-checkout disable
+2026-08-07T00:00:50.8253528Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-08-07T00:00:50.8479511Z ##[group]Checking out the ref
+2026-08-07T00:00:50.8483522Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-08-07T00:00:51.0832514Z Switched to a new branch 'main'
+2026-08-07T00:00:51.0833075Z branch 'main' set up to track 'origin/main'.
+2026-08-07T00:00:51.0840334Z ##[endgroup]
+2026-08-07T00:00:51.0881398Z [command]/usr/bin/git log -1 --format=%H
+2026-08-07T00:00:51.0906310Z 73d932a762a5f84ae125d580a21952831f2dac0f
+2026-08-07T00:00:51.1112612Z ##[group]Run actions/setup-go@v7
+2026-08-07T00:00:51.1112860Z with:
+2026-08-07T00:00:51.1113052Z   go-version-file: go.mod
+2026-08-07T00:00:51.1113255Z   cache: true
+2026-08-07T00:00:51.1113442Z   cache-dependency-path: go.sum
+2026-08-07T00:00:51.1113665Z   check-latest: false
+2026-08-07T00:00:51.1115767Z   token: ***
+2026-08-07T00:00:51.1115956Z ##[endgroup]
+2026-08-07T00:00:51.1999683Z Setup go version spec 1.26.5
+2026-08-07T00:00:51.2261575Z Found in cache @ /opt/hostedtoolcache/go/1.26.5/x64
+2026-08-07T00:00:51.2262671Z Added go to the path
+2026-08-07T00:00:51.2265397Z Successfully set up Go version 1.26.5
+2026-08-07T00:00:51.4524538Z [command]/opt/hostedtoolcache/go/1.26.5/x64/bin/go env GOMODCACHE
+2026-08-07T00:00:51.4552573Z [command]/opt/hostedtoolcache/go/1.26.5/x64/bin/go env GOCACHE
+2026-08-07T00:00:51.4577143Z /home/runner/go/pkg/mod
+2026-08-07T00:00:51.4594091Z /home/runner/.cache/go-build
+2026-08-07T00:00:51.6781054Z Cache hit for: setup-go-Linux-x64-ubuntu24-go-1.26.5-f57a02aea1457571149006f5f7a5516e75c2b7c5c0230144f311e9dfd6f65b28
+2026-08-07T00:00:52.8867702Z Received 29360128 of 237041255 (12.4%), 28.0 MBs/sec
+2026-08-07T00:00:53.8894124Z Received 171966464 of 237041255 (72.5%), 82.0 MBs/sec
+2026-08-07T00:00:54.3341776Z Received 237041255 of 237041255 (100.0%), 92.4 MBs/sec
+2026-08-07T00:00:54.3342689Z Cache Size: ~226 MB (237041255 B)
+2026-08-07T00:00:54.3395506Z [command]/usr/bin/tar -xf /home/runner/work/_temp/5ffb82fe-b817-4f7f-90a1-fbdfcfc638bf/cache.tzst -P -C /home/runner/work/music-release-publisher/music-release-publisher --use-compress-program unzstd
+2026-08-07T00:00:56.0829553Z Cache restored successfully
+2026-08-07T00:00:56.0933190Z Cache restored from key: setup-go-Linux-x64-ubuntu24-go-1.26.5-f57a02aea1457571149006f5f7a5516e75c2b7c5c0230144f311e9dfd6f65b28
+2026-08-07T00:00:56.0957888Z go version go1.26.5 linux/amd64
+2026-08-07T00:00:56.0958068Z
+2026-08-07T00:00:56.0958347Z ##[group]go env
+2026-08-07T00:00:56.1459943Z AR='ar'
+2026-08-07T00:00:56.1460266Z CC='gcc'
+2026-08-07T00:00:56.1460588Z CGO_CFLAGS='-O2 -g'
+2026-08-07T00:00:56.1460808Z CGO_CPPFLAGS=''
+2026-08-07T00:00:56.1461021Z CGO_CXXFLAGS='-O2 -g'
+2026-08-07T00:00:56.1461222Z CGO_ENABLED='1'
+2026-08-07T00:00:56.1461413Z CGO_FFLAGS='-O2 -g'
+2026-08-07T00:00:56.1461608Z CGO_LDFLAGS='-O2 -g'
+2026-08-07T00:00:56.1461808Z CXX='g++'
+2026-08-07T00:00:56.1461988Z GCCGO='gccgo'
+2026-08-07T00:00:56.1462175Z GO111MODULE=''
+2026-08-07T00:00:56.1462351Z GOAMD64='v1'
+2026-08-07T00:00:56.1462523Z GOARCH='amd64'
+2026-08-07T00:00:56.1462698Z GOAUTH='netrc'
+2026-08-07T00:00:56.1462865Z GOBIN=''
+2026-08-07T00:00:56.1463070Z GOCACHE='/home/runner/.cache/go-build'
+2026-08-07T00:00:56.1463309Z GOCACHEPROG=''
+2026-08-07T00:00:56.1463491Z GODEBUG=''
+2026-08-07T00:00:56.1463688Z GOENV='/home/runner/.config/go/env'
+2026-08-07T00:00:56.1464150Z GOEXE=''
+2026-08-07T00:00:56.1464334Z GOEXPERIMENT=''
+2026-08-07T00:00:56.1464525Z GOFIPS140='off'
+2026-08-07T00:00:56.1464700Z GOFLAGS=''
+2026-08-07T00:00:56.1465265Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build656792117=/tmp/go-build -gno-record-gcc-switches'
+2026-08-07T00:00:56.1465810Z GOHOSTARCH='amd64'
+2026-08-07T00:00:56.1466007Z GOHOSTOS='linux'
+2026-08-07T00:00:56.1466188Z GOINSECURE=''
+2026-08-07T00:00:56.1466508Z GOMOD='/home/runner/work/music-release-publisher/music-release-publisher/go.mod'
+2026-08-07T00:00:56.1466872Z GOMODCACHE='/home/runner/go/pkg/mod'
+2026-08-07T00:00:56.1467242Z GONOPROXY=''
+2026-08-07T00:00:56.1467501Z GONOSUMDB=''
+2026-08-07T00:00:56.1467688Z GOOS='linux'
+2026-08-07T00:00:56.1467872Z GOPATH='/home/runner/go'
+2026-08-07T00:00:56.1468080Z GOPRIVATE=''
+2026-08-07T00:00:56.1468312Z GOPROXY='https://proxy.golang.org,direct'
+2026-08-07T00:00:56.1468592Z GOROOT='/opt/hostedtoolcache/go/1.26.5/x64'
+2026-08-07T00:00:56.1469040Z GOSUMDB='sum.golang.org'
+2026-08-07T00:00:56.1469251Z GOTELEMETRY='local'
+2026-08-07T00:00:56.1469494Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+2026-08-07T00:00:56.1469920Z GOTMPDIR=''
+2026-08-07T00:00:56.1470116Z GOTOOLCHAIN='local'
+2026-08-07T00:00:56.1470391Z GOTOOLDIR='/opt/hostedtoolcache/go/1.26.5/x64/pkg/tool/linux_amd64'
+2026-08-07T00:00:56.1470690Z GOVCS=''
+2026-08-07T00:00:56.1470869Z GOVERSION='go1.26.5'
+2026-08-07T00:00:56.1471078Z GOWORK=''
+2026-08-07T00:00:56.1471269Z PKG_CONFIG='pkg-config'
+2026-08-07T00:00:56.1471398Z
+2026-08-07T00:00:56.1471685Z ##[endgroup]
+2026-08-07T00:00:56.1673305Z ##[group]Run make run
+2026-08-07T00:00:56.1673571Z [36;1mmake run[0m
+2026-08-07T00:00:56.1716010Z shell: /usr/bin/bash -e {0}
+2026-08-07T00:00:56.1716243Z env:
+2026-08-07T00:00:56.1716425Z   GOTOOLCHAIN: local
+2026-08-07T00:00:56.1716637Z   RELEASE_PROVIDER: musicbrainz
+2026-08-07T00:00:56.1717053Z   GEMINI_API_KEY: ***
+2026-08-07T00:00:56.1717268Z   DISCORD_WEBHOOK_URL:
+2026-08-07T00:00:56.1717470Z   TELEGRAM_BOT_TOKEN:
+2026-08-07T00:00:56.1717657Z   TELEGRAM_CHAT_ID:
+2026-08-07T00:00:56.1717866Z   THREADS_CLIENT_ID: ***
+2026-08-07T00:00:56.1718115Z   THREADS_CLIENT_SECRET: ***
+2026-08-07T00:00:56.1718389Z   THREADS_REDIRECT_URI: ***
+2026-08-07T00:00:56.1719654Z   THREADS_ACCESS_TOKEN: ***
+2026-08-07T00:00:56.1719870Z ##[endgroup]
+2026-08-07T00:00:56.2265755Z go mod download
+2026-08-07T00:00:58.3626232Z go build -o music-release-publisher cmd/bot/main.go
+2026-08-07T00:01:07.3232190Z ./music-release-publisher
+2026-08-07T00:01:09.8556515Z 2026/08/07 00:01:09 fetched 2 releases
+2026-08-07T00:01:24.8560521Z 2026/08/07 00:01:24 [Threads] publish failed: threads: create carousel post: threads api error 400 (validation_error): Text too long - Text is limited to 500 characters
+2026-08-07T00:01:24.8645922Z Post job cleanup.
+2026-08-07T00:01:24.9527947Z [command]/opt/hostedtoolcache/go/1.26.5/x64/bin/go env GOMODCACHE
+2026-08-07T00:01:24.9594912Z [command]/opt/hostedtoolcache/go/1.26.5/x64/bin/go env GOCACHE
+2026-08-07T00:01:24.9615747Z /home/runner/go/pkg/mod
+2026-08-07T00:01:24.9636172Z /home/runner/.cache/go-build
+2026-08-07T00:01:24.9640412Z Cache hit occurred on the primary key setup-go-Linux-x64-ubuntu24-go-1.26.5-f57a02aea1457571149006f5f7a5516e75c2b7c5c0230144f311e9dfd6f65b28, not saving cache.
+2026-08-07T00:01:24.9850376Z Post job cleanup.
+2026-08-07T00:01:25.0531516Z [command]/usr/bin/git version
+2026-08-07T00:01:25.0566538Z git version 2.54.0
+2026-08-07T00:01:25.0592838Z Temporarily overriding HOME='/home/runner/work/_temp/b2a08606-32e4-41af-912a-4fce66e01e29' before making global git config changes
+2026-08-07T00:01:25.0594036Z Adding repository directory to the temporary git global config as a safe directory
+2026-08-07T00:01:25.0605209Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/music-release-publisher/music-release-publisher
+2026-08-07T00:01:25.0633216Z Removing SSH command configuration
+2026-08-07T00:01:25.0635858Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-08-07T00:01:25.0665502Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-08-07T00:01:25.0868018Z Removing HTTP extra header
+2026-08-07T00:01:25.0873732Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-08-07T00:01:25.0903369Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-08-07T00:01:25.1106664Z Removing includeIf entries pointing to credentials config files
+2026-08-07T00:01:25.1114765Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-08-07T00:01:25.1140037Z includeif.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git.path
+2026-08-07T00:01:25.1141193Z includeif.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git/worktrees/*.path
+2026-08-07T00:01:25.1142183Z includeif.gitdir:/github/workspace/.git.path
+2026-08-07T00:01:25.1142780Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-08-07T00:01:25.1147085Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git.path
+2026-08-07T00:01:25.1169259Z /home/runner/work/_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:01:25.1179615Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-6ee34376\-ed63\-4b7d\-a109\-17593f43f727\.config
+2026-08-07T00:01:25.1217732Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git/worktrees/*.path
+2026-08-07T00:01:25.1240294Z /home/runner/work/_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:01:25.1249134Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/music-release-publisher/music-release-publisher/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-6ee34376\-ed63\-4b7d\-a109\-17593f43f727\.config
+2026-08-07T00:01:25.1281699Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-08-07T00:01:25.1304309Z /github/runner_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:01:25.1311252Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-6ee34376\-ed63\-4b7d\-a109\-17593f43f727\.config
+2026-08-07T00:01:25.1344262Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-08-07T00:01:25.1365248Z /github/runner_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config
+2026-08-07T00:01:25.1372796Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-6ee34376\-ed63\-4b7d\-a109\-17593f43f727\.config
+2026-08-07T00:01:25.1403901Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-08-07T00:01:25.1588408Z Removing credentials config '/home/runner/work/_temp/git-credentials-6ee34376-ed63-4b7d-a109-17593f43f727.config'
+2026-08-07T00:01:25.1732091Z Cleaning up orphan processes
