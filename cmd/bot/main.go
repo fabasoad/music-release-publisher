@@ -18,7 +18,7 @@ func main() {
 
 	providers := buildReleaseProviders(ctx)
 	if len(providers) == 0 {
-		log.Fatal("no release providers configured — set GEMINI_API_KEY or MUSICBRAINZ_ENABLED=true")
+		log.Fatal("no release providers configured — add at least one to RELEASE_PROVIDERS env var. Possible values are: musicbrainz, gemini")
 	}
 
 	publishers := buildPublishers()
@@ -123,16 +123,20 @@ func dedup(releases []publisher.MusicRelease) []publisher.MusicRelease {
 func buildReleaseProviders(ctx context.Context) []publisher.ReleaseProvider {
 	var providers []publisher.ReleaseProvider
 
-	if key := os.Getenv("GEMINI_API_KEY"); key != "" {
-		p, err := ai.NewCurator(ctx, key)
-		if err != nil {
-			log.Printf("gemini: init failed: %v", err)
+	if strings.Contains(os.Getenv("RELEASE_PROVIDERS"), "gemini") {
+		if key := os.Getenv("GEMINI_API_KEY"); key != "" {
+			p, err := ai.NewCurator(ctx, key)
+			if err != nil {
+				log.Printf("gemini: init failed: %v", err)
+			} else {
+				providers = append(providers, p)
+			}
 		} else {
-			providers = append(providers, p)
+			log.Fatal("gemini: gemini is added as a release provider but GEMINI_API_KEY is missing. Either provide GEMINI_API_KEY env var or remove gemini from RELEASE_PROVIDERS env var")
 		}
 	}
 
-	if os.Getenv("MUSICBRAINZ_ENABLED") == "true" {
+	if strings.Contains(os.Getenv("RELEASE_PROVIDERS"), "musicbrainz") {
 		providers = append(providers, musicbrainz.NewProvider())
 	}
 
