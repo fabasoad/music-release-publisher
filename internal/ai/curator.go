@@ -64,13 +64,14 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 		Items: &genai.Schema{
 			Type: genai.TypeObject,
 			Properties: map[string]*genai.Schema{
-				"artist": {Type: genai.TypeString},
-				"title":  {Type: genai.TypeString},
-				"album":  {Type: genai.TypeString},
-				"type":   {Type: genai.TypeString, Enum: []string{"Album", "EP", "Single", "Broadcast", "Other", "Compilation", "Soundtrack", "Spokenword", "Interview", "Audiobook", "Audio drama", "Live", "Remix", "DJ-mix", "Mixtape/Street"}},
-				"genre":  {Type: genai.TypeString},
+				"artist":  {Type: genai.TypeString},
+				"title":   {Type: genai.TypeString},
+				"album":   {Type: genai.TypeString},
+				"type":    {Type: genai.TypeString, Enum: []string{"Album", "EP", "Single", "Broadcast", "Other", "Compilation", "Soundtrack", "Spokenword", "Interview", "Audiobook", "Audio drama", "Live", "Remix", "DJ-mix", "Mixtape/Street"}},
+				"genre":   {Type: genai.TypeString},
+				"country": {Type: genai.TypeString},
 			},
-			Required: []string{"artist", "title", "album", "type", "genre"},
+			Required: []string{"artist", "title", "album", "type", "genre", "country"},
 		},
 	}
 

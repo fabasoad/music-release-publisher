@@ -44,7 +44,7 @@ func makeResponse(text string) *genai.GenerateContentResponse {
 }
 
 func TestFetchReleases_Success(t *testing.T) {
-	body := `[{"artist":"Burial","title":"Antidawn","type":"EP","genre":"electronic"}]`
+	body := `[{"artist":"Burial","title":"Antidawn","type":"EP","genre":"electronic","country":"GB"}]`
 
 	gen := new(mockContentGenerator)
 	gen.On("GenerateContent", mock.Anything, model, mock.Anything, mock.Anything).
@@ -56,15 +56,15 @@ func TestFetchReleases_Success(t *testing.T) {
 	year := time.Now().UTC().AddDate(0, 0, -1).Format("2006")
 	require.NoError(t, err)
 	assert.Equal(t, []publisher.MusicRelease{
-		{Artist: "Burial", Title: "Antidawn", Type: "EP", Genre: "electronic", Date: year},
+		{Artist: "Burial", Title: "Antidawn", Type: "EP", Genre: "electronic", Country: "GB", Date: year},
 	}, releases)
 	gen.AssertExpectations(t)
 }
 
 func TestFetchReleases_MultipleReleases(t *testing.T) {
 	body := `[
-		{"artist":"Portishead","title":"Third","type":"album","genre":"ambient"},
-		{"artist":"Radiohead","title":"OK Computer","type":"album","genre":"indie"}
+		{"artist":"Portishead","title":"Third","type":"album","genre":"ambient","country":"GB"},
+		{"artist":"Radiohead","title":"OK Computer","type":"album","genre":"indie","country":"GB"}
 	]`
 
 	gen := new(mockContentGenerator)

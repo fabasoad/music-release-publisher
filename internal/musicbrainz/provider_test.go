@@ -28,7 +28,7 @@ func newTestProvider(srv *httptest.Server) *Provider {
 	}
 }
 
-func mbReleaseFull(id, status, language, country string, credits []mbArtistCredit, tags []struct {
+func mbReleaseFull(id, status, country string, credits []mbArtistCredit, tags []struct {
 	Count int    `json:"count"`
 	Name  string `json:"name"`
 }) mbRelease {
@@ -40,14 +40,13 @@ func mbReleaseFull(id, status, language, country string, credits []mbArtistCredi
 		ArtistCredit: credits,
 		Tags:         tags,
 	}
-	r.TextRepresentation.Language = language
 	r.Country = country
 	r.ReleaseGroup.PrimaryType = "Album"
 	return r
 }
 
 func officialRelease(id string) mbRelease {
-	return mbReleaseFull(id, "Official", "eng", "US",
+	return mbReleaseFull(id, "Official", "US",
 		[]mbArtistCredit{{Artist: mbArtist{Name: "Artist"}}},
 		[]struct {
 			Count int    `json:"count"`
@@ -183,6 +182,7 @@ func TestFetchReleases_Success(t *testing.T) {
 	assert.Equal(t, "Test Album", releases[0].Title)
 	assert.Equal(t, "Test Album", releases[0].Album)
 	assert.Equal(t, "Album", releases[0].Type)
+	assert.Equal(t, "US", releases[0].Country)
 	assert.Equal(t, "https://coverartarchive.org/release/abc-123/front", releases[0].CoverURL)
 }
 
@@ -231,8 +231,8 @@ func TestFetchReleases_SkipsNoArtistCredit(t *testing.T) {
 	assert.Empty(t, releases)
 }
 
-func TestFetchReleases_SkipsRussianLanguage(t *testing.T) {
-	r := mbReleaseFull("id", "Official", "rus", "DE",
+func TestFetchReleases_PopulatesCountryFromRU(t *testing.T) {
+	r := mbReleaseFull("id", "Official", "RU",
 		[]mbArtistCredit{{Artist: mbArtist{Name: "Artist"}}}, makeTags("rock"))
 
 	srv := serveJSON(t, mbResponse{Releases: []mbRelease{r}})
@@ -240,23 +240,12 @@ func TestFetchReleases_SkipsRussianLanguage(t *testing.T) {
 
 	releases, err := newTestProvider(srv).FetchReleases(context.Background())
 	require.NoError(t, err)
-	assert.Empty(t, releases)
-}
-
-func TestFetchReleases_SkipsRussianCountry(t *testing.T) {
-	r := mbReleaseFull("id", "Official", "eng", "RU",
-		[]mbArtistCredit{{Artist: mbArtist{Name: "Artist"}}}, makeTags("rock"))
-
-	srv := serveJSON(t, mbResponse{Releases: []mbRelease{r}})
-	defer srv.Close()
-
-	releases, err := newTestProvider(srv).FetchReleases(context.Background())
-	require.NoError(t, err)
-	assert.Empty(t, releases)
+	require.Len(t, releases, 1)
+	assert.Equal(t, "RU", releases[0].Country)
 }
 
 func TestFetchReleases_SkipsNonOfficialStatus(t *testing.T) {
-	r := mbReleaseFull("id", "Bootleg", "eng", "US",
+	r := mbReleaseFull("id", "Bootleg", "US",
 		[]mbArtistCredit{{Artist: mbArtist{Name: "Artist"}}}, makeTags("rock"))
 
 	srv := serveJSON(t, mbResponse{Releases: []mbRelease{r}})
@@ -268,7 +257,7 @@ func TestFetchReleases_SkipsNonOfficialStatus(t *testing.T) {
 }
 
 func TestFetchReleases_PassesEnglishNonRu(t *testing.T) {
-	r := mbReleaseFull("id", "Official", "eng", "DE",
+	r := mbReleaseFull("id", "Official", "DE",
 		[]mbArtistCredit{{Artist: mbArtist{Name: "Artist"}}}, makeTags("rock"))
 
 	srv := serveJSON(t, mbResponse{Releases: []mbRelease{r}})
@@ -292,7 +281,7 @@ func TestFetchReleases_SetsUserAgent(t *testing.T) {
 	}))
 	defer srv.Close()
 
-	_ , err := newTestProvider(srv).FetchReleases(context.Background())
+	_, err := newTestProvider(srv).FetchReleases(context.Background())
 	require.NoError(t, err)
 	assert.Equal(t, userAgent, gotUA)
 }

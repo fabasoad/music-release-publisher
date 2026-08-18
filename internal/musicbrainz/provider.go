@@ -49,7 +49,7 @@ type mbRelease struct {
 	Barcode        string           `json:"barcode"`
 	TrackCount     int              `json:"track-count"`
 	ArtistCredit   []mbArtistCredit `json:"artist-credit"`
-	ReleaseGroup struct {
+	ReleaseGroup   struct {
 		ID            string `json:"id"`
 		TypeID        string `json:"type-id"`
 		PrimaryTypeID string `json:"primary-type-id"`
@@ -166,8 +166,8 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 
 	var releases []publisher.MusicRelease
 	for _, r := range mbResp.Releases {
-		// skip releases with no credited artist, Russian-language releases, releases from Russia, or non-official releases
-		if len(r.ArtistCredit) == 0 || r.TextRepresentation.Language == "rus" || r.Country == "RU" || r.Status != "Official" {
+		// skip releases with no credited artist, Russian-language releases, or non-official releases
+		if len(r.ArtistCredit) == 0 || r.Status != "Official" {
 			continue
 		}
 		releases = append(releases, publisher.MusicRelease{
@@ -176,6 +176,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 			Album:    r.Title,
 			Type:     r.ReleaseGroup.PrimaryType,
 			Genre:    joinGenres(r.Tags),
+			Country:  r.Country,
 			Date:     r.Date,
 			CoverURL: fmt.Sprintf("https://coverartarchive.org/release/%s/front", r.ID),
 		})

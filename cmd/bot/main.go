@@ -47,6 +47,9 @@ func main() {
 		releases = enrich(ctx, releases, discogs.NewClient(token))
 	}
 
+	releases = filterByCountry(releases, "Russia", "RU")
+	log.Printf("total releases after country filter: %d", len(releases))
+
 	releases = filterByDate(releases, targetDate)
 	log.Printf("total releases after date filter: %d", len(releases))
 
@@ -92,6 +95,24 @@ func enrich(ctx context.Context, releases []publisher.MusicRelease, dc *discogs.
 		out[i] = r
 	}
 	log.Printf("total enriched releases: %d/%d", totalEnriched, len(releases))
+	return out
+}
+
+// filterByCountry drops releases whose Country matches any of the excluded countries (case-insensitive).
+func filterByCountry(releases []publisher.MusicRelease, excluded ...string) []publisher.MusicRelease {
+	out := releases[:0:0]
+	for _, r := range releases {
+		drop := false
+		for _, c := range excluded {
+			if strings.EqualFold(r.Country, c) {
+				drop = true
+				break
+			}
+		}
+		if !drop {
+			out = append(out, r)
+		}
+	}
 	return out
 }
 
