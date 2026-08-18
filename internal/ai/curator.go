@@ -79,5 +79,14 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 	if err := json.Unmarshal([]byte(result.Text()), &releases); err != nil {
 		return nil, fmt.Errorf("ai: unmarshal releases: %w", err)
 	}
+
+	// AI date accuracy cannot be trusted beyond the year, so force a partial
+	// date of just the target year. The pipeline will verify the exact date via
+	// Discogs before including these releases.
+	year := now.AddDate(0, 0, -1).Format("2006")
+	for i := range releases {
+		releases[i].Date = year
+	}
+
 	return releases, nil
 }

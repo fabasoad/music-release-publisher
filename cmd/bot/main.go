@@ -4,8 +4,11 @@ import (
 	"context"
 	"log"
 	"os"
+	"strings"
+	"time"
 
 	"music-release-publisher/internal/ai"
+	"music-release-publisher/internal/discogs"
 	"music-release-publisher/internal/musicbrainz"
 	"music-release-publisher/internal/publisher"
 )
@@ -13,24 +16,43 @@ import (
 func main() {
 	ctx := context.Background()
 
-	provider := buildReleaseProvider(ctx)
+	providers := buildReleaseProviders(ctx)
+	if len(providers) == 0 {
+		log.Fatal("no release providers configured — set GEMINI_API_KEY or MUSICBRAINZ_ENABLED=true")
+	}
 
 	publishers := buildPublishers()
 	if len(publishers) == 0 {
 		log.Fatal("no publishers configured — set at least one platform's env vars")
 	}
 
-	releases, err := provider.FetchReleases(ctx)
-	if err != nil {
-		log.Fatalf("fetch releases: %v", err)
+	var dc *discogs.Client
+	if token := os.Getenv("DISCOGS_TOKEN"); token != "" {
+		dc = discogs.NewClient(token)
 	}
-	log.Printf("fetched %d releases", len(releases))
+
+	targetDate := time.Now().UTC().AddDate(0, 0, -1).Format("2006-01-02")
+
+	var releases []publisher.MusicRelease
+	for _, rp := range providers {
+		r, err := rp.FetchReleases(ctx)
+		if err != nil {
+			log.Printf("fetch releases: %v", err)
+			continue
+		}
+		log.Printf("fetched %d releases from %T", len(r), rp)
+		releases = append(releases, r...)
+	}
+
+	releases = dedup(releases)
+	log.Printf("total releases after dedup: %d", len(releases))
+
+	releases = filterByDate(ctx, releases, targetDate, dc)
+	log.Printf("total releases after date filter: %d", len(releases))
 
 	chunkSize := 4
 	for i := 0; i < len(releases); i += chunkSize {
-		// Ensure the index does not go out of bounds on the last chunk
 		end := min(i+chunkSize, len(releases))
-
 		chunk := releases[i:end]
 
 		for _, p := range publishers {
@@ -43,24 +65,68 @@ func main() {
 	}
 }
 
-func buildReleaseProvider(ctx context.Context) publisher.ReleaseProvider {
-	name := os.Getenv("RELEASE_PROVIDER")
-	if name == "" {
-		name = "gemini"
-	}
-	switch name {
-	case "gemini":
-		p, err := ai.NewCurator(ctx, mustEnv("GEMINI_API_KEY"))
-		if err != nil {
-			log.Fatalf("init gemini provider: %v", err)
+// filterByDate partitions releases into exact matches (Date == targetDate) and
+// partial matches (Date is a non-empty prefix of targetDate, e.g. "2026" or
+// "2026-08"). Exact matches pass through directly. Partial matches are verified
+// against Discogs; when no Discogs client is configured they are dropped.
+// Releases with an empty or unrelated Date are dropped unconditionally.
+func filterByDate(ctx context.Context, releases []publisher.MusicRelease, targetDate string, dc *discogs.Client) []publisher.MusicRelease {
+	out := releases[:0:0]
+	for _, r := range releases {
+		switch {
+		case r.Date == targetDate:
+			out = append(out, r)
+		case r.Date != "" && strings.HasPrefix(targetDate, r.Date):
+			if dc == nil {
+				log.Printf("skipping partial-date release %q by %q (no Discogs client)", r.Title, r.Artist)
+				continue
+			}
+			info, err := dc.VerifyReleaseDate(ctx, r.Title, r.Artist, targetDate)
+			if err != nil {
+				log.Printf("discogs verify %q by %q: %v", r.Title, r.Artist, err)
+			}
+			if info != nil {
+				r.Date = targetDate
+				if r.CoverURL == "" && info.CoverURL != "" {
+					r.CoverURL = info.CoverURL
+				}
+				out = append(out, r)
+			}
 		}
-		return p
-	case "musicbrainz":
-		return musicbrainz.NewProvider()
-	default:
-		log.Fatalf("unknown RELEASE_PROVIDER %q", name)
-		return nil
 	}
+	return out
+}
+
+func dedup(releases []publisher.MusicRelease) []publisher.MusicRelease {
+	seen := make(map[string]struct{}, len(releases))
+	out := releases[:0:0]
+	for _, r := range releases {
+		key := strings.ToLower(strings.TrimSpace(r.Artist)) + "\x00" + strings.ToLower(strings.TrimSpace(r.Title))
+		if _, ok := seen[key]; !ok {
+			seen[key] = struct{}{}
+			out = append(out, r)
+		}
+	}
+	return out
+}
+
+func buildReleaseProviders(ctx context.Context) []publisher.ReleaseProvider {
+	var providers []publisher.ReleaseProvider
+
+	if key := os.Getenv("GEMINI_API_KEY"); key != "" {
+		p, err := ai.NewCurator(ctx, key)
+		if err != nil {
+			log.Printf("gemini: init failed: %v", err)
+		} else {
+			providers = append(providers, p)
+		}
+	}
+
+	if os.Getenv("MUSICBRAINZ_ENABLED") == "true" {
+		providers = append(providers, musicbrainz.NewProvider())
+	}
+
+	return providers
 }
 
 func buildPublishers() []publisher.Publisher {
@@ -88,12 +154,4 @@ func buildPublishers() []publisher.Publisher {
 	}
 
 	return publishers
-}
-
-func mustEnv(key string) string {
-	v := os.Getenv(key)
-	if v == "" {
-		log.Fatalf("required env var %s is not set", key)
-	}
-	return v
 }
