@@ -25,7 +25,6 @@ jobs:
 
       - name: Run
         env:
-          RELEASE_PROVIDER: "${{ vars.RELEASE_PROVIDER }}"
           GEMINI_API_KEY: "${{ secrets.GEMINI_API_KEY }}"
           MUSICBRAINZ_ENABLED: "true"
           DISCOGS_TOKEN: "${{ secrets.DISCOGS_TOKEN }}"

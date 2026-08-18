@@ -44,20 +44,20 @@ func NewClient(token string) *Client {
 	}
 }
 
-// ReleaseInfo holds the Discogs-verified details returned by VerifyReleaseDate.
+// ReleaseInfo holds the Discogs details for a release.
 type ReleaseInfo struct {
+	Date     string
 	CoverURL string
 }
 
-// VerifyReleaseDate checks whether Discogs can confirm that the release with
-// the given title and artist was published on targetDate (YYYY-MM-DD). It
+// FetchReleaseInfo searches Discogs for the release with the given title and
+// artist and returns its exact release date and primary cover image URL. It
 // performs two requests:
 //  1. Search for the release to obtain its resource URL.
 //  2. Fetch the release detail to read the full "released" date and cover image.
 //
-// Returns (nil, nil) when no matching release is found or when the Discogs date
-// does not equal targetDate.
-func (c *Client) VerifyReleaseDate(ctx context.Context, title, artist, targetDate string) (*ReleaseInfo, error) {
+// Returns (nil, nil) when no matching release is found.
+func (c *Client) FetchReleaseInfo(ctx context.Context, title, artist string) (*ReleaseInfo, error) {
 	resourceURL, err := c.searchResourceURL(ctx, title, artist)
 	if err != nil {
 		return nil, err
@@ -71,11 +71,7 @@ func (c *Client) VerifyReleaseDate(ctx context.Context, title, artist, targetDat
 		return nil, err
 	}
 
-	if r.Released != targetDate {
-		return nil, nil
-	}
-
-	info := &ReleaseInfo{}
+	info := &ReleaseInfo{Date: r.Released}
 	for _, img := range r.Images {
 		if img.Type == "primary" && img.URI != "" {
 			info.CoverURL = img.URI

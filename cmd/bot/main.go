@@ -26,11 +26,6 @@ func main() {
 		log.Fatal("no publishers configured — set at least one platform's env vars")
 	}
 
-	var dc *discogs.Client
-	if token := os.Getenv("DISCOGS_TOKEN"); token != "" {
-		dc = discogs.NewClient(token)
-	}
-
 	targetDate := time.Now().UTC().AddDate(0, 0, -1).Format("2006-01-02")
 
 	var releases []publisher.MusicRelease
@@ -43,11 +38,16 @@ func main() {
 		log.Printf("fetched %d releases from %T", len(r), rp)
 		releases = append(releases, r...)
 	}
+	log.Printf("total releases: %d", len(releases))
 
 	releases = dedup(releases)
 	log.Printf("total releases after dedup: %d", len(releases))
 
-	releases = filterByDate(ctx, releases, targetDate, dc)
+	if token := os.Getenv("DISCOGS_TOKEN"); token != "" {
+		releases = enrich(ctx, releases, discogs.NewClient(token))
+	}
+
+	releases = filterByDate(releases, targetDate)
 	log.Printf("total releases after date filter: %d", len(releases))
 
 	chunkSize := 4
@@ -65,33 +65,43 @@ func main() {
 	}
 }
 
-// filterByDate partitions releases into exact matches (Date == targetDate) and
-// partial matches (Date is a non-empty prefix of targetDate, e.g. "2026" or
-// "2026-08"). Exact matches pass through directly. Partial matches are verified
-// against Discogs; when no Discogs client is configured they are dropped.
-// Releases with an empty or unrelated Date are dropped unconditionally.
-func filterByDate(ctx context.Context, releases []publisher.MusicRelease, targetDate string, dc *discogs.Client) []publisher.MusicRelease {
+// enrich queries Discogs for every release and, when a match is found, overwrites
+// the Date with the exact Discogs date and sets CoverURL if not already set.
+func enrich(ctx context.Context, releases []publisher.MusicRelease, dc *discogs.Client) []publisher.MusicRelease {
+	out := make([]publisher.MusicRelease, len(releases))
+	totalEnriched := 0
+	for i, r := range releases {
+		info, err := dc.FetchReleaseInfo(ctx, r.Title, r.Artist)
+		if err != nil {
+			log.Printf("discogs enrich %q by %q: %v", r.Title, r.Artist, err)
+		}
+		if info != nil {
+			enriched := false
+			if info.Date != "" {
+				r.Date = info.Date
+				enriched = true
+			}
+			if r.CoverURL == "" && info.CoverURL != "" {
+				r.CoverURL = info.CoverURL
+				enriched = true
+			}
+			if enriched {
+				totalEnriched++
+			}
+		}
+		out[i] = r
+	}
+	log.Printf("total enriched releases: %d/%d", totalEnriched, len(releases))
+	return out
+}
+
+// filterByDate keeps only releases whose Date exactly matches targetDate.
+// Releases with a missing, partial, or non-matching date are dropped.
+func filterByDate(releases []publisher.MusicRelease, targetDate string) []publisher.MusicRelease {
 	out := releases[:0:0]
 	for _, r := range releases {
-		switch {
-		case r.Date == targetDate:
+		if r.Date == targetDate {
 			out = append(out, r)
-		case r.Date != "" && strings.HasPrefix(targetDate, r.Date):
-			if dc == nil {
-				log.Printf("skipping partial-date release %q by %q (no Discogs client)", r.Title, r.Artist)
-				continue
-			}
-			info, err := dc.VerifyReleaseDate(ctx, r.Title, r.Artist, targetDate)
-			if err != nil {
-				log.Printf("discogs verify %q by %q: %v", r.Title, r.Artist, err)
-			}
-			if info != nil {
-				r.Date = targetDate
-				if r.CoverURL == "" && info.CoverURL != "" {
-					r.CoverURL = info.CoverURL
-				}
-				out = append(out, r)
-			}
 		}
 	}
 	return out
