@@ -22,29 +22,33 @@ const (
 	userAgent = "music-release-publisher/1.0.0-beta ( fabasoad@gmail.com )"
 )
 
-type mbRelease struct {
+type mbArtist struct {
 	ID             string `json:"id"`
-	Score          int    `json:"score"`
-	Count          int    `json:"count"`
-	StatusID       string `json:"status-id"`
-	Status         string `json:"status"`
-	PackagingID    string `json:"packaging-id"`
-	Packaging      string `json:"packaging"`
-	ArtistCreditID string `json:"artist-credit-id"`
-	Title          string `json:"title"`
-	Date           string `json:"date"`
-	Country        string `json:"country"`
-	Barcode        string `json:"barcode"`
-	TrackCount     int    `json:"track-count"`
-	ArtistCredit   []struct {
-		Name   string `json:"name"`
-		Artist struct {
-			ID             string `json:"id"`
-			Name           string `json:"name"`
-			SortName       string `json:"sort-name"`
-			Disambiguation string `json:"disambiguation"`
-		} `json:"artist"`
-	} `json:"artist-credit"`
+	Name           string `json:"name"`
+	SortName       string `json:"sort-name"`
+	Disambiguation string `json:"disambiguation"`
+}
+
+type mbArtistCredit struct {
+	Name   string   `json:"name"`
+	Artist mbArtist `json:"artist"`
+}
+
+type mbRelease struct {
+	ID             string           `json:"id"`
+	Score          int              `json:"score"`
+	Count          int              `json:"count"`
+	StatusID       string           `json:"status-id"`
+	Status         string           `json:"status"`
+	PackagingID    string           `json:"packaging-id"`
+	Packaging      string           `json:"packaging"`
+	ArtistCreditID string           `json:"artist-credit-id"`
+	Title          string           `json:"title"`
+	Date           string           `json:"date"`
+	Country        string           `json:"country"`
+	Barcode        string           `json:"barcode"`
+	TrackCount     int              `json:"track-count"`
+	ArtistCredit   []mbArtistCredit `json:"artist-credit"`
 	ReleaseGroup struct {
 		ID            string `json:"id"`
 		TypeID        string `json:"type-id"`
@@ -89,11 +93,17 @@ type mbResponse struct {
 }
 
 type Provider struct {
-	client *http.Client
+	client  *http.Client
+	baseURL string
+	sleep   func(time.Duration) <-chan time.Time
 }
 
 func NewProvider() *Provider {
-	return &Provider{client: &http.Client{Timeout: 30 * time.Second}}
+	return &Provider{
+		client:  &http.Client{Timeout: 30 * time.Second},
+		baseURL: baseURL,
+		sleep:   time.After,
+	}
 }
 
 const maxRetries = 3
@@ -107,7 +117,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 	}
 	query := fmt.Sprintf("date:%s AND (%s)", date, strings.Join(tagParts, " OR "))
 
-	reqURL := fmt.Sprintf("%s/release?query=%s&fmt=json", baseURL, url.QueryEscape(query))
+	reqURL := fmt.Sprintf("%s/release?query=%s&fmt=json", p.baseURL, url.QueryEscape(query))
 
 	var resp *http.Response
 	for attempt := range maxRetries {
@@ -133,7 +143,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 			select {
 			case <-ctx.Done():
 				return nil, ctx.Err()
-			case <-time.After(time.Duration(1<<uint(attempt)) * time.Second):
+			case <-p.sleep(time.Duration(1<<uint(attempt)) * time.Second):
 			}
 		}
 	}
@@ -156,20 +166,35 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 
 	var releases []publisher.MusicRelease
 	for _, r := range mbResp.Releases {
-		// skip releases with no credited artist, wrong release date, Russian-language releases, releases from Russia, or non-official releases
-		if len(r.ArtistCredit) == 0 || r.Date != date || r.TextRepresentation.Language == "rus" || r.Country == "RU" || r.Status != "Official" {
+		// skip releases with no credited artist, Russian-language releases, releases from Russia, or non-official releases
+		if len(r.ArtistCredit) == 0 || r.TextRepresentation.Language == "rus" || r.Country == "RU" || r.Status != "Official" {
 			continue
 		}
 		releases = append(releases, publisher.MusicRelease{
-			Artist:   r.ArtistCredit[0].Artist.Name,
+			Artist:   joinArtists(r.ArtistCredit),
 			Title:    r.Title,
 			Album:    r.Title,
 			Type:     r.ReleaseGroup.PrimaryType,
 			Genre:    joinGenres(r.Tags),
+			Date:     r.Date,
 			CoverURL: fmt.Sprintf("https://coverartarchive.org/release/%s/front", r.ID),
 		})
 	}
 	return releases, nil
+}
+
+func joinArtists(credits []mbArtistCredit) string {
+	parts := make([]string, 0, len(credits))
+	for _, c := range credits {
+		name := c.Artist.Name
+		if name == "" {
+			name = c.Name
+		}
+		if name != "" {
+			parts = append(parts, name)
+		}
+	}
+	return strings.Join(parts, " & ")
 }
 
 func joinGenres(tags []struct {

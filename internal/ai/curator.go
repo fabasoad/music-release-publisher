@@ -1,10 +1,13 @@
 package ai
 
 import (
+	"bytes"
 	"context"
+	_ "embed"
 	"encoding/json"
 	"fmt"
 	"strings"
+	"text/template"
 	"time"
 
 	"music-release-publisher/internal/genres"
@@ -12,6 +15,11 @@ import (
 
 	"google.golang.org/genai"
 )
+
+//go:embed prompt.tmpl
+var promptTmpl string
+
+var prompt = template.Must(template.New("prompt").Parse(promptTmpl))
 
 const model = "gemini-2.5-flash-lite"
 
@@ -21,34 +29,35 @@ type contentGenerator interface {
 
 type Curator struct {
 	models contentGenerator
+	tmpl   *template.Template
 }
 
-func NewCurator(ctx context.Context, apiKey string) (*Curator, error) {
-	client, err := genai.NewClient(ctx, &genai.ClientConfig{
+// newClientFn is the factory for the underlying genai client. Replaced in tests.
+var newClientFn = func(ctx context.Context, apiKey string) (*genai.Client, error) {
+	return genai.NewClient(ctx, &genai.ClientConfig{
 		APIKey:  apiKey,
 		Backend: genai.BackendGeminiAPI,
 	})
+}
+
+func NewCurator(ctx context.Context, apiKey string) (*Curator, error) {
+	client, err := newClientFn(ctx, apiKey)
 	if err != nil {
 		return nil, fmt.Errorf("ai: create client: %w", err)
 	}
-	return &Curator{models: client.Models}, nil
+	return &Curator{models: client.Models, tmpl: prompt}, nil
 }
 
 func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, error) {
 	now := time.Now().UTC()
-	start := now.AddDate(0, 0, -1).Format("2006/01/02")
-	end := now.Format("2006/01/02")
-	prompt := fmt.Sprintf(
-		"List notable new music releases between %s 00:00 UTC and %s 00:00 UTC"+
-			" including but not limited to the following genres: %v. Return only real,"+
-			" verifiable releases. For each release include the artist name,"+
-			" release title, release type, album title"+
-			" and release genre. If no new music releases were released in that time range"+
-			" — do not return older releases.",
-		start,
-		end,
-		strings.Join(genres.All, ", "),
-	)
+	var buf bytes.Buffer
+	if err := c.tmpl.Execute(&buf, map[string]string{
+		"Start":  now.AddDate(0, 0, -1).Format("2006/01/02"),
+		"End":    now.Format("2006/01/02"),
+		"Genres": strings.Join(genres.All, ", "),
+	}); err != nil {
+		return nil, fmt.Errorf("ai: render prompt: %w", err)
+	}
 
 	schema := &genai.Schema{
 		Type: genai.TypeArray,
@@ -70,7 +79,7 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 		ResponseSchema:   schema,
 	}
 
-	result, err := c.models.GenerateContent(ctx, model, genai.Text(prompt), config)
+	result, err := c.models.GenerateContent(ctx, model, genai.Text(buf.String()), config)
 	if err != nil {
 		return nil, fmt.Errorf("ai: generate content: %w", err)
 	}
@@ -79,5 +88,14 @@ func (c *Curator) FetchReleases(ctx context.Context) ([]publisher.MusicRelease, 
 	if err := json.Unmarshal([]byte(result.Text()), &releases); err != nil {
 		return nil, fmt.Errorf("ai: unmarshal releases: %w", err)
 	}
+
+	// AI date accuracy cannot be trusted beyond the year, so force a partial
+	// date of just the target year. The pipeline will verify the exact date via
+	// Discogs before including these releases.
+	year := now.AddDate(0, 0, -1).Format("2006")
+	for i := range releases {
+		releases[i].Date = year
+	}
+
 	return releases, nil
 }

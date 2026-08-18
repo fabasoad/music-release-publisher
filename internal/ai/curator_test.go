@@ -3,7 +3,10 @@ package ai
 import (
 	"context"
 	"errors"
+	"fmt"
 	"testing"
+	"text/template"
+	"time"
 
 	"music-release-publisher/internal/publisher"
 
@@ -47,12 +50,13 @@ func TestFetchReleases_Success(t *testing.T) {
 	gen.On("GenerateContent", mock.Anything, model, mock.Anything, mock.Anything).
 		Return(makeResponse(body), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	releases, err := c.FetchReleases(context.Background())
 
+	year := time.Now().UTC().AddDate(0, 0, -1).Format("2006")
 	require.NoError(t, err)
 	assert.Equal(t, []publisher.MusicRelease{
-		{Artist: "Burial", Title: "Antidawn", Type: "EP", Genre: "electronic"},
+		{Artist: "Burial", Title: "Antidawn", Type: "EP", Genre: "electronic", Date: year},
 	}, releases)
 	gen.AssertExpectations(t)
 }
@@ -67,7 +71,7 @@ func TestFetchReleases_MultipleReleases(t *testing.T) {
 	gen.On("GenerateContent", mock.Anything, model, mock.Anything, mock.Anything).
 		Return(makeResponse(body), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	releases, err := c.FetchReleases(context.Background())
 
 	require.NoError(t, err)
@@ -82,7 +86,7 @@ func TestFetchReleases_EmptyList(t *testing.T) {
 	gen.On("GenerateContent", mock.Anything, model, mock.Anything, mock.Anything).
 		Return(makeResponse(`[]`), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	releases, err := c.FetchReleases(context.Background())
 
 	require.NoError(t, err)
@@ -95,7 +99,7 @@ func TestFetchReleases_GenerateContentError(t *testing.T) {
 	gen.On("GenerateContent", mock.Anything, model, mock.Anything, mock.Anything).
 		Return(nil, errors.New("network error"))
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	releases, err := c.FetchReleases(context.Background())
 
 	require.Error(t, err)
@@ -110,7 +114,7 @@ func TestFetchReleases_InvalidJSON(t *testing.T) {
 	gen.On("GenerateContent", mock.Anything, model, mock.Anything, mock.Anything).
 		Return(makeResponse(`not valid json`), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	releases, err := c.FetchReleases(context.Background())
 
 	require.Error(t, err)
@@ -124,7 +128,7 @@ func TestFetchReleases_UsesCorrectModel(t *testing.T) {
 	gen.On("GenerateContent", mock.Anything, "gemini-2.5-flash-lite", mock.Anything, mock.Anything).
 		Return(makeResponse(`[]`), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	_, err := c.FetchReleases(context.Background())
 
 	require.NoError(t, err)
@@ -139,7 +143,7 @@ func TestFetchReleases_ConfigHasJSONMimeType(t *testing.T) {
 		}),
 	).Return(makeResponse(`[]`), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	_, err := c.FetchReleases(context.Background())
 
 	require.NoError(t, err)
@@ -155,9 +159,44 @@ func TestFetchReleases_ConfigHasResponseSchema(t *testing.T) {
 		}),
 	).Return(makeResponse(`[]`), nil)
 
-	c := &Curator{models: gen}
+	c := &Curator{models: gen, tmpl: prompt}
 	_, err := c.FetchReleases(context.Background())
 
 	require.NoError(t, err)
 	gen.AssertExpectations(t)
+}
+
+func TestFetchReleases_TemplateExecuteError(t *testing.T) {
+	// Template that always fails execution via a bad function call.
+	badTmpl := template.Must(template.New("bad").Funcs(template.FuncMap{
+		"fail": func() (string, error) { return "", fmt.Errorf("template exec error") },
+	}).Parse(`{{fail}}`))
+
+	gen := new(mockContentGenerator)
+	c := &Curator{models: gen, tmpl: badTmpl}
+	_, err := c.FetchReleases(context.Background())
+
+	require.Error(t, err)
+	assert.ErrorContains(t, err, "ai: render prompt")
+}
+
+func TestNewCurator_Success(t *testing.T) {
+	c, err := NewCurator(context.Background(), "fake-api-key")
+	require.NoError(t, err)
+	assert.NotNil(t, c)
+	assert.NotNil(t, c.tmpl)
+}
+
+func TestNewCurator_ClientError(t *testing.T) {
+	orig := newClientFn
+	newClientFn = func(_ context.Context, _ string) (*genai.Client, error) {
+		return nil, fmt.Errorf("injected client error")
+	}
+	defer func() { newClientFn = orig }()
+
+	c, err := NewCurator(context.Background(), "any-key")
+	require.Error(t, err)
+	assert.ErrorContains(t, err, "ai: create client")
+	assert.ErrorContains(t, err, "injected client error")
+	assert.Nil(t, c)
 }

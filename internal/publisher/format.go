@@ -7,13 +7,13 @@ import (
 )
 
 func formatMessageSingle(release MusicRelease) string {
-	title := fmt.Sprintf("🔥 New %s Release 🔥", time.Now().AddDate(0, 0, -1).Weekday().String())
+	title := fmt.Sprintf("🔥 New %s Release 🔥", time.Now().AddDate(0, 0, -1).Format("January 2"))
 	body := fmt.Sprintf("[%s] %s — %s (%s)", release.Type, release.Artist, release.Title, release.Genre)
 	return fmt.Sprintf("%s\n\n%s", title, body)
 }
 
 func formatMessageMultiple(releases []MusicRelease) string {
-	title := fmt.Sprintf("🔥 New %s Releases 🔥", time.Now().AddDate(0, 0, -1).Weekday().String())
+	title := fmt.Sprintf("🔥 New %s Releases 🔥", time.Now().AddDate(0, 0, -1).Format("January 2"))
 	var body []string
 	for _, r := range releases {
 		body = append(body, fmt.Sprintf("- [%s] %s — %s (%s)", r.Type, r.Artist, r.Title, r.Genre))

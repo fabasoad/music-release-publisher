@@ -25,7 +25,7 @@ lint:
 
 .PHONY: test
 test:
-	go tool oss.indeed.com/go/go-opine test -coverprofile=coverage.out -min-coverage 5
+	go tool oss.indeed.com/go/go-opine test -coverprofile=coverage.out -min-coverage 20
 
 .PHONY: test/console
 test/console: test
