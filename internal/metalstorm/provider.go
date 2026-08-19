@@ -15,12 +15,14 @@ import (
 type Provider struct {
 	client  *http.Client
 	baseURL string
+	cookie  string
 }
 
-func NewProvider() *Provider {
+func NewProvider(cookie string) *Provider {
 	return &Provider{
 		client:  &http.Client{Timeout: 30 * time.Second},
 		baseURL: "https://metalstorm.net",
+		cookie:  cookie,
 	}
 }
 
@@ -33,7 +35,7 @@ func (p *Provider) FetchReleases(ctx context.Context) ([]publisher.MusicRelease,
 	// Standard browser headers to avoid basic blocks
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36")
 	req.Header.Set("Accept", "text/html,application/xhtml+xml")
-	req.Header.Set("Cookie", "ms_id=6f7f5c29ee2e95f5aea03fd9e522b00a; ms_settings=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e; cf_clearance=u7bnVa54gA8GHjC.9qE6Z2jAl3jcI5HHbesPzGUrTSs-1787098884-1.2.1.1-8KLGUtTaPR5IgQ0zSb9PP0Rl0cRxd_i4t0rLO1oVD0YJSd4VTPJ.axQdlqSIwLnj_9pT_iu10KAJ7U0Gn8M1ZdsGNq6g7ONPBuWWaaEhDyATPedK0gxFdGsUT5lHPagJpssTUfB8nfz5drDHetXN4AHUWQkrAJTmJt0SOD_JQdfvi0QTfWP2D7sl6Dk3kjj5HBxQVdCjB4TIEbOqVLLrGKvMmBmg.mLit37CPWCx7Ib4psPMQbLcbgbxGP1KIRJahtBDFQ1GanVXIZ8QmKqHDDdQZxRMuaPhBgIxYKlbmj5dDq.onjCo0QAQigbG4xO7QFBZOlu8cwHv_XK0OB9Jc8UPzsGnRgnNG9JYzbHM8LQ")
+	req.Header.Set("Cookie", p.cookie)
 	req.Header.Set("sec-fetch-mode", "cors")
 	req.Header.Set("sec-fetch-site", "same-origin")
 

@@ -27,6 +27,7 @@ jobs:
         env:
           GEMINI_API_KEY: "${{ secrets.GEMINI_API_KEY }}"
           RELEASE_PROVIDERS: "${{ vars.RELEASE_PROVIDERS }}"
+          METAL_STORM_COOKIE: "${{ secrets.METAL_STORM_COOKIE }}"
           DISCOGS_TOKEN: "${{ secrets.DISCOGS_TOKEN }}"
           DISCORD_WEBHOOK_URL: "${{ secrets.DISCORD_WEBHOOK_URL }}"
           TELEGRAM_BOT_TOKEN: "${{ secrets.TELEGRAM_BOT_TOKEN }}"

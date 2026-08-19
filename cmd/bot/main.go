@@ -100,7 +100,6 @@ func enrich(ctx context.Context, releases []publisher.MusicRelease, dc *discogs.
 	return out
 }
 
-
 func buildReleaseProviders(ctx context.Context) []publisher.ReleaseProvider {
 	var providers []publisher.ReleaseProvider
 
@@ -122,7 +121,11 @@ func buildReleaseProviders(ctx context.Context) []publisher.ReleaseProvider {
 	}
 
 	if strings.Contains(os.Getenv("RELEASE_PROVIDERS"), "metalstorm") {
-		providers = append(providers, metalstorm.NewProvider())
+		if key := os.Getenv("METAL_STORM_COOKIE"); key != "" {
+			providers = append(providers, metalstorm.NewProvider(key))
+		} else {
+			log.Fatal("metal storm: metalstorm is added as a release provider but METAL_STORM_COOKIE is missing. Either provide METAL_STORM_COOKIE env var or remove metalstorm from RELEASE_PROVIDERS env var")
+		}
 	}
 
 	return providers
