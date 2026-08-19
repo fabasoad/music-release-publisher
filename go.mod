@@ -3,6 +3,7 @@ module music-release-publisher
 go 1.26.6
 
 require (
+	github.com/PuerkitoBio/goquery v1.12.0
 	github.com/stretchr/testify v1.12.0
 	github.com/tirthpatell/threads-go v1.9.4
 	golang.org/x/text v0.41.0
@@ -17,6 +18,7 @@ require (
 	github.com/BurntSushi/toml v1.6.0 // indirect
 	github.com/air-verse/air v1.67.4 // indirect
 	github.com/andybalholm/brotli v1.2.2 // indirect
+	github.com/andybalholm/cascadia v1.3.4 // indirect
 	github.com/bep/godartsass/v2 v2.5.0 // indirect
 	github.com/bep/golibsass v1.2.0 // indirect
 	github.com/bits-and-blooms/bitset v1.25.0 // indirect
@@ -58,7 +60,7 @@ require (
 	golang.org/x/sys v0.47.0 // indirect
 	golang.org/x/tools v0.49.0 // indirect
 	google.golang.org/api v0.293.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260817212433-ac3dfec99bb1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260818201246-1b0934165a6f // indirect
 	google.golang.org/grpc v1.83.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

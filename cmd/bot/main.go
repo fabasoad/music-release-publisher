@@ -3,12 +3,14 @@ package main
 import (
 	"context"
 	"log"
+	"music-release-publisher/internal/metalstorm"
 	"os"
 	"strings"
 	"time"
 
 	"music-release-publisher/internal/ai"
 	"music-release-publisher/internal/discogs"
+	"music-release-publisher/internal/filter"
 	"music-release-publisher/internal/musicbrainz"
 	"music-release-publisher/internal/publisher"
 )
@@ -40,17 +42,17 @@ func main() {
 	}
 	log.Printf("total releases: %d", len(releases))
 
-	releases = dedup(releases)
+	releases = filter.Dedup(releases)
 	log.Printf("total releases after dedup: %d", len(releases))
 
 	if token := os.Getenv("DISCOGS_TOKEN"); token != "" {
 		releases = enrich(ctx, releases, discogs.NewClient(token))
 	}
 
-	releases = filterByCountry(releases, "Russia", "RU")
+	releases = filter.ByCountry(releases, "Russia", "RU")
 	log.Printf("total releases after country filter: %d", len(releases))
 
-	releases = filterByDate(releases, targetDate)
+	releases = filter.ByDate(releases, targetDate)
 	log.Printf("total releases after date filter: %d", len(releases))
 
 	chunkSize := 4
@@ -98,48 +100,6 @@ func enrich(ctx context.Context, releases []publisher.MusicRelease, dc *discogs.
 	return out
 }
 
-// filterByCountry drops releases whose Country matches any of the excluded countries (case-insensitive).
-func filterByCountry(releases []publisher.MusicRelease, excluded ...string) []publisher.MusicRelease {
-	out := releases[:0:0]
-	for _, r := range releases {
-		drop := false
-		for _, c := range excluded {
-			if strings.EqualFold(r.Country, c) {
-				drop = true
-				break
-			}
-		}
-		if !drop {
-			out = append(out, r)
-		}
-	}
-	return out
-}
-
-// filterByDate keeps only releases whose Date exactly matches targetDate.
-// Releases with a missing, partial, or non-matching date are dropped.
-func filterByDate(releases []publisher.MusicRelease, targetDate string) []publisher.MusicRelease {
-	out := releases[:0:0]
-	for _, r := range releases {
-		if r.Date == targetDate {
-			out = append(out, r)
-		}
-	}
-	return out
-}
-
-func dedup(releases []publisher.MusicRelease) []publisher.MusicRelease {
-	seen := make(map[string]struct{}, len(releases))
-	out := releases[:0:0]
-	for _, r := range releases {
-		key := strings.ToLower(strings.TrimSpace(r.Artist)) + "\x00" + strings.ToLower(strings.TrimSpace(r.Title))
-		if _, ok := seen[key]; !ok {
-			seen[key] = struct{}{}
-			out = append(out, r)
-		}
-	}
-	return out
-}
 
 func buildReleaseProviders(ctx context.Context) []publisher.ReleaseProvider {
 	var providers []publisher.ReleaseProvider
@@ -159,6 +119,10 @@ func buildReleaseProviders(ctx context.Context) []publisher.ReleaseProvider {
 
 	if strings.Contains(os.Getenv("RELEASE_PROVIDERS"), "musicbrainz") {
 		providers = append(providers, musicbrainz.NewProvider())
+	}
+
+	if strings.Contains(os.Getenv("RELEASE_PROVIDERS"), "metalstorm") {
+		providers = append(providers, metalstorm.NewProvider())
 	}
 
 	return providers
