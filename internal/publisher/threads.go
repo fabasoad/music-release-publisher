@@ -34,7 +34,7 @@ func (t *ThreadsPublisher) Name() string { return "Threads" }
 func (t *ThreadsPublisher) Publish(ctx context.Context, releases []MusicRelease) error {
 	topicTag := "Rock Music"
 	for _, r := range releases {
-		if strings.Contains(r.Genre, "Metal") {
+		if strings.Contains(strings.ToLower(r.Genre), "metal") {
 			topicTag = "Metal Threads"
 			break
 		}
