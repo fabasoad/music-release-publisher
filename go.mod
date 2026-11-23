@@ -3,11 +3,11 @@ module music-release-publisher
 go 1.27.4
 
 require (
-	github.com/PuerkitoBio/goquery v1.13.0
+	github.com/PuerkitoBio/goquery v1.14.0
 	github.com/stretchr/testify v1.12.1
 	github.com/tirthpatell/threads-go v1.12.0
 	golang.org/x/text v0.44.0
-	google.golang.org/genai v1.77.0
+	google.golang.org/genai v1.79.1
 )
 
 require (
