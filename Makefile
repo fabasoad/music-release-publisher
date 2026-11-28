@@ -6,10 +6,6 @@ BUILD_CMD := go build -o music-release-publisher cmd/bot/main.go
 build: download/deps
 	$(BUILD_CMD)
 
-.PHONY: install
-install:
-	go install cmd/bot/main.go
-
 .PHONY: download/deps
 download/deps:
 	go mod download
@@ -51,8 +47,8 @@ run/quick:
 update:
 	go get -u ./...
 
-.PHONY: sync/deps
-sync/deps:
+.PHONY: install
+install:
 	go mod tidy
 
 .PHONY: vet
